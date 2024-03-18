@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNews | Perguntas Frequentes</title>
+    <link 
+      rel="stylesheet" 
+      href="../styles.css" 
+    />
     
 </head>
 <body>
@@ -11,22 +15,30 @@
     
     <!--inicio do header-->
     <header>
-        <img src="../img/logo_longa.png" alt="logo da empresa" width="300">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./noticias.html">Notícias</a></li>
-                <li><a href="./sobre_dengue.html">Sobre a Dengue</a></li>
-                <li><a href="./mapa_casos.html">Mapa de Casos</a></li>
-                <li><a href="./quiz.html">Quiz</a></li>
-                <li><a href="./FAQ.html">FAQ</a></li>
-                <li><a href="./quem_somos.html">Quem Somos</a></li>
-            </ul>
-            <form action="/search" method="get">
-                <input type="text" name="search" placeholder="Digite aqui sua busca"/>
-                <button type="submit">Buscar</button>
-            </form>
-        </nav>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="../img/logo_longa.png" alt="logo do site" width="300px">
+          </a>
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./noticias.html">Notícias</a></li>
+            <li><a href="./sobre_dengue.html">Sobre a Dengue</a></li>
+            <li><a href="./mapa_casos.html">Mapa de Casos</a></li>
+            <li><a href="./quiz.html">Quiz</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+            <li><a href="./quem_somos.html">Quem Somos</a></li>
+        </ul>
+        <div class="busca">
+          <form action="/search" method="get">
+            <input type="text" name="search" placeholder="Digite aqui sua busca"/>
+            <button type="submit">Buscar</button>
+        </form>
+
+        </div>
+
+      </nav>
     </header>
 
     <!--inicio do conteúdo principal-->
@@ -613,31 +625,91 @@
           <!--pergunta #48-->
           <aside>
             <h3>#48 O que é Zika?</h3>
-              <p></p>
+              <p>
+                É uma arbovirose causada pelo vírus Zika (ZIKV). Arboviroses são doenças causadas por vírus (arbovírus) transmitidos por meio da picada de mosquitos infectados da espécie <i>Aedes aegypti</i>.
+              </p>
+                A maioria das infecções pelo Zika Virus são assintomáticas ou representam uma doença febril autolimitada semelhante às infecções por chikungunya e dengue. Entretanto, a associação da infecção viral com complicações neurológicas como microcefalia congênita e síndrome de Guillain-Barré (SGB) foi demonstrada por estudos realizados durante surtos da doença no Brasil e na Polinésia Francesa. 
+              <p>
+                <strong>
+                  IMPORTANTE: Todos os sexos e faixas etárias são igualmente suscetíveis ao vírus Zika, porém mulheres grávidas e pessoas acima de 60 anos têm maiores riscos de desenvolver complicações da doença. Esses riscos podem aumentar quando a pessoa tem alguma comorbidade.
+                </strong>
+              </p>
           </aside>
 
           <!--pergunta #49-->
           <aside>
             <h3>#49 Quais são os sinais e sintomas da Zika?</h3>
-              <p></p>
+              <p>
+                A infecção pelo vírus Zika pode ser assintomática ou sintomática. Quando sintomática, pode apresentar quadro clínico variável, desde manifestações brandas e autolimitadas até complicações neurológicas e malformações congênitas. Estudos recentes indicam que mais de 50% dos pacientes infectados por Zika tornam-se sintomáticos. O período de incubação da doença varia de 2 a 7 dias.
+              </p>
+              <p>Manifestações mais comuns:</p>
+              <ul>
+                <li>Febre baixa (≤38,5 ºC) ou ausente;</li>
+                <li>Exantema (geralmente pruriginoso e maculopapular craniocaudal) de início precoce;</li>
+                <li>Conjuntivite não purulenta;</li>
+                <li>Cefaleia, artralgia, astenia e mialgia;</li>
+                <li>Edema periarticular, linfonodomegalia.</li>
+              </ul>
+              <p>
+                Além da manifestação clínica exantemática febril leve da infecção pelo ZIKV, o prurido é um sintoma importante durante o período agudo, podendo afetar as atividades cotidianas e o sono.
+              </p>
+              <p>
+                Duas complicações neurológicas graves relacionadas ao ZIKV foram identificadas: Síndrome de Guillan-Barré (SGB), uma condição rara em que o sistema imunológico de uma pessoa ataca os nervos periféricos, e microcefalia, a manifestação mais grave de um espectro de defeitos congênitos. Gestantes infectadas podem transmitir o vírus ao feto e essa forma de transmissão da infecção pode resultar em aborto espontâneo, óbito fetal ou malformações congênitas, como a microcefalia.
+              </p>
+              <p>Deve-se ficar atento para o aparecimento de outros quadros neurológicos, tais como, encefalites, mielites e neurite óptica, entre outros.</p>
           </aside>          
 
           <!--pergunta #50-->
           <aside>
             <h3>#50 Como ocorre a transmissão do vírus da Zika?</h3>
-              <p></p>
+              <p>
+                A principal forma de transmissão do Zika Virus aos humanos é por meio da picada de mosquitos vetores infectados da espécie <i>Aedes aegypti</i>. Esta espécie de mosquito também é responsável pela transmissão da dengue e chikungunya no Brasil. 
+              </p>
+              <p>
+                Outras formas não vetoriais de transmissão do ZIKV incluem da mãe para feto durante a gravidez (transmissão vertical), transmissão interpessoal durante o contato sexual e transmissão por transfusão de sangue. 
+              </p>
+              <p>
+                A transmissão vertical do Zika Virus pode ocorrer em todos os três trimestres da gestação, independentemente da presença ou ausência de sintomas na mãe. Aproximadamente 26% das mães infectadas transmitem o Zika Virus aos fetos, no entanto, o risco de desenvolver defeitos congênitos, incluindo anormalidades neurológicas como a microcefalia, foi maior entre as mulheres infectadas durante o primeiro trimestre. Em contraste, o risco de complicações neurológicas fetais foi menor entre as mulheres grávidas que adquiriram infecção pelo ZIKV durante o terceiro trimestre da infecção. 
+              </p>
+              <p>
+                Embora a infecção pelo Zika Virus do feto da mãe que adquiriu o ZIKV após a relação sexual tenha sido relatada, não está claro se o risco de infecção fetal é maior por meio da transmissão sexual para a mãe do que pela transmissão vetorial para a mãe. 
+              </p>
+              <p>
+                As taxas de detecção do Zika Virus no sêmen de homens infectados sintomáticos têm sido consistentes na maioria dos estudos, variando de 50% a 60% no primeiro mês do início dos sintomas. Quase todos os casos de transmissão sexual do Zika Virus foram identificados dentro de 20 dias após o início da doença do parceiro infectado. Acredita-se que a duração variável da excreção de ZIKA no sêmen dos homens seja devida a diferentes características virais e do hospedeiro. 
+              </p>
+              <p>
+                <strong>
+                  IMPORTANTE: O Zika Virus já foi detectado na saliva, urina e leite materno, entretanto a transmissão por meio desses fluidos corporais ainda não foi evidenciada.
+                </strong>
+              </p>
           </aside>
           
           <!--pergunta #51-->
           <aside>
             <h3>#51 Como é feito o diagnóstico do Zika Vírus?</h3>
-              <p></p>
+              <p>
+                O diagnóstico do Zika vírus é clínico e feito por um médico. O resultado é confirmado por meio de exames laboratoriais de sorologia e biologia molecular. Todos os exames estão disponíveis no Sistema Único de Saúde (SUS).
+              </p>
+              <p>
+                Os recém-nascidos com suspeita de comprometimento neurológico necessitam de exames de imagem, como ultrassom. Tomografias ou ressonância magnética. Em caso de confirmação do Zika a notificação deve ser ao Ministério da Saúde em até 24 horas.
+              </p>
           </aside>
           
           <!--pergunta #52-->
           <aside>
             <h3>#52 Como é feito o tratamento da Zika?</h3>
-              <p></p>
+              <p>Ainda não existe antiviral disponível para tratamento específico da infecção pelo vírus Zika.</p>
+              <p>Para os quadros sintomáticos, aplicam-se as principais medidas:</p>
+              <ul>
+                <li>Repouso relativo, enquanto durar a febre;</li>
+                <li>Estímulo à ingestão de líquidos;</li>
+                <li>Administração de paracetamol ou dipirona em caso de dor ou febre;</li>
+                <li>Não administração de ácido acetilsalicílico;</li>
+                <li>Administração de anti-histamínicos;</li>
+                <li>Recomendação ao paciente para que retorne imediatamente ao serviço de saúde, em casos de sensação de formigamento de membros ou alterações do nível de consciência (para investigação de SGB e de outros quadros neurológicos);</li>
+                <li>Diante da queixa de alteração visual, encaminhamento ao oftalmologista para avaliação e tratamento.</li>
+              </ul>
+              <p>Gestantes com suspeita de Zika devem ser acompanhadas conforme protocolos vigentes para o pré-natal, desenvolvidos pelo Ministério da Saúde do Brasil.  </p>
           </aside>
 
         </section>
