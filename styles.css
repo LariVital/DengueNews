@@ -1,0 +1,49 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    background-color: #f8f9fa ;
+    padding: 10px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: end;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+nav ul li {
+    margin-right: 20px;
+    padding: 5px;
+
+}
+
+
+.logo {
+    padding: 5px;
+}
+
+.busca {
+    margin: 5px;
+}
+
+footer {
+    display: flex;
+
+}
+
+address {
+    
+}
+
+footer nav {
+    background-color: #f8f9fa ;
+}
