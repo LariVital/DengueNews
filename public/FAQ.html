@@ -15,12 +15,12 @@
     
     <!--inicio do header-->
     <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="../img/logo_longa.png" alt="logo do site" width="300px">
+        </a>
+      </div>
       <nav>
-        <div class="logo">
-          <a href="index.html">
-            <img src="../img/logo_longa.png" alt="logo do site" width="300px">
-          </a>
-        </div>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="./noticias.html">Notícias</a></li>
@@ -30,15 +30,15 @@
             <li><a href="./FAQ.html">FAQ</a></li>
             <li><a href="./quem_somos.html">Quem Somos</a></li>
         </ul>
-        <div class="busca">
-          <form action="/search" method="get">
-            <input type="text" name="search" placeholder="Digite aqui sua busca"/>
-            <button type="submit">Buscar</button>
-        </form>
-
-        </div>
 
       </nav>
+      <div class="busca">
+        <form action="/search" method="get">
+          <input type="text" name="search" placeholder="Digite aqui sua busca"/>
+          <button type="submit">Buscar</button>
+        </form>
+
+      </div>
     </header>
 
     <!--inicio do conteúdo principal-->
@@ -726,11 +726,11 @@
 
     <!--inicio do footer-->
     <footer>
-        <div>
+        <div class="footer-logo">
             <img src="../img/logo_contorno.png" width="150" alt="logo da empresa">
         </div>
             
-        <div>
+        <div class="footer-links">
             <nav>
                 <div>
                     <ul>
@@ -779,7 +779,7 @@
             
             </address>
 
-            <p>&copy; 2024 Dengue News | Todos os direitos reservados.</p>
+            <div class="copyright"><p>&copy; 2024 Dengue News | Todos os direitos reservados.</p></div>
 
         </div>
 

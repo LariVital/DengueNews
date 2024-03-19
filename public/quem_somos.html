@@ -7,24 +7,34 @@
 </head>
 <body>
 
+    
+    <!--inicio do header-->
     <header>
-        <img src="../img/logo_longa.png" alt="logo da empresa" width="300">
+        <div class="logo">
+          <a href="index.html">
+            <img src="../img/logo_longa.png" alt="logo do site" width="300px">
+          </a>
+        </div>
         <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./noticias.html">Notícias</a></li>
-                <li><a href="./sobre_dengue.html">Sobre a Dengue</a></li>
-                <li><a href="./mapa_casos.html">Mapa de Casos</a></li>
-                <li><a href="./quiz.html">Quiz</a></li>
-                <li><a href="./FAQ.html">FAQ</a></li>
-                <li><a href="./quem_somos.html">Quem Somos</a></li>
-            </ul>
-            <form action="/search" method="get">
-                <input type="text" name="search" placeholder="Digite aqui sua busca"/>
-                <button type="submit">Buscar</button>
-            </form>
+          <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./noticias.html">Notícias</a></li>
+              <li><a href="./sobre_dengue.html">Sobre a Dengue</a></li>
+              <li><a href="./mapa_casos.html">Mapa de Casos</a></li>
+              <li><a href="./quiz.html">Quiz</a></li>
+              <li><a href="./FAQ.html">FAQ</a></li>
+              <li><a href="./quem_somos.html">Quem Somos</a></li>
+          </ul>
+  
         </nav>
-    </header>
+        <div class="busca">
+          <form action="/search" method="get">
+            <input type="text" name="search" placeholder="Digite aqui sua busca"/>
+            <button type="submit">Buscar</button>
+          </form>
+  
+        </div>
+      </header>
 
 <!--início do conteúdo principal-->
     <main>
@@ -135,13 +145,15 @@
 
     </main>
 
-<!--inicio do footer-->
+
+
+    <!--inicio do footer-->
     <footer>
-        <div>
+        <div class="footer-logo">
             <img src="../img/logo_contorno.png" width="150" alt="logo da empresa">
         </div>
             
-        <div>
+        <div class="footer-links">
             <nav>
                 <div>
                     <ul>
@@ -181,16 +193,16 @@
 
             <address>
                 <ul>
-                    <li><a href=""><img src="../img/social_media/facebook.png" target="_blank" width="30"></a></li>
-                    <li><a href=""><img src="../img/social_media/instagram.png" target="_blank" width="30"></a></li>
-                    <li><a href=""><img src="../img/social_media/twitter.png" target="_blank" width="30"></a></li>
+                    <li><a href=""><img src="../img/social_media/facebook.png" width="30"></a></li>
+                    <li><a href=""><img src="../img/social_media/instagram.png" width="30"></a></li>
+                    <li><a href=""><img src="../img/social_media/twitter.png" width="30"></a></li>
                 </ul>
 
                 <a href="mailto:contato@denguenews.com">contato@denguenews.com</a>
             
             </address>
 
-            <p>&copy; 2024 Dengue News | Todos os direitos reservados.</p>
+            <div class="copyright"><p>&copy; 2024 Dengue News | Todos os direitos reservados.</p></div>
 
         </div>
 
