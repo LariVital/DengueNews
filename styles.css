@@ -1,14 +1,13 @@
-nav {
+header nav {
     display: flex;
-    justify-content: space-between;
-    margin: 10px;
+    margin: 0px;
     align-items: center;
-    background-color: #f8f9fa ;
-    padding: 10px;
+    background-color: #ffffff;
+    padding: 0x;
 }
 
 
-nav ul {
+header nav ul {
     display: flex;
     list-style: none;
     align-items: end;
@@ -16,29 +15,30 @@ nav ul {
 
 }
 
-nav a {
+header nav a {
     text-decoration: none;
     color: #000000a6;
     font-size: 16px;
     font-style: normal;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 8px; 0px;
+    padding: 4px 10px;
 }
 
 
-nav a:hover {
-    color: #2196F3;
+header nav a:hover {
+    color: ;
     font-weight: 600;
-    background-color: #
+    background-color: #f8f9fa;
 }
 
-nav ul li {
+header nav ul li {
     margin-right: 20px;
     text-decoration: none;
+    margin: 0px;
 
 }
 
-nav img {
+header nav img {
     height: 70px;
     width: auto;
 
@@ -57,24 +57,95 @@ nav img {
     font-size: 16px;
     font-style: normal;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .busca input {
     color: #000000a6;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 footer {
-    display: flex;
-
-}
-
-address {
-    
-}
-
-footer nav {
     background-color: #f8f9fa ;
 }
+
+
+footer nav {
+    display: flex;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0px;
+}
+
+
+footer ul li {
+    margin-right: 20px;
+    text-decoration: none;
+    margin: 0px;
+}
+
+
+footer nav img {
+    height: 150px;
+    width: auto;
+    margin-right: 20px;
+
+}
+
+.dados-contato a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+.dados-contato ul {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 8px 0px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #000000a6;
+    font-size: 16px;
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 20px;
+
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #000000a6;
+    font-size: 16px;
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 20px;
+
+}
+
+footer strong {
+    text-decoration: none;
+    color: #000000a6;
+    font-size: 16px;
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 20px;
+}
+
+
+.copyright {
+    display: flex;
+    justify-content: center
+
+}
+
+.copyright p {
+    margin: 0px 0px 16px 0px;
+}
+
