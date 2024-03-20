@@ -17,6 +17,8 @@ nav ul {
 
 nav a {
     text-decoration: none;
+    height: 70px;
+    width: auto;
 }
 
 
@@ -27,8 +29,9 @@ nav ul li {
 }
 
 
-.logo {
+.logo a {
     padding: 5px;
+
 }
 
 .busca {
