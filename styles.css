@@ -74,6 +74,7 @@ footer {
 
 footer nav {
     display: flex;
+    justify-content: space-evenly;
 }
 
 footer ul {
