@@ -1,72 +1,93 @@
-header nav {
-    display: flex;
-    margin: 0px;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 0x;
-}
-
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    align-items: end;
-    padding: 0px;
-
-}
-
-header nav a {
-    text-decoration: none;
-    color: #000000a6;
-    font-size: 16px;
-    font-style: normal;
+* {
+    margin: 0;
+    padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 4px 10px;
+
 }
 
-
-header nav a:hover {
-    color: ;
-    font-weight: 600;
+/* cabeçalho de navegação */
+.header-topo {
     background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    padding: 16x;
+    margin-bottom: 10px;
 }
 
-header nav ul li {
-    margin-right: 20px;
+
+.header-topo nav ul li {
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+.header-topo ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+
+.header-topo nav a {
     text-decoration: none;
-    margin: 0px;
-
+    color: #000000a6
 }
 
-header nav img {
+
+.header-topo nav a:hover {
+    color: #000000
+}
+
+/* logo superior */
+.header-topo img {
     height: 70px;
     width: auto;
-
-}
-.logo {
-    padding: 5px;
+    margin-left: 8px;
 }
 
-.busca {
-    margin: 5px;
+/* formulário de pesquisa */
+form.busca {
+    display: flex;
+    align-items: center;
     
 }
 
-.busca button {
+button.botao-busca {
+    padding: 6px 12px;
+    font-size: 16px;
+    color:#FFC107;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-color:#FFC107;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style:solid;
+    margin-right: 8px;
+    transition-duration: 0.4s;
+  }
+    
+  button.botao-busca:hover {
+    background-color:#FFC107;
+    color: #ffffff;
+  }
+
+input.form-control {
+    border-width: 1px 1px 1px 1px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border-color: #ffffff;
     color: #000000a6;
     font-size: 16px;
-    font-style: normal;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    border-style:solid;
+    margin-right: 8px;
 }
 
-.busca input {
-    color: #000000a6;
-    font-size: 14px;
-    font-style: normal;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/* conteúdo principal */
+
+main {
+    margin: 20px;
 }
 
+/* footer */
 footer {
     background-color: #f8f9fa ;
 }
@@ -75,6 +96,8 @@ footer {
 footer nav {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 10px;
+
 }
 
 footer ul {
@@ -93,8 +116,15 @@ footer ul li {
 footer nav img {
     height: 150px;
     width: auto;
-    margin: 10px 0px 0px 0px;
 
+}
+
+address {
+    padding-bottom: 8px;
+}
+
+.dados-contato{
+    padding-bottom: 4px;
 }
 
 .dados-contato a {
@@ -107,7 +137,7 @@ footer nav img {
 .dados-contato ul {
     display: flex;
     justify-content: center;
-    margin: 0px 0px 8px 0px;
+    margin: 0px 0px 4px 0px;
 }
 
 footer nav a {
@@ -152,6 +182,30 @@ footer strong {
 }
 
 .copyright p {
-    margin: 0px 0px 16px 0px;
+    padding: 8px;
 }
 
+h1 {
+    text-size: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+h3 {
+    text-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+p {
+    text-size: 1rem;
+}
