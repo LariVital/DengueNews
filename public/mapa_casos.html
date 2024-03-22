@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNews | Arboviroses em números!</title>
+    <!-- font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- folha de estilos css -->
     <link rel="stylesheet" href="../styles.css" />
 
 </head>
@@ -13,14 +18,11 @@
 
 
     <!--inicio do header-->
-    <header>
+    <header class="header-topo">
+        <a class="logo-top" href="index.html">
+            <img src="../img/logo_longa_center.png" alt="logo do site">
+        </a>
         <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="../img/logo_longa_center.png" alt="logo do site">
-                </a>
-            </div>
-            <hr>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./noticias.html">Notícias</a></li>
@@ -30,14 +32,12 @@
                 <li><a href="./FAQ.html">FAQ</a></li>
                 <li><a href="./quem_somos.html">Quem Somos</a></li>
             </ul>
+        </nav>
+        <form class="busca" role="search">
+            <input class="form-control" type="search" aria-label="Busca" placeholder="Digite aqui sua busca" />
+            <button class="botao-busca" type="submit">Buscar</button>
+        </form>
 
-            <div class="busca">
-                <form action="/search" method="get">
-                    <input type="text" name="search" placeholder="Digite aqui sua busca" />
-                    <button type="submit">Buscar</button>
-                </form>
-
-            </div>
 
         </nav>
     </header>
