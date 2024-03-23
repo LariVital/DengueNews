@@ -84,7 +84,7 @@ input.form-control {
 /* conteúdo principal */
 
 main {
-    margin: 20px;
+    margin: 60px;
 }
 
 /* footer */
@@ -193,8 +193,8 @@ h1 {
 }
 
 h2 {
-    text-size: 1.5rem;
     font-family: "Poppins", sans-serif;
+    text-size-adjust: 1.5rem;
     font-weight: 400;
     margin-bottom: 6px;
 }
@@ -206,6 +206,36 @@ h3 {
     margin-bottom: 2px;
 }
 
+h4 {
+    text-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
 p {
     text-size: 1rem;
+}
+
+/* quem somos */
+
+.projeto-integrador {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div#pi.container {
+    display: block;
+    margin-right: 25px;
+    width: 100%;
+}
+
+div#ods3.container {
+    display: flex;
+    margin: 25px 0px;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    width: 100%;
 }
