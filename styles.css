@@ -203,14 +203,14 @@ h3 {
     text-size: 1.2rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    margin-bottom: 2px;
+    margin-bottom: 6px;
 }
 
 h4 {
     text-size: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 }
 
 p {
@@ -235,7 +235,77 @@ div#ods3.container {
     display: flex;
     margin: 25px 0px;
     padding: 25px;
+    color:#757575;
     background-color: #f8f9fa;
     border-radius: 20px;
     width: 100%;
+}
+
+#ods-verde {
+    color:#4CA146;
+}
+
+div.negocio-cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+div.negocio-cards aside {
+    padding: 30px;
+    width: 15%;
+    background-color: #f8f9fa;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+div.negocio-cards figure {
+    display: flex;
+    justify-content: center;
+}
+
+div.negocio-cards h4 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.members {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.members article {
+    width: 15%;
+    padding: 25px;
+}
+
+.members figure {
+    align-items: center;
+}
+
+.members h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    
+}
+
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+
+}
+
+.foto-perfil img {
+    width: 200px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+div.redes-prof img {
+    margin-top: 15px;
+    
 }
