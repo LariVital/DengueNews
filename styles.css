@@ -455,3 +455,27 @@ div.redes-prof img {
   
    
 }
+
+/*  newsletter */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/aedes_fundoAmarelo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#mailbox {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border-radius: 20px;
+    width: 50vh;
+
+}
+
