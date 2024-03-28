@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
@@ -412,11 +413,11 @@ div.redes-prof img {
 .one h2{
    margin-bottom: 10px;
    padding: 10px 0 10px ;text-align:left
-   justify-content:center;
+   justify-content: center;
 
    font-family:"roboto", sans-serif;
-   font-size:28px;
-   font-weight:medium;
+   font-size: 28px;
+   font-weight: medium;
 
 }
 .one p{
@@ -446,7 +447,7 @@ div.redes-prof img {
 }
  
 .one span{
-   transition: padding: left 0.5s;
+   transition: padding; left 0.5s;
 
 }
 
@@ -458,23 +459,40 @@ div.redes-prof img {
 
 /*  newsletter */
 
-#body-news {
-    display: flex;
+#body-newsletter {
+    /* display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding: 0; */
     background-image: url('../img/aedes_fundoAmarelo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-
-#mailbox {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 50px;
-    border-radius: 20px;
-    width: 50vh;
-
+.container-newsletter {
+    display: flex;
+    justify-content: center;
+    padding: 15rem;
+    border-radius: 5px;
+    
 }
+.form-newsletter {
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    height: 13rem;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* #mailbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 60px;
+    border-radius: 20px;
+    width: 50vh; */
+
