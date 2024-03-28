@@ -458,7 +458,7 @@ div.redes-prof img {
 
 /*  newsletter */
 
-body {
+#body-news {
     display: flex;
     justify-content: center;
     align-items: center;
