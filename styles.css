@@ -204,7 +204,7 @@ footer strong {
 }
 
 h1 {
-    text-size: 4rem;
+    font-size: 4rem;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     margin-bottom: 10px;
@@ -218,21 +218,21 @@ h2 {
 }
 
 h3 {
-    text-size: 1.2rem;
+    font-size: 1.2rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     margin-bottom: 6px;
 }
 
 h4 {
-    text-size: 1rem;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     margin-bottom: 4px;
 }
 
 p {
-    text-size: 1rem;
+    font-size: 1rem;
 }
 
 /* quem somos */
@@ -464,6 +464,9 @@ div.redes-prof img {
 
 .body-news {
     background-image: url("./img/aedes_fundoAmarelo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
