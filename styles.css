@@ -480,6 +480,11 @@ div.redes-prof img {
     width: 80vh;
 
 }
+
+#mailbox label {
+    margin-bottom: 1rem;
+}
+
 .form-news {
     display: flex;
     flex-direction: column;
