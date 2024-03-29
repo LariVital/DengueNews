@@ -464,7 +464,7 @@ div.redes-prof img {
 
 .body-news {
     background-image: url("./img/aedes_fundoAmarelo.jpg");
-    background-size: cover;
+    background-size: 800px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
@@ -480,7 +480,7 @@ div.redes-prof img {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     padding: 50px;
-    width: 80vh;
+    width: 100vh;
 
 }
 
