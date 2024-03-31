@@ -537,12 +537,42 @@ p {
     margin: 0;
 }
 
-.main-faq {
+
+#mosquito-faq {
     background-image: url("./img/background/mosquito.png");
+    background-size: 50%;
+    background-repeat: repeat;
+}
+
+#dengue-faq {
+    background-image: url("./img/background/virus.png");
+    background-size: 50%;
+    background-repeat: repeat;
+
+}
+
+#vacina-faq {
+    background-image: url("./img/background/vacinacao.png");
     background-size: 100%;
     background-repeat: repeat;
 
 }
+
+#chikungunya-faq {
+    background-image: url("./img/background/virus.png");
+    background-size: 50%;
+    background-repeat: repeat;
+
+}
+
+#zika-faq {
+    background-image: url("./img/background/mosquito.png");
+    background-size: 50%;
+    background-repeat: repeat;
+
+}
+
+
 
 
 .collapse ul li {
