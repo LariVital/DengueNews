@@ -525,3 +525,37 @@ p {
 #digite-email input {
     width: 100%;
 }
+
+/* faq */
+
+.titulo-bloco {
+    color: #FFC107;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    padding: 30px 0px 10px 30px;
+    margin: 0;
+}
+
+#mosquito-faq {
+    background-image: url("./img/background/mosquito.png");
+    background-size: 100%;
+    background-repeat: repeat;
+
+}
+
+#dengue-faq {
+    background-image: url("./img/background/virus2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#vacina-faq {
+    background-image: url("./img/background/vacinacao.png");
+    background-size: 50%;
+    background-repeat: repeat;
+}
+
+.collapse ul li {
+    margin-left: 30px;
+}
