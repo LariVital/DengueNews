@@ -529,16 +529,24 @@ p {
 /* faq */
 
 .titulo-bloco {
-    width: 100%;
-    color: #FFC107;
-    background-color: rgba(0, 0, 0, 0.6);
-    font-weight: 600;
-    padding: 25px;
+    height: 5rem;
+    color: #000000;
+    background-image: url("./img/background/mosquito2.png");
+    background-size: 50%;
+    background-position: center;
+    font-weight: 500;
+
     margin: 0;
 }
 
+.titulo-bloco h2 {
+    color:#FFC107;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+}
 
-#mosquito-faq {
+
+/* #mosquito-faq {
     background-image: url("./img/background/mosquito.png");
     background-size: 50%;
     background-repeat: repeat;
@@ -570,7 +578,7 @@ p {
     background-size: 50%;
     background-repeat: repeat;
 
-}
+} */
 
 
 
