@@ -7,11 +7,10 @@
 
 /* atributos em comum */
 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     margin-bottom: 10px;
-    padding-left: 10rem;
 }
 
 h2 {
@@ -584,6 +583,17 @@ footer strong {
 
 /* faq */
 
+.main-faq {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 900px;
+}
+
+.main-faq h1 {
+    align-self: center;
+}
+
 .titulo-bloco {
     height: 5rem;
     color: #000000;
@@ -591,7 +601,6 @@ footer strong {
     background-size: 50%;
     background-position: center;
     font-weight: 500;
-
     margin: 0;
 }
 
@@ -604,4 +613,16 @@ footer strong {
 
 .collapse ul li {
     margin-left: 30px;
+}
+
+.faq-atualiza {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.btn.btn-link {
+    text-align: left;
 }
