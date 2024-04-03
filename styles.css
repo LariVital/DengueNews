@@ -242,25 +242,28 @@ footer strong {
 /* quem somos */
 
 .main-quemsomos {
-    margin: 0;
+    margin: 0 auto;
+    width: 900px;
 }
 
 .projeto-integrador {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10rem;
-    margin-left: 10rem;
+    margin: 20px 10p;
+    padding-top: 20px;
 }
 
+
 .texto-pi {
-    margin-right: 25px;
+    margin-right: 20px;
     width: 50%;
 }
 
 .ods3 {
     display: flex;
-    margin: 25px 0px;
+    flex-direction: column;
+    margin-left: 10px;
     padding: 30px;
     border: 1px solid #4CA146;
     color:#000000;
@@ -268,8 +271,17 @@ footer strong {
     width: 50%;
 }
 
+.ods3-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .ods3 img {
-    margin-left: 15px;
+    margin-top: 10px;
+    margin-left: 16px;
+    width: 9rem;
 }
 
 #ods-verde {
@@ -278,7 +290,7 @@ footer strong {
 
 .negocio-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     margin-bottom: 0;
     margin-right: 0;
@@ -288,12 +300,21 @@ footer strong {
 
 .negocio-cards article {
     padding: 25px;
-    width: 15%;
+    width: 50%;
     background-color: #fff2cc;
-    margin: 15px;
+    margin: 15px 0px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+.negocio-cards article:first-of-type {
+    margin-right: 20px;
+}
+
+.negocio-cards article:last-of-type {
+    margin-left: 20px;
+}
+
 
 .negocio-cards figure {
     display: flex;
@@ -326,7 +347,10 @@ footer strong {
 }
 
 .members article {
-    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
     padding: 25px 25px 10px 25px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.6);
@@ -334,6 +358,12 @@ footer strong {
     border-radius: 20px;
 }
 
+#set-members2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(360deg, #FFF, #fff2cc);
+    margin-bottom: 5px;
+}
 .members figure {
     align-items: center;
 }
@@ -387,7 +417,7 @@ footer strong {
 }
 
 .surgimento {
-    width: 49%;
+    width: 100%;
     padding: 20px 50px;
     background-color: #f8f9fa;
     border-radius: 20px;
@@ -430,7 +460,7 @@ footer strong {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Distribui o espaço em duas colunas */
     gap: 50px; /* Espaçamento entre os itens dentro do artigo */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
+    align-items: center; Alinha os itens verticalmente ao centro
     padding: 10px;
     border-bottom:1px solid #212121;
 }
