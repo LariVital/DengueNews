@@ -3,8 +3,43 @@
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Roboto';
-
 }
+
+/* atributos em comum */
+h1 {
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+    padding-left: 10rem;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    text-size-adjust: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+h4 {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
 
 /* cabeçalho de navegação */
 .header-topo {
@@ -204,39 +239,6 @@ footer strong {
     padding: 8px;
 }
 
-h1 {
-    font-size: 4rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    margin-bottom: 10px;
-    padding-left: 10rem;
-}
-
-h2 {
-    font-family: "Poppins", sans-serif;
-    text-size-adjust: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 6px;
-}
-
-h3 {
-    font-size: 1.2rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    margin-bottom: 6px;
-}
-
-h4 {
-    font-size: 1rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    margin-bottom: 4px;
-}
-
-p {
-    font-size: 1rem;
-}
-
 /* quem somos */
 
 .main-quemsomos {
@@ -403,10 +405,13 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px;
 }
 .container-content{
-    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30pxp;
     background-color: #f3f3f3;
    
 }
@@ -430,8 +435,10 @@ p {
     border-bottom:1px solid #212121;
 }
 .image-container img {
-    width: 600px; 
-    height: 400px;
+    /* width: 600px; 
+    height: 400px; */
+    width: 500px;
+    height: auto;
     align-self: center;
 }
 .one{
@@ -451,9 +458,11 @@ p {
     font: size 15px; 
     font-family: "monserrat", sans-serif;
     font-weight: 300;
+    margin-bottom: 10px;
 
 }
-.one a{
+
+/* .one a{
     padding: 15px 0;
     display: block;
     transition: all 0,5s;
@@ -468,20 +477,37 @@ p {
     text-decoration: solid;
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-    
-}
+} */
  
+.one a {
+    padding: 6px 12px;
+    font-size: 16px;
+    color:#FFC107;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-color:#FFC107;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style:solid;
+    margin-right: 8px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+  }
+    
+.one a:hover {
+    background-color:#FFC107;
+    color: #ffffff;
+  }
+
 .one span{
    transition: padding, left 0.5s;
 
 }
 
-.one a:hover{
+/* .one a:hover{
     padding-left: 5px;
   
    
-}
+} */
 
 /*  newsletter */
 
@@ -544,43 +570,6 @@ p {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 25px;
 }
-
-
-/* #mosquito-faq {
-    background-image: url("./img/background/mosquito.png");
-    background-size: 50%;
-    background-repeat: repeat;
-}
-
-#dengue-faq {
-    background-image: url("./img/background/virus.png");
-    background-size: 50%;
-    background-repeat: repeat;
-
-}
-
-#vacina-faq {
-    background-image: url("./img/background/vacinacao.png");
-    background-size: 100%;
-    background-repeat: repeat;
-
-}
-
-#chikungunya-faq {
-    background-image: url("./img/background/virus.png");
-    background-size: 50%;
-    background-repeat: repeat;
-
-}
-
-#zika-faq {
-    background-image: url("./img/background/mosquito.png");
-    background-size: 50%;
-    background-repeat: repeat;
-
-} */
-
-
 
 
 .collapse ul li {
