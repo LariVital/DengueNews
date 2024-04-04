@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNews | Perguntas Frequentes</title>
     <!-- font Poppins -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- folha de estilos css -->
     <link rel="stylesheet" href="../styles.css" />
-
-</head>
-
-<body>
-
+    <!-- Adicione as referências necessárias ao Bootstrap CSS e JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
 
     <!--inicio do header-->
-    <header class="header-topo">
-        <a class="logo-top" href="index.html">
+        <header class="header-topo">
+        <a class="logo-top" href="../index.html">
             <img src="../img/logo_longa_center.png" alt="logo do site">
         </a>
         <nav>
@@ -39,759 +42,1300 @@
 
 
         </nav>
-    </header>
+        </header>
 
     <!--inicio do conteúdo principal-->
-    <main>
-        <h1>50 perguntas frequentes: arboviroses</h1>
+        <main class="main-faq">
+            <h1 class="faq-title">50 Perguntas e Respostas</h1>
+            <section class="bloco-perguntas" id="mosquito-faq">
+            <div class="container">
+                <div class="titulo-bloco">
+                    <h2>Mosquito</h2>
+                </div>
 
-        <section id="section1">
-          <h2>Mosquito</h2>
-          <div class="accordion" id="accordionExample">
+                <div class="accordion" id="accordionMosquito">
 
-            <!--pergunta #1-->
-            <article>
-              <h3>#1 Como controlar o Aedes aegypti?</h3>
-              <p>
-                O controle mais efetivo da proliferação do mosquito é a manutenção ambiental principalmente nas residências, para isso é necessário tirar ao menos 10 minutos para verificar o telhado, as calhas entupidas, piscina, garrafas, pneus e demais itens que possam acumular água e se tornar criadouros do transmissor. Mesmo em lugares que necessitem de armazenamento de água é importante não deixar os reservatórios destampados. Nesse sentido, algumas medidas são necessárias, tais como:
-              </p>
-              <ul>
-                <li>Destinação correta de lixo e outros resíduos;</li>
-                <li>Tampar as caixas d'água;</li>
-                <li>Não deixar água acumulada;</li>
-                <li>Manter os lixos fechados;</li>
-                <li>Utilizar areia nos vasos de plantas;</li>
-                <li>Deixar garrafas e outros recipientes de cabeça para baixo;</li>
-                <li>Deixar as lonas esticadas;</li>
-                <li>Retirar a água dos pneus.</li>
-              </ul>
-            </article>
+                    <!-- Pergunta 1 -->
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Pergunta 1: Como controlar o Aedes aegypti?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionMosquito">
+                            <div class="card-body">
+                                <p>
+                                O controle mais efetivo da proliferação do mosquito é a manutenção ambiental principalmente nas residências, para isso é necessário tirar ao menos 10 minutos para verificar o telhado, as calhas entupidas, piscina, garrafas, pneus e demais itens que possam acumular água e se tornar criadouros do transmissor. Mesmo em lugares que necessitem de armazenamento de água é importante não deixar os reservatórios destampados. Nesse sentido, algumas medidas são necessárias, tais como:
+                                </p>
+                                <ul>
+                                <li>Destinação correta de lixo e outros resíduos;</li>
+                                <li>Tampar as caixas d'água;</li>
+                                <li>Não deixar água acumulada;</li>
+                                <li>Manter os lixos fechados;</li>
+                                <li>Utilizar areia nos vasos de plantas;</li>
+                                <li>Deixar garrafas e outros recipientes de cabeça para baixo;</li>
+                                <li>Deixar as lonas esticadas;</li>
+                                <li>Retirar a água dos pneus.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Pergunta 2 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Pergunta 2: Como a pessoa reconhece o mosquito Aedes aegypti?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMosquito">
+                            <div class="card-body">
+                            <p>
+                                <i>Aedes aegypti</i> é o nome científico de um mosquito ou pernilongo cuja característica que o diferencia dos demais mosquitos é a presença de listras brancas no tronco, cabeça e pernas. É um mosquito doméstico, que vive dentro ou ao redor de domicílios ou de outros locais frequentados por pessoas, como estabelecimentos comerciais, escolas ou igrejas, por exemplo. Tem hábitos preferencialmente diurnos e alimenta-se de sangue humano, sobretudo ao amanhecer e ao entardecer.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Pergunta 3 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Pergunta 3: O que posso fazer mais diminuir a quantidade de mosquito Aedes aegypti no meu bairro?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMosquito">
+                            <div class="card-body">
+                            <p>
+                                O Ministério da Saúde esclarece que a melhor arma para combater a dengue, a chikungunya e a Zika é não deixar o mosquito nascer, nesse sentido, o cuidado da população com os domicílios e o ambiente em que está é primordial.
+                            </p>
+                            <p>
+                                A conscientização da população é parte fundamental nas medidas de prevenção. O combate ao mosquito Aedes aegypti depende da participação de todos, as ações contra o vetor da dengue, chikungunya e Zika são complementares, sendo cada uma delas importante no combate e controle da doença.
+                            </p>
+                            <p>
+                                O controle mais efetivo da proliferação do mosquito é a manutenção ambiental principalmente nas residências, para isso é necessário verificar o telhado, as calhas entupidas, piscina, garrafas, pneus e demais itens que possam acumular água e se tornar criadouros do transmissor. Mesmo em lugares que necessitem de armazenamento de água é importante não deixar os reservatórios destampados.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Pergunta 4 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Pergunta 4: Quais medidas podem ser feitas para o controle da dengue durante uma epidemia?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionMosquito">
+                            <div class="card-body">
+                            <p>
+                                Quando há ocorrência de muitos casos de dengue, chikungunya ou Zika, é necessário realizar atividades para o bloqueio da transmissão das doenças, para isso uma das ações adotadas pelo Ministério da Saúde é o fumacê, também chamado de nebulização espacial, e que sempre deve ser realizado com limpeza do ambiente e eliminação de criadouros.  O fumacê é uma estratégia de controle vetorial para reduzir as fêmeas adultas de Aedes aegypti, que transmitem as doenças.
+                            </p>
+                            <p>
+                                Para se obter sucesso, as gotículas de inseticidas geradas pelo equipamento devem penetrar no interior dos quintais e das casas. Observa-se atualmente que as casas estão cada vez mais fechadas (muros altos, vegetação alta etc.). É importante a adesão da população ao receber os agentes de endemias, que orientam a abrir portas e janelas para facilitar a entrada das gotas no interior das residências, e por isto, ações de comunicação e participação comunitária são realizadas com antecedência.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Pergunta 5 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Pergunta 5: É perigoso receber os agentes de combate as endemias (ACE) na minha casa?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionMosquito">
+                            <div class="card-body">
+                            <p>
+                                É importante a adesão da população ao receber os agentes de combate as endemias. Esses profissionais são credenciados e possuem identificação própria, resguardando a segurança do morador.
+                            </p>
+                            <p>
+                                O trabalho dos agentes de combate as endemias consiste na eliminação dos “focos” do mosquito nos domicílios, na orientação às famílias para eliminar criadouros a não deixar água parada em locais propícios à proliferação do mosquito. Onde não for possível eliminar água o ACE realiza o tratamento com larvicida, para eliminar o vetor. 
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Pergunta 6 -->
+                    <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Pergunta 6: Citronela, andiroba e óleo de cravo: estes produtos funcionam para afastar o mosquito Aedes aegypti?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionMosquito">
+                        <div class="card-body">
+                            <p>
+                            Essas alternativas não são totalmente ineficazes, mas elas não garantem o resultado que as pessoas esperam com relação ao Aedes aegypti. O indicado é observar o que o Ministério da Saúde recomenda: tirar 10 minutos do tempo de cada um, e o próprio cidadão inspecionar a sua casa, verificar se não há nenhum depósito com a água parada, depósitos expostos à chuva ou qualquer objeto que possa acumular água.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                    <!-- Pergunta 7 -->
+                    <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Pergunta 7: O mosquito Aedes Aegypti só pica de dia?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionMosquito">
+                        <div class="card-body">
+                            <p>
+                            O <i>Aedes aegypti</i> tem hábitos diurnos, no interior da residência ele pode ser encontrado, preferencialmente, em locais sombreados e escuros, como por exemplo, atrás da geladeira, atrás das cortinas, atrás do guarda-roupa. O <i>Aedes</i> pode se alimentar de sangue humano durante o dia inteiro. O cidadão deve arejar a casa, abrir as janelas, ventilar o ambiente, pois o inseto tem fotofobia - aversão à luz -. Assim, recomenda-se manter a casa diariamente arejada e clareada. Mas, atenção: se existir algum espécime do vetor dentro de casa, em que o morador passe o dia inteiro fora e inexistir fonte de alimentação, pode ocorrer do <i>Aedes aegypti</i> picar no período da noite. Ele é um mosquito inteiramente adaptado e adaptável ao meio urbano. Comumente, ele pica durante o dia, mas dependendo da necessidade e do ambiente, ele pode picar a noite também.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                    <!-- Pergunta 8 -->
+                    <div class="card">
+                    <div class="card-header" id="headingEight">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Pergunta 8: O mosquito Aedes aegypti já nasce infectado pelas doenças que transmite?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionMosquito">
+                        <div class="card-body">
+                            <p>
+                            O mosquito pode apresentar partículas virais, no entanto, a carga não é suficiente para infectar outras pessoas. Ele se infecta ao picar um ser humano em seu período de viremia, em que o paciente apresenta os primeiros sintomas, e geralmente dura uma semana.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                    <!-- Pergunta 9 -->
+                    <div class="card">
+                    <div class="card-header" id="headingNine">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                Pergunta 9: O mosquito Aedes Aegypti se reproduz apenas em água limpa?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionMosquito">
+                        <div class="card-body">
+                            <p>
+                            Não. Nos últimos 20 anos vem ocorrendo um processo de adaptação biológica no vetor. Hoje, com os altos índices de infestação, a probabilidade da adaptação é alta. Atualmente já encontramos Aedes em fossas, cisternas, boca de lobo, ou seja, depósitos que antes não eram explorados pelo mosquito vêm sendo utilizado para postura dos ovos. É possível encontrar o Aedes aegypti na água suja sim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                    <!-- Pergunta 10 -->
+                    <div class="card">
+                    <div class="card-header" id="headingTen">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                Pergunta 10: O mosquito Aedes Aegypti pode transmitir o vírus HIV?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionMosquito">
+                        <div class="card-body">
+                            <p>
+                            Não. Até o presente momento o Aedes aegypti transmite, comprovadamente, dengue, febre amarela urbana, Zika e chikungunya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                    <!-- Pergunta 11 -->
+                    <div class="card">
+                    <div class="card-header" id="headingEleven">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                Pergunta 11: O mosquito Aedes Aegypti pica em áreas da zona rural?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionMosquito">
+                        <div class="card-body">
+                            <p>
+                            Não há registro de grandes infestações ou infestação considerável de <i>Aedes aegypti</i> em área rural neste local há outro <iAedes></i>, o <i>Aedes albopictus</i>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            </section>
 
-            <!--pergunta #2-->
-            <article>
-              <h3>#2 Como a pessoa reconhece o mosquito Aedes aegypti?</h3>
-              <p>
-                <i>Aedes aegypti</i> é o nome científico de um mosquito ou pernilongo cuja característica que o diferencia dos demais mosquitos é a presença de listras brancas no tronco, cabeça e pernas. É um mosquito doméstico, que vive dentro ou ao redor de domicílios ou de outros locais frequentados por pessoas, como estabelecimentos comerciais, escolas ou igrejas, por exemplo. Tem hábitos preferencialmente diurnos e alimenta-se de sangue humano, sobretudo ao amanhecer e ao entardecer.
-              </p>
-            </article>
+            <section class="bloco-perguntas" id="dengue-faq">
+            <div class="container">
+                <div class="titulo-bloco">
+                    <h2>Dengue</h2>
+                </div>
 
-            <!--pergunta #3-->
-            <article>
-              <h3>#3 O que posso fazer mais diminuir a quantidade de mosquito Aedes aegypti no meu bairro?</h3>
-              <p>
-                O Ministério da Saúde esclarece que a melhor arma para combater a dengue, a chikungunya e a Zika é não deixar o mosquito nascer, nesse sentido, o cuidado da população com os domicílios e o ambiente em que está é primordial.
-              </p>
-              <p>
-                A conscientização da população é parte fundamental nas medidas de prevenção. O combate ao mosquito Aedes aegypti depende da participação de todos, as ações contra o vetor da dengue, chikungunya e Zika são complementares, sendo cada uma delas importante no combate e controle da doença.
-              </p>
-              <p>
-                O controle mais efetivo da proliferação do mosquito é a manutenção ambiental principalmente nas residências, para isso é necessário verificar o telhado, as calhas entupidas, piscina, garrafas, pneus e demais itens que possam acumular água e se tornar criadouros do transmissor. Mesmo em lugares que necessitem de armazenamento de água é importante não deixar os reservatórios destampados.
-              </p>
-            </article>
+                <div class="accordion" id="accordionDengue">
+                    <!-- Pergunta 12 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwelve">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+                                    Pergunta 12: O que é dengue?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionDengue">
+                            <div class="card-body">
+                            <p>
+                                A dengue é a arbovirose urbana mais prevalente nas Américas, principalmente no Brasil. É uma doença febril que tem se mostrado de grande importância em saúde pública nos últimos anos. O vírus dengue (DENV) é um arbovírus transmitido pela picada da fêmea do mosquito Aedes aegypti e possui quatro sorotipos diferentes (DENV-1, DENV-2, DENV-3 e DENV-4).
+                            </p>
+                            <p>
+                                O período do ano com maior transmissão da doença ocorre nos meses mais chuvosos de cada região, geralmente de novembro a maio. O acúmulo de água parada contribui para a proliferação do mosquito e, consequentemente, maior disseminação da doença. É importante evitar água parada, todos os dias, porque os ovos do mosquito podem sobreviver por um ano no ambiente.
+                            </p>
+                            <p>
+                                Todas as faixas etárias são igualmente suscetíveis à doença, porém as pessoas mais velhas e aquelas que possuem doenças crônicas, como diabetes e hipertensão arterial, têm maior risco de evoluir para casos graves e outras complicações que podem levar à morte.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Pergunta 13 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThirteen">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                                    Pergunta 13: Quais são os sintomas da dengue?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionDengue">
+                            <div class="card-body">
+                            <p>Os principais sintomas da dengue são:</p>
+                            <ul>
+                                <li>Febre alta > 38°C;</li>
+                                <li>Dor no corpo e articulações;</li>
+                                <li>Dor atrás dos olhos;</li>
+                                <li>Mal-estar;</li>
+                                <li>Falta de apetite;</li>
+                                <li>Dor de cabeça;</li>
+                                <li>Manchas vermelhas no corpo.</li>
+                            </ul>
+                            <p>No entanto, a infecção por dengue pode ser assintomática (sem sintomas), apresentar quadro leve, sinais de alarme e de gravidade.</p>
+                            <p>
+                                Normalmente, a primeira manifestação da dengue é a febre alta (>38°C), de início abrupto, que geralmente dura de 2 a 7 dias, acompanhada de dor de cabeça, dores no corpoarticulações, além de prostração, fraqueza, dor atrás dos olhos, e manchas vermelhas na pele. Também podem acontecer erupções e coceira na pele.
+                            </p>
+                            <p>Fique atento aos sinais e sintomas da dengue.</p>
+                            <p>Ao apresentar os sintomas, é importante procurar um serviço de saúde para diagnóstico e tratamento adequados, todos oferecidos de forma integral e gratuita por meio do SisteÚnico de Saúde (SUS).</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Pergunta 14 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFourteen">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                                    Pergunta 14: Quais são os sinais de alarme?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionDengue">
+                            <div class="card-body">
+                            <p>Os sinais de alarme são assim chamados por sinalizarem o extravasamento de plasma e/ou hemorragias que podem levar o paciente a choque grave e óbito.</p>
+                            <p>Os sinais de alarme são caracterizados principalmente por:</p>
+                            <ul>
+                                <li>Dor abdominal intensa (referida ou à palpação) e contínua;</li>
+                                <li>Náuseas;</li>
+                                <li>Vômitos persistentes;</li>
+                                <li>Acúmulo de líquidos (ascite, derrame pleural, derrame pericárdico);</li>
+                                <li>Hipotensão postural e/ou lipotímia;</li>
+                                <li>Letargia e/ou irritabilidade;</li>
+                                <li>Hepatomegalia maior do que 2cm abaixo do rebordo costal;</li>
+                                <li>Sangramento de mucosa; e</li>
+                                <li>Aumento progressivo do hematócrito.</li>
+                            </ul>
+                            <p>
+                                A fase crítica tem início com o declínio da febre (período de defervescência), entre o 3° e o 7° dia do início de sintomas. Os sinais de alarme, quando presentes, ocorrem nessa fase. A maioria deles é resultante do aumento da permeabilidade capilar. Essa condição marca o início da piora clínica do paciente e sua possível evolução para o choque, por extravasamento plasmático. Sem a identificação e o correto manejo nessa fase, alguns pacientes podem evoluir para as formas graves.
+                            </p>
+                            <p>
+                                Os casos graves de dengue são caracterizados por sangramento, disfunções de órgãos ou extravasamento de plasma. O choque ocorre quando um volume crítico de plasma é perdido pelo extravasamento. Ocorre habitualmente entre o 4º e o 5º dia – no intervalo de 3 a 7 dias de doença –, sendo geralmente precedido por sinais de alarme.
+                            </p>
+                            <p>
+                                Mulheres grávidas, crianças e pessoas mais velhas (acima de 60 anos) têm maiores riscos de desenvolver complicações pela doença. Os riscos aumentam quando o indivíduo tem alguma doença crônica, como asma brônquica, diabetes mellitus, anemia falciforme, hipertensão, além de infecções prévias por outros sorotipos.
+                            </p>
+                            <p> Recomendação ao paciente para que retorne imediatamente ao serviço de saúde, em caso de sinais de alarme.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Pergunta 15 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFifteen">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                                    Pergunta 15: Como ocorre a transmissão do vírus da dengue?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordionDengue">
+                            <div class="card-body">
+                            <p>
+                                O vírus da dengue (DENV) pode ser transmitido ao homem principalmente por via vetorial, pela picada de fêmeas de <i>Aedes aegypti</i> infectadas, no ciclo urbano humano–vetor–humano. Os relatos de transmissão por via vertical (de mãe para filho durante a gestação) e transfusional são raros.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Pergunta 16 -->
+                    <div class="card">
+                        <div class="card-header" id="headingSixteen">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                                    Pergunta 16: Como é feito o diagnóstico da dengue?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordionDengue">
+                            <div class="card-body">
+                            <p>Para o diagnóstico laboratorial da infecção aguda pelo DENV, podem ser realizados os exames descritos a seguir:</p>
+                            <ul>
+                                <li>Exames específicos;</li>
+                                <li>Métodos diretos;</li>
+                                <li>Pesquisa de vírus (isolamento viral por inoculação em células);</li>
+                                <li>Pesquisa de genoma do vírus da dengue por transcrição reversa seguida de reação em cadeia da polimerase (RT-PCR).</li>
+                            </ul>
+                            <p>Métodos indiretos</p>
+                            <ul>
+                                <li>Pesquisa de anticorpos IgM por testes sorológicos (ensaio imunoenzimático – ELISA)</li>
+                                <li>Teste de neutralização por redução de placas (PRNT);</li>
+                                <li>Inibição da hemaglutinação (IH);</li>
+                                <li>Pesquisa de antígeno NS1 (ensaio imunoenzimático – ELISA);</li>
+                                <li>Patologia: estudo anatomopatológico seguido de pesquisa de antígenos virais por imuno-histoquímica (IHQ).</li>
+                            </ul>
+                            <p>Exames específicos</p>
+                            <p>
+                                O hematócrito, a contagem de plaquetas e a dosagem de albumina auxiliam na avaliação e no monitoramento dos pacientes com suspeita ou diagnóstico confirmado de dengue, especialmente os que apresentarem sinais de alarme ou gravidade.
+                            </p>
+                            <p>
+                                Para informações complementares a respeito de exames específicos e inespecíficos da doença, acesse o <a href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-3-6a-edicao/view" target="_blank">Guia de Vigilância</a>.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Pergunta 17 -->
+                    <div class="card">
+                    <div class="card-header" id="headingSeventeen">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                                Pergunta 17: Como se prevenir da dengue?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen" data-parent="#accordionDengue">
+                        <div class="card-body">
+                            <p>
+                            O controle do vetor <i>Aedes aegypti</i> é o principal método para a prevenção e controle para a dengue e outras arboviroses urbanas (como chikungunya e Zika).
+                            </p>
+                            <p>
+                            Deve-se reduzir a infestação de mosquitos por meio da eliminação de criadouros, sempre que possível, ou manter os reservatórios e qualquer local que possa acumular água totalmente cobertos com telas/capas/tampas, impedindo a postura de ovos do mosquito <i>Aedes aegypti</i>.
+                            </p>
+                            <p>
+                            Medidas de proteção individual para evitar picadas de mosquitos devem ser adotadas por viajantes e residentes em áreas de transmissão. A proteção contra picadas de mosquito é necessária principalmente ao longo do dia, pois o Aedes aegypti pica principalmente durante o dia.
+                            </p>
+                            <p>Recomenda-se as seguintes medidas de proteção individual:</p>
+                            <ul>
+                            <li>Proteger as áreas do corpo que o mosquito possa picar, com o uso de calças e camisas de mangas compridas;</li>
+                            <li>Usar repelentes à base de DEET (N-N-dietilmetatoluamida), IR3535 ou de Icaridina nas partes expostas do corpo. Também pode ser aplicado sobre as roupas. O uso deve seguir as indicações do fabricante em relação à faixa etária e à frequência de aplicação. Deve ser observada a existência de registro em órgão competente. Repelentes de insetos contendo DEET, IR3535 ou Icaridina são seguros para uso durante a gravidez, quando usados de acordo com as instruções do fabricante. Em crianças menores de 2 anos de idade, não é recomendado o uso de repelente sem orientação médica. Para crianças entre 2 e 12 anos, usar concentrações até 10% de DEET, no máximo 3 vezes ao dia;</li>
+                            <li>A utilização de mosquiteiros sobre a cama, uso de telas em portas e janelas e, quando disponível, ar-condicionado.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                    <!-- Pergunta 18 -->
+                    <div class="card">
+                    <div class="card-header" id="headingEighteen">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                                Pergunta 18: Quantas vezes eu posso ter dengue?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen" data-parent="#accordionDengue">
+                        <div class="card-body">
+                            <p>
+                            O indivíduo pode ter dengue até quatro vezes ao longo de sua vida. Isso ocorre porque pode ser infectado com aos quatro diferentes sorotipos do vírus. Uma vez exposto a um determinado sorotipo, após a remissão da doença, o indivíduo para a ter imunidade para aquele sorotipo específico, ficando ainda susceptível aos demais. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                    <!-- Pergunta 19 -->
+                    <div class="card">
+                    <div class="card-header" id="headingNineteen">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                                Pergunta 19: Há de fato uma vacina contra a dengue?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen" data-parent="#accordionDengue">
+                        <div class="card-body">
+                            <p>
+                            <strong>Sim</strong>. O Ministério da Saúde incorporou em janeiro de 2024 a vacina contra dengue no <abbr title="Sistema Único de Saúde">SUS</abbr>. O Brasil é o primeiro país do mundo a oferecer o imunizante no sistema público universal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                    <!-- Pergunta 20 -->
+                    <div class="card">
+                    <div class="card-header" id="headingTwenty">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                                Pergunta 20: Por que não vacinam a população contra a dengue?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty" data-parent="#accordionDengue">
+                        <div class="card-body">
+                            <p>
+                            A vacina, conhecida como Qdenga, não será utilizada em larga escala em um primeiro momento, já que o laboratório fabricante, Takeda, afirmou que tem uma capacidade restrita de fornecimento de doses. Por isso, a vacinação, em 2024, será focada em público e regiões prioritárias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                    <!-- Pergunta 21 -->
+                    <div class="card">
+                    <div class="card-header" id="headingTwentyOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwentyOne" aria-expanded="false" aria-controls="collapseTwentyOne">
+                                Pergunta 21: Como diferenciar a dengue, da zika e da chikungunya?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwentyOne" class="collapse" aria-labelledby="headingTwentyOne" data-parent="#accordionDengue">
+                        <div class="card-body">
+                            <p>As três arboviroses podem apresentar febre sendo:</p>
+                            <ul>
+                            <li>Dengue: Febre alta com duração entre 4 e 7 dias (>38°C)</li>
+                            <li>Zika: Sem febre ou subfebril com duração de 1 a 2 dias subfebril (≤38°C)</li>
+                            <li>Chikungunya: Febre alta com duração de 2 a 3 dias (>38°C)</li>
+                            </ul>
+                            <p>Rash cutâneo (lesão avermelhada arredondada)</p>
+                            <ul>
+                            <li>Dengue: surge a partir do 4º dia entre 30 a 50% dos casos</li>
+                            <li>Zika: surge no 1ºou 2º dia entre 90 a 100% dos casos</li>
+                            <li>Chikungunya: Surge entre 2 e 5 dias em 50% dos casos</li>
+                            </ul>
+                            <p>Mialgia (dor muscular)</p>
+                            <ul>
+                            <li>Dengue: frequência alta</li>
+                            <li>Zika: frequência média</li>
+                            <li>Chikungunya: frequência baixa</li>
+                            </ul>
+                            <p>Artralgia (dor nas articulações)</p>
+                            <ul>
+                            <li>Dengue: frequência baixa</li>
+                            <li>Zika: frequência média</li>
+                            <li>Chikungunya: frequência alta</li>
+                            </ul>
+                            <p>Intensidade da dor articular</p>
+                            <ul>
+                            <li>Dengue: Leve</li>
+                            <li>Zika: Leve/moderada</li>
+                            <li>Chikungunya: Moderada/intensa</li>
+                            </ul>
+                            <p>Edema da articulação</p>
+                            <ul>
+                            <li>Dengue: raro</li>
+                            <li>Zika: frequente e de leve intensidade</li>
+                            <li>Chikungunya: frequente e de moderado a intenso</li>
+                            </ul>
+                            <p>Cefaleia</p>
+                            <ul>
+                            <li>Dengue: frequência alta</li>
+                            <li>Zika: frequência média</li>
+                            <li>Chikungunya: frequência média</li>
+                            </ul>
+                            <p>Leucopenia</p>
+                            <ul>
+                            <li>Frequência alta nas três.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                    <!-- Pergunta 22 -->
+                    <div class="card">
+                    <div class="card-header" id="headingTwentyTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwentyTwo" aria-expanded="false" aria-controls="collapseTwentyTwo">
+                                Pergunta 22: Como saber se já tive dengue, zika ou chukungunya?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwentyTwo" class="collapse" aria-labelledby="headingTwentyTwo" data-parent="#accordionDengue">
+                        <div class="card-body">
+                            <p>Por meio de exame de sorologia reagente para IGG.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            </section>
 
-            <!--pergunta #4-->
-            <article>
-              <h3>#4 Quais medidas podem ser feitas para o controle da dengue durante uma epidemia?</h3>
-              <p>
-                Quando há ocorrência de muitos casos de dengue, chikungunya ou Zika, é necessário realizar atividades para o bloqueio da transmissão das doenças, para isso uma das ações adotadas pelo Ministério da Saúde é o fumacê, também chamado de nebulização espacial, e que sempre deve ser realizado com limpeza do ambiente e eliminação de criadouros.  O fumacê é uma estratégia de controle vetorial para reduzir as fêmeas adultas de Aedes aegypti, que transmitem as doenças.
-              </p>
-              <p>
-                Para se obter sucesso, as gotículas de inseticidas geradas pelo equipamento devem penetrar no interior dos quintais e das casas. Observa-se atualmente que as casas estão cada vez mais fechadas (muros altos, vegetação alta etc.). É importante a adesão da população ao receber os agentes de endemias, que orientam a abrir portas e janelas para facilitar a entrada das gotas no interior das residências, e por isto, ações de comunicação e participação comunitária são realizadas com antecedência.
-              </p>
-            </article>
+            <section class="bloco-perguntas" id="vacina-faq">
+            <div class="container">
+                <div class="titulo-bloco">
+                    <h2>Vacinação (Dengue)</h2>
+                </div>
 
-            <!--pergunta #5-->
-            <article>
-              <h3>#5 É perigoso receber os agentes de combate as endemias (ACE) na minha casa?</h3>
-              <p>
-                É importante a adesão da população ao receber os agentes de combate as endemias. Esses profissionais são credenciados e possuem identificação própria, resguardando a segurança do morador.
-              </p>
-              <p>
-                O trabalho dos agentes de combate as endemias consiste na eliminação dos “focos” do mosquito nos domicílios, na orientação às famílias para eliminar criadouros a não deixar água parada em locais propícios à proliferação do mosquito. Onde não for possível eliminar água o ACE realiza o tratamento com larvicida, para eliminar o vetor. 
-              </p>
-            </article>
+                <div class="accordion" id="accordionVacina">
+                
+                    <!-- Pergunta 23 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwentyThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwentyThree" aria-expanded="true" aria-controls="collapseTwentyThree">
+                                    Pergunta 23: Por que a vacina não é para toda a população?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentyThree" class="collapse" aria-labelledby="headingTwentyThree" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>
+                                    A expansão da estratégia de vacinação contra a dengue no país será gradativa, à medida que novas doses da vacina sejam disponibilizadas pelo fabricante ao Ministério da Saúde. 
+                                  </p>
+                                  <p>
+                                    Nesse momento, a estratégia inicial para a vacinação contra a dengue contemplará indivíduos na faixa etária de 10 a 14 anos, 11 meses e 29 dias, que residem em localidades prioritárias, com critérios definidos a partir do cenário epidemiológico da doença no país.  
+                                  </p>
+                                  <p>
+                                    O Ministério da Saúde comprou o quantitativo total de doses disponibilizadas ao <a href="https://www.gov.br/saude/pt-br/acesso-a-informacao/acoes-e-programas/programa-nacional-de-imunizacoes-vacinacao" target="_blank">Programa Nacional de Imunização (PNI)</a>, pelo fabricante, neste primeiro momento. 
+                                  </p>
+                                  <p>
+                                    Para 2024, foram encomendadas 5,2 milhões de doses e para 2025, mais 9 milhões de doses. Neste ano, ao todo, o Brasil receberá 6,5 milhões de doses da vacina, sendo 1,3 milhão de doação pelo laboratório fornecedor e 5,2 milhões compradas pelo Ministério da Saúde. A distribuição das doses deverá ser escalonada ao longo do ano, conforme o cronograma de entregas da empresa. Com esse quantitativo total, a expectativa é vacinar cerca de 3,2 milhões de pessoas, uma vez que o esquema da vacina compreende duas doses por indivíduo.
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 24 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwentyFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwentyFour" aria-expanded="false" aria-controls="collapseTwentyFour">
+                                    Pergunta 24: Neste momento, quem vai poder receber a vacina?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentyFour" class="collapse" aria-labelledby="headingTwentyFour" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>
+                                    A vacinação será destinada ao público de 10 a 14 anos, 11 meses e 29 dias, que residem em localidades prioritárias, com critérios definidos a partir do cenário epidemiológico da doença no país e conforme decisão pactuada com estados e municípios em Comissão Intergestores Tripartite (CIT).
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 25 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwentyFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwentyFive" aria-expanded="false" aria-controls="collapseTwentyFive">
+                                    Pergunta 25: A vacinação ocorrerá em todo o país?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentyFive" class="collapse" aria-labelledby="headingTwentyFive" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>
+                                    <strong>Não</strong>.A vacinação terá como ponto de partida as Regiões de Saúde com municípios de grande porte, com alta transmissão nos últimos 10 anos (população residente igual ou maior do que 100 mil habitantes).
+                                  </p>
+                                  <p>
+                                    A lista das regiões/municípios foi pactuada em Comissão Intergestores Tripartite (CIT), que reúne Ministério da Saúde e secretarias estaduais e municipais de saúde de todo o país.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 26 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwentySix">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwentySix" aria-expanded="false" aria-controls="collapseTwentySix">
+                                    Pergunta 26: Por que o meu município não recebeu a vacina? Posso tomar a vacina em outro município?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentySix" class="collapse" aria-labelledby="headingTwentySix" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>Os territórios que irão receber as doses da vacina contra a dengue foram definidos por meio do cenário epidemiológico específico, considerando os municípios com elevado contingente populacional (acima de 100 mil habitantes) e pela taxa de incidência anual média em 10 anos. Dito isso os municípios irão receber o quantitativo para atender a população alvo (10 a 14 anos de idade) da vacina.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 27 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwentySeven">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwentySeven" aria-expanded="false" aria-controls="collapseTwentySeven">
+                                    Pergunta 27: Quando deve começar a vacinação?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentySeven" class="collapse" aria-labelledby="headingTwentySeven" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>A previsão é que a vacinação do público-alvo inicie no mês de fevereiro.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <!--pergunta #6-->
-            <article>
-              <h3>#6 Citronela, andiroba e óleo de cravo: estes produtos funcionam para afastar o mosquito Aedes aegypti?</h3>
-              <p>
-                Essas alternativas não são totalmente ineficazes, mas elas não garantem o resultado que as pessoas esperam com relação ao Aedes aegypti. O indicado é observar o que o Ministério da Saúde recomenda: tirar 10 minutos do tempo de cada um, e o próprio cidadão inspecionar a sua casa, verificar se não há nenhum depósito com a água parada, depósitos expostos à chuva ou qualquer objeto que possa acumular água.
-              </p>
-            </article>
+                    <!-- Pergunta 28 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwentyEight">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwentyEight" aria-expanded="false" aria-controls="collapseTwentyEight">
+                                    Pergunta 28: Essa vacina protege contra todos os sorotipos da dengue?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentyEight" class="collapse" aria-labelledby="headingTwentyEight" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>
+                                    A eficácia da vacina em crianças e adolescentes foi comprovada contra DENV-1 (69,8%), DENV-2 (95,1%) e DENV-3 (48,9%). No entanto, a avaliação da eficácia contra DENV-4 foi inconclusiva devido à quantidade limitada de casos durante o estudo. Para adultos, foram avaliados apenas imunogenicidade e segurança da vacina.
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 29 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwentyNine">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwentyNine" aria-expanded="false" aria-controls="collapseTwentyNine">
+                                    Pergunta 29: Essa vacina protege contra Zika, Febre Amarela e Chikungunya?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentyNine" class="collapse" aria-labelledby="headingTwentyNine" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p><strong>Não</strong>, a vacina adquirida pelo Ministério da Saúde não oferece proteção contra outras arboviroses. Sua eficácia é exclusiva para a prevenção da dengue.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <!--pergunta #7-->
-            <article>
-              <h3>#7 O mosquito Aedes Aegypti só pica de dia?</h3>
-              <p>
-                O <i>Aedes aegypti</i> tem hábitos diurnos, no interior da residência ele pode ser encontrado, preferencialmente, em locais sombreados e escuros, como por exemplo, atrás da geladeira, atrás das cortinas, atrás do guarda-roupa. O <i>Aedes</i> pode se alimentar de sangue humano durante o dia inteiro. O cidadão deve arejar a casa, abrir as janelas, ventilar o ambiente, pois o inseto tem fotofobia - aversão à luz -. Assim, recomenda-se manter a casa diariamente arejada e clareada. Mas, atenção: se existir algum espécime do vetor dentro de casa, em que o morador passe o dia inteiro fora e inexistir fonte de alimentação, pode ocorrer do <i>Aedes aegypti</i> picar no período da noite. Ele é um mosquito inteiramente adaptado e adaptável ao meio urbano. Comumente, ele pica durante o dia, mas dependendo da necessidade e do ambiente, ele pode picar a noite também.
-              </p>
-            </article>
+                    <!-- Pergunta 30 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThirty">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThirty" aria-expanded="false" aria-controls="collapseThirty">
+                                    Pergunta 30: Qual é a eficácia contra hospitalização?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirty" class="collapse" aria-labelledby="headingThirty" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>
+                                    Em relação às hospitalizações por dengue confirmada laboratorialmente (DCV), a eficácia da vacina aponta 84,1% de proteção geral contra a doença, sendo de 85,9% entre soropositivos e 79,3% para os soronegativos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <!--pergunta #8-->
-            <article>
-              <h3>#8 O mosquito Aedes aegypti já nasce infectado pelas doenças que transmite?</h3>
-              <p>
-                O mosquito pode apresentar partículas virais, no entanto, a carga não é suficiente para infectar outras pessoas. Ele se infecta ao picar um ser humano em seu período de viremia, em que o paciente apresenta os primeiros sintomas, e geralmente dura uma semana.
-              </p>
+                    <!-- Pergunta 31 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThirtyOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThirtyOne" aria-expanded="false" aria-controls="collapseThirtyOne">
+                                    Pergunta 31: Qual é o esquema de doses da vacina adquirida pelo Ministério da Saúde?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtyOne" class="collapse" aria-labelledby="headingThirtyOne" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>A vacina apresenta um esquema de duas doses, com intervalo mínimo de três meses entre 1ª e 2ª dose.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            </article>
+                    <!-- Pergunta 32 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThirtyTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThirtyTwo" aria-expanded="false" aria-controls="collapseThirtyTwo">
+                                    Pergunta 32: Será necessário tomar dose de reforço?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtyTwo" class="collapse" aria-labelledby="headingThirtyTwo" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>
+                                    Não há dados, até o momento, que indiquem a necessidade de dose de reforço. Os estudos continuam em andamento para responder a essa questão. O acompanhamento de 4,5 anos até agora, considerando a data da administração da 2ª dose, não demonstrou a necessidade de reforço durante esse período.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <!--pergunta #9--> 
-            <article>
-              <h3>#9 O mosquito Aedes Aegypti se reproduz apenas em água limpa?</h3>
-              <p>
-                Não. Nos últimos 20 anos vem ocorrendo um processo de adaptação biológica no vetor. Hoje, com os altos índices de infestação, a probabilidade da adaptação é alta. Atualmente já encontramos Aedes em fossas, cisternas, boca de lobo, ou seja, depósitos que antes não eram explorados pelo mosquito vêm sendo utilizado para postura dos ovos. É possível encontrar o Aedes aegypti na água suja sim.
-              </p>
-            </article>
+                    <!-- Pergunta 33 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThirtyThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThirtyThree" aria-expanded="false" aria-controls="collapseThirtyThree">
+                                    Pergunta 33: Quem não pode receber a vacina de dengue adquirida pelo Ministério da Saúde?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtyThree" class="collapse" aria-labelledby="headingThirtyThree" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <ul>
+                                    <li>Crianças menores de 4 anos e idosos com 60 anos e mais;</li>
+                                    <li>Gestantes e lactantes (mulheres que estão amamentando);</li>
+                                    <li>Pessoas com hipersensibilidade aos componentes da vacina ou a uma dose anterior;</li>
+                                    <li>Pessoas com imunodeficiência congênita ou adquirida; e</li>
+                                    <li>Pessoas com infecção pelo HIV sintomática ou assintomática quando houver evidência de imunossupressão.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-            <!--pergunta #10--> 
-            <article>
-              <h3>#10 O mosquito Aedes Aegypti pode transmitir o vírus HIV?</h3>
-              <p>
-                Não. Até o presente momento o Aedes aegypti transmite, comprovadamente, dengue, febre amarela urbana, Zika e chikungunya.
-              </p>
-            </article>
+                    <!-- Pergunta 34 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThirtyFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThirtyFour" aria-expanded="false" aria-controls="collapseThirtyFour">
+                                    Pergunta 34: Quem já teve dengue pode receber a vacina?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtyFour" class="collapse" aria-labelledby="headingThirtyFour" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p><strong>Sim</strong>. A vacina é indicada para proteção contra o vírus da dengue em crianças, adolescentes e adultos de 4 a 60 anos de idade, independentemente de infecção prévia (soropositivos e soronegativos).</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pergunta 35 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThirtyFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThirtyFive" aria-expanded="false" aria-controls="collapseThirtyFive">
+                                    Pergunta 35: QQuanto tempo após a pessoa ter tido dengue posso receber a vacina?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtyFive" class="collapse" aria-labelledby="headingThirtyFive" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>
+                                    Após uma infecção pelo vírus da dengue, recomenda-se um intervalo de 6 meses para a administração da vacina de dengue.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <!--pergunta #11--> 
-            <article>
-              <h3>#11 O mosquito Aedes Aegypti pica em áreas da zona rural?</h3>
-              <p>
-                Não há registro de grandes infestações ou infestação considerável de <i>Aedes aegypti</i> em área rural neste local há outro <iAedes></i>, o <i>Aedes albopictus</i>.
-              </p>
-            </article>
-     
-        </section>
+                    <!-- Pergunta 36 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThirtySix">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThirtySix" aria-expanded="false" aria-controls="collapseThirtySix">
+                                    Pergunta 36: Eu tive dengue após a primeira dose da vacina. Quanto tempo devo esperar para receber a segunda dose?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtySix" class="collapse" aria-labelledby="headingThirtySix" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>
+                                    Após uma infecção pelo vírus da dengue, recomenda-se um intervalo de 6 meses para a administração vacina. Assim, tal recomendação também se aplica para os casos de dengue que ocorreram após a 1ª dose do imunizante.
+                                  </p>
+                                  <p>
+                                    Ressalta-se que, considerando o intervalo sugerido, não haverá comprometimento da resposta imunológica para a complementação do esquema. Não sendo, portanto, necessário reiniciar o esquema.
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
 
-        <section id="section2">
-          <h2>Dengue</h2>
+                    <!-- Pergunta 37 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThirtySeven">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThirtySeven" aria-expanded="false" aria-controls="collapseThirtySeven">
+                                    Pergunta 37: A vacina não é a principal medida de proteção? Por quê?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtySeven" class="collapse" aria-labelledby="headingThirtySeven" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>
+                                    O combate à proliferação do mosquito Aedes aegypti é a principal forma de proteção individual e em grupo. Portanto, mesmo com a oferta da vacina, que será destinada a um público específico, é importante que toda a população, juntamente, com os gestores públicos, fortaleça as ações de vigilância para reduzir a infestação de mosquitos por meio da eliminação de criadouros.
+                                  </p>
+                                  <p><strong>Entre as medidas estão:</strong></p>
+                                  <ul>
+                                    <li>Manter os reservatórios e qualquer local que possa acumular água totalmente cobertos com telas/capas/tampas, impedindo a postura de ovos do mosquito Aedes aegypti; </li>
+                                    <li>Medidas de proteção individual para evitar picadas de mosquitos devem ser adotadas por viajantes e residentes em áreas de transmissão;</li>
+                                    <li>Proteção contra picadas de mosquito, principalmente ao longo do dia, pois o Aedes aegypti é mais ativo durante o dia;</li>
+                                    <li>Proteção das áreas do corpo mais expostas, com o uso de calças e camisas de mangas compridas;</li>
+                                    <li>Uso de repelentes;</li>
+                                    <li>A utilização de mosquiteiros sobre a cama, uso de telas em portas e janelas, além de manter o ambiente limpo e arejado;</li>
+                                    <li>Manter a vigilância de ralos e demais recipientes que possam acumular água parada.</li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
 
-          <!--pergunta #12-->
-          <article>
-            <h3>#12 O que é dengue?</h3>
-            <p>
-              A dengue é a arbovirose urbana mais prevalente nas Américas, principalmente no Brasil. É uma doença febril que tem se mostrado de grande importância em saúde pública nos últimos anos. O vírus dengue (DENV) é um arbovírus transmitido pela picada da fêmea do mosquito Aedes aegypti e possui quatro sorotipos diferentes (DENV-1, DENV-2, DENV-3 e DENV-4).
-            </p>
-            <p>
-              O período do ano com maior transmissão da doença ocorre nos meses mais chuvosos de cada região, geralmente de novembro a maio. O acúmulo de água parada contribui para a proliferação do mosquito e, consequentemente, maior disseminação da doença. É importante evitar água parada, todos os dias, porque os ovos do mosquito podem sobreviver por um ano no ambiente.
-            </p>
-            <p>
-              Todas as faixas etárias são igualmente suscetíveis à doença, porém as pessoas mais velhas e aquelas que possuem doenças crônicas, como diabetes e hipertensão arterial, têm maior risco de evoluir para casos graves e outras complicações que podem levar à morte.
-            </p>
-          </article>
+                    <!-- Pergunta 38 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThirtyEight">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThirtyEight" aria-expanded="false" aria-controls="collapseThirtyEight">
+                                    Pergunta 38: Quem está vacinado pode desenvolver a dengue grave?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtyEight" class="collapse" aria-labelledby="headingThirtyEight" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>
+                                    Até o momento, sabemos que os estudos clínicos sobre a vacina apresentaram eficácia de 84,1% de proteção geral contra a doença e não houve sinais de alarme para questões associadas a segurança. Todavia, a vacina está sob análise contínua no período inicial de implementação para averiguar se há algum risco maior na sua utilização na população.
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
 
-          <!--pergunta #13-->
-          <article>
-            <h3>#13 Quais são os sintomas da dengue?</h3>
-            <p>Os principais sintomas da dengue são:</p>
-            <ul>
-              <li>Febre alta > 38°C;</li>
-              <li>Dor no corpo e articulações;</li>
-              <li>Dor atrás dos olhos;</li>
-              <li>Mal-estar;</li>
-              <li>Falta de apetite;</li>
-              <li>Dor de cabeça;</li>
-              <li>Manchas vermelhas no corpo.</li>
-            </ul>
-            <p>No entanto, a infecção por dengue pode ser assintomática (sem sintomas), apresentar quadro leve, sinais de alarme e de gravidade.</p>
-            <p>
-              Normalmente, a primeira manifestação da dengue é a febre alta (>38°C), de início abrupto, que geralmente dura de 2 a 7 dias, acompanhada de dor de cabeça, dores no corpoarticulações, além de prostração, fraqueza, dor atrás dos olhos, e manchas vermelhas na pele. Também podem acontecer erupções e coceira na pele.
-            </p>
-            <p>Fique atento aos sinais e sintomas da dengue.</p>
-            <p>Ao apresentar os sintomas, é importante procurar um serviço de saúde para diagnóstico e tratamento adequados, todos oferecidos de forma integral e gratuita por meio do SisteÚnico de Saúde (SUS).</p>
-          </article>
+                    <!-- Pergunta 39 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThirtyNine">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThirtyNine" aria-expanded="false" aria-controls="collapseThirtyNine">
+                                    Pergunta 39: Quais são os possíveis efeitos colaterais da vacina?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtyNine" class="collapse" aria-labelledby="headingThirtyNine" data-parent="#accordionVacina">
+                            <div class="card-body">
+                                <p>
+                                    Entre as reações sistêmicas, cefaleia foi o evento mais comum, seguido por dor, fadiga e cansaço físico. As reações raras incluíram irritabilidade (em crianças), sonolência, perda de apetite e febre. Assim como para as manifestações locais, as reações sistêmicas tendem a ser mais frequentes após a primeira dose, começando no dia da injeção ou na data subsequente.
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
 
-          <!--pergunta #14-->
-          <article>
-            <h3>#14 Quais são os sinais de alarme?</h3>
-            <p>Os sinais de alarme são assim chamados por sinalizarem o extravasamento de plasma e/ou hemorragias que podem levar o paciente a choque grave e óbito.</p>
-            <p>Os sinais de alarme são caracterizados principalmente por:</p>
-            <ul>
-              <li>Dor abdominal intensa (referida ou à palpação) e contínua;</li>
-              <li>Náuseas;</li>
-              <li>Vômitos persistentes;</li>
-              <li>Acúmulo de líquidos (ascite, derrame pleural, derrame pericárdico);</li>
-              <li>Hipotensão postural e/ou lipotímia;</li>
-              <li>Letargia e/ou irritabilidade;</li>
-              <li>Hepatomegalia maior do que 2cm abaixo do rebordo costal;</li>
-              <li>Sangramento de mucosa; e</li>
-              <li>Aumento progressivo do hematócrito.</li>
-            </ul>
-            <p>
-              A fase crítica tem início com o declínio da febre (período de defervescência), entre o 3° e o 7° dia do início de sintomas. Os sinais de alarme, quando presentes, ocorrem nessa fase. A maioria deles é resultante do aumento da permeabilidade capilar. Essa condição marca o início da piora clínica do paciente e sua possível evolução para o choque, por extravasamento plasmático. Sem a identificação e o correto manejo nessa fase, alguns pacientes podem evoluir para as formas graves.
-            </p>
-            <p>
-              Os casos graves de dengue são caracterizados por sangramento, disfunções de órgãos ou extravasamento de plasma. O choque ocorre quando um volume crítico de plasma é perdido pelo extravasamento. Ocorre habitualmente entre o 4º e o 5º dia – no intervalo de 3 a 7 dias de doença –, sendo geralmente precedido por sinais de alarme.
-            </p>
-            <p>
-              Mulheres grávidas, crianças e pessoas mais velhas (acima de 60 anos) têm maiores riscos de desenvolver complicações pela doença. Os riscos aumentam quando o indivíduo tem alguma doença crônica, como asma brônquica, diabetes mellitus, anemia falciforme, hipertensão, além de infecções prévias por outros sorotipos.
-            </p>
-            <p> Recomendação ao paciente para que retorne imediatamente ao serviço de saúde, em caso de sinais de alarme.</p>
-          </article>
+                </div>
+            </div>
+            </section>
 
-          <!--pergunta #15-->
-          <article>
-            <h3>#15 Como ocorre a transmissão do vírus da dengue?</h3>
-            <p>
-              O vírus da dengue (DENV) pode ser transmitido ao homem principalmente por via vetorial, pela picada de fêmeas de <i>Aedes aegypti</i> infectadas, no ciclo urbano humano–vetor–humano. Os relatos de transmissão por via vertical (de mãe para filho durante a gestação) e transfusional são raros.
-            </p>
-          </article>
+            <section class="bloco-perguntas" id="chikungunya-faq">
+            <div class="container">
+                <div class="titulo-bloco">
+                    <h2>Chikungunya</h2>
+                </div>
 
-          <!--pergunta #16-->
-          <article>
-            <h3>#16 Como é feito o diagnóstico da dengue?</h3>
-            <p>Para o diagnóstico laboratorial da infecção aguda pelo DENV, podem ser realizados os exames descritos a seguir:</p>
-            <ul>
-              <li>Exames específicos;</li>
-              <li>Métodos diretos;</li>
-              <li>Pesquisa de vírus (isolamento viral por inoculação em células);</li>
-              <li>Pesquisa de genoma do vírus da dengue por transcrição reversa seguida de reação em cadeia da polimerase (RT-PCR).</li>
-            </ul>
-            <p>Métodos indiretos</p>
-            <ul>
-              <li>Pesquisa de anticorpos IgM por testes sorológicos (ensaio imunoenzimático – ELISA)</li>
-              <li>Teste de neutralização por redução de placas (PRNT);</li>
-              <li>Inibição da hemaglutinação (IH);</li>
-              <li>Pesquisa de antígeno NS1 (ensaio imunoenzimático – ELISA);</li>
-              <li>Patologia: estudo anatomopatológico seguido de pesquisa de antígenos virais por imuno-histoquímica (IHQ).</li>
-            </ul>
-            <p>Exames específicos</p>
-            <p>
-              O hematócrito, a contagem de plaquetas e a dosagem de albumina auxiliam na avaliação e no monitoramento dos pacientes com suspeita ou diagnóstico confirmado de dengue, especialmente os que apresentarem sinais de alarme ou gravidade.
-            </p>
-            <p>
-              Para informações complementares a respeito de exames específicos e inespecíficos da doença, acesse o <a href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-3-6a-edicao/view" target="_blank">Guia de Vigilância</a>.
-            </p>
-          </article>
+                <div class="accordion" id="accordionChikungunya">
+                
+                    <!-- Pergunta 40 -->
+                    <div class="card">
+                        <div class="card-header" id="headingForty">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseForty" aria-expanded="true" aria-controls="collapseForty">
+                                    Pergunta 40: O que é chikungunya?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseForty" class="collapse" aria-labelledby="headingForty" data-parent="#accordionChikungunya">
+                            <div class="card-body">
+                                <p>É uma arbovirose transmitida pela picada do mosquito do gênero <i>Aedes aegypti</i> infectado.</p>
+                                <p>Destaca-se que a doença pode evoluir em três fases:</p>
+                                <ul>
+                                  <li>Febril ou aguda: tem duração de 5 a 14 dias;</li>
+                                  <li>Pós-aguda: tem um curso de até 3 meses;</li>
+                                  <li>Crônica: Se os sintomas persistirem por mais de 3 meses após o início da doença, considera-se instalada a fase crônica.</li>
+                                </ul>
+                                <p> Em mais de 50% dos casos, a artralgia (dor nas articulações) torna-se crônica, podendo persistir por anos.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 41 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFortyOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFortyOne" aria-expanded="false" aria-controls="collapseFortyOne">
+                                    Pergunta 41: Quais são os sinais e sintomas da chikungunya?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFortyOne" class="collapse" aria-labelledby="headingFortyOne" data-parent="#accordionChikungunya">
+                            <div class="card-body">
+                                <p>
+                                    Os principais sintomas são febre alta de início rápido, dores intensas nas articulações dos pés e mãos. Além de dedos, tornozelos e pulsos. Pode ocorrer ainda dor de cabeça, dores nos músculos e manchas vermelhas na pele.
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 42 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFortyTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFortyTwo" aria-expanded="false" aria-controls="collapseFortyTwo">
+                                    Pergunta 42: Quais os sinais de alarme da chikungunya?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFortyTwo" class="collapse" aria-labelledby="headingFortyTwo" data-parent="#accordionChikungunya">
+                            <div class="card-body">
+                                <p>
+                                    Em áreas com circulação de CHIKV, podem ocorrer casos da doença com manifestações atípicas, caracterizadas pelo surgimento de manifestações clínicas menos frequentes (BRASIL, 2014b; GODAERT et al., 2017a). Um caso atípico é considerado grave quando requer hospitalização (RAJAPAKSE; RODRIGO; RAJAPAKSE, 2010).As formas graves da infecção pelo CHIKV acometem, com maior frequência, pacientes com doenças associadas (diabetes, hipertensão arterial sistêmica, asma, cardiopatia, alcoolismo, doenças reumatológicas, anemia falciforme, talassemia), crianças menores de 2 anos, pacientes com idade acima de 65 anos e aqueles que estão em uso de alguns fármacos. Para mais informações, consultar: Chikungunya: manejo clínico (BRASIL, 2017c). As manifestações atípicas e as doenças associadas listadas anteriormente estão relacionadas ao maior risco de evolução para o óbito. Todo paciente que apresentar sinais clínicos e/ou laboratoriais que indiquem a necessidade de internação em unidade de terapia intensiva ou risco de morte deve ser considerado como forma grave da doença. Durante epidemias, um cuidado especial dever ser tomado na investigação de possíveis quadros graves de chikungunya, que podem dar entrada em hospitais, sem suspeita anterior de chikungunya. Essa situação pode levar ao manejo inadequado do paciente e o quadro evoluir para o óbito.
+                                  </p> 
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 43 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFourtyThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFourtyThree" aria-expanded="false" aria-controls="collapseFourtyThree">
+                                    Pergunta 43: Como ocorre a transmissão do vírus da chikungunya?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFourtyThree" class="collapse" aria-labelledby="headingFourtyThree" data-parent="#accordionChikungunya">
+                            <div class="card-body">
+                                <p>
+                                    O vírus da dengue (DENV) pode ser transmitido ao homem principalmente por via vetorial, pela picada de fêmeas de <i>Aedes aegypti</i> infectadas, no ciclo urbano humano–vetor–humano. Os relatos de transmissão por via vertical (de mãe para filho durante a gestação) e transfusional são raros.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 44 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFourtyFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFourtyFour" aria-expanded="false" aria-controls="collapseFourtyFour">
+                                    Pergunta 44: Como é feito o diagnóstico da chikungunya?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFourtyFour" class="collapse" aria-labelledby="headingFourtyFour" data-parent="#accordionChikungunya">
+                            <div class="card-body">
+                                <p>
+                                    O diagnóstico da chikungunya é clínico e feito por um médico. Todos os exames estão disponíveis no Sistema Único de Saúde (SUS). Em caso de confirmação da doença a notificação deve ser feita ao Ministério da Saúde em até 24 horas.
+                                  </p>
+                                  <p>Em situações de epidemia a maioria dos casos serão confirmados por critério clínico.</p>
+                            </div>
+                        </div>
+                    </div>
 
-          <!--pergunta #17-->
-          <article>
-            <h3>#17 Como se prevenir da dengue?</h3>
-            <p>
-              O controle do vetor <i>Aedes aegypti</i> é o principal método para a prevenção e controle para a dengue e outras arboviroses urbanas (como chikungunya e Zika).
-            </p>
-            <p>
-              Deve-se reduzir a infestação de mosquitos por meio da eliminação de criadouros, sempre que possível, ou manter os reservatórios e qualquer local que possa acumular água totalmente cobertos com telas/capas/tampas, impedindo a postura de ovos do mosquito <i>Aedes aegypti</i>.
-            </p>
-            <p>
-              Medidas de proteção individual para evitar picadas de mosquitos devem ser adotadas por viajantes e residentes em áreas de transmissão. A proteção contra picadas de mosquito é necessária principalmente ao longo do dia, pois o Aedes aegypti pica principalmente durante o dia.
-            </p>
-            <p>Recomenda-se as seguintes medidas de proteção individual:</p>
-            <ul>
-              <li>Proteger as áreas do corpo que o mosquito possa picar, com o uso de calças e camisas de mangas compridas;</li>
-              <li>Usar repelentes à base de DEET (N-N-dietilmetatoluamida), IR3535 ou de Icaridina nas partes expostas do corpo. Também pode ser aplicado sobre as roupas. O uso deve seguir as indicações do fabricante em relação à faixa etária e à frequência de aplicação. Deve ser observada a existência de registro em órgão competente. Repelentes de insetos contendo DEET, IR3535 ou Icaridina são seguros para uso durante a gravidez, quando usados de acordo com as instruções do fabricante. Em crianças menores de 2 anos de idade, não é recomendado o uso de repelente sem orientação médica. Para crianças entre 2 e 12 anos, usar concentrações até 10% de DEET, no máximo 3 vezes ao dia;</li>
-              <li>A utilização de mosquiteiros sobre a cama, uso de telas em portas e janelas e, quando disponível, ar-condicionado.</li>
-            </ul>
-          </article>
+                    <!-- Pergunta 45 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFourtyFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFourtyFive" aria-expanded="false" aria-controls="collapseFourtyFive">
+                                    Pergunta 45: Como é feito o tratamento da chikungunya?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFourtyFive" class="collapse" aria-labelledby="headingFourtyFive" data-parent="#accordionChikungunya">
+                            <div class="card-body">
+                                <p>
+                                    O tratamento da chikungunya é feito de acordo com os sintomas. Até o momento, não há tratamento antiviral específico para chikungunya. A terapia utilizada é analgesia e suporte.
+                                  </p>
+                                  <p>
+                                    É necessário estimular a hidratação oral dos pacientes e a escolha dos medicamentos devem ser realizadas após a avaliação do paciente, com aplicação de escalas de dor apropriadas para cada idade e fase da doença. 
+                                  </p>
+                                  <p>Em casos de sequelas mais graves, e sob avaliação médica conforme cada caso, pode ser recomendada a fisioterapia.</p>
+                                  <p> 
+                                    Em caso de suspeita, com o surgimento de qualquer sintoma, é fundamental procurar um profissional de saúde para o correto diagnóstico e prescrição dos medicamentos, evitando sempre a automedicação. Os tratamentos são oferecidos de forma integral e gratuita por meio do Sistema Único de Saúde (SUS).
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 46 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFourtySix">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFourtySix" aria-expanded="false" aria-controls="collapseFourtySix">
+                                    Pergunta 46: Como se prevenir da chikungunya?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFourtySix" class="collapse" aria-labelledby="headingFourtySix" data-parent="#accordionChikungunya">
+                            <div class="card-body">
+                                <p>O controle do vetor Aedes aegypti é o principal método para a prevenção e controle para a dengue e outras arboviroses urbanas (como chikungunya e Zika).</p>
+                                <p>
+                                  Deve-se reduzir a infestação de mosquitos por meio da eliminação de criadouros, sempre que                    possível, ou manter os reservatórios e qualquer local que possa acumular água totalmente cobertos               com telas/capas/tampas, impedindo a postura de ovos do mosquito <i>Aedes aegypti</i>.
+                                </p>
+                                <p>
+                                  Medidas de proteção individual para evitar picadas de mosquitos devem ser adotadas por viajantes e                    residentes em áreas de transmissão. A proteção contra picadas de mosquito é necessária                  principalmente ao longo do dia, pois o Aedes aegypti pica principalmente durante o dia.
+                                </p>
+                                <p>Recomenda-se as seguintes medidas de proteção individual:</p>
+                                <ul>
+                                  <li>Proteger as áreas do corpo que o mosquito possa picar, com o uso de calças e camisas de mangas                    compridas.</li>
+                                  <li>Usar repelentes à base de DEET (N-N-dietilmetatoluamida), IR3535 ou de Icaridina nas partes                   expostas do corpo. Também pode ser aplicado sobre as roupas. O uso deve seguir as indicações do                 fabricante em relação à faixa etária e à frequência de aplicação. Deve ser observada a existência                   de registro em órgão competente. Repelentes de insetos contendo DEET, IR3535 ou Icaridina são               seguros para uso durante a gravidez, quando usados de acordo com as instruções do fabricante. Em            crianças menores de 2 anos de idade, não é recomendado o uso de repelente sem orientação médica.              Para crianças entre 2 e 12 anos, usar concentrações até 10% de DEET, no máximo 3 vezes ao dia. A              utilização de mosquiteiros sobre a cama, uso de telas em portas e janelas e, quando disponível,             ar-condicionado.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-          <!--pergunta #18-->
-          <article>
-            <h3>#18 Quantas vezes eu posso ter dengue?</h3>
-            <p>
-              O indivíduo pode ter dengue até quatro vezes ao longo de sua vida. Isso ocorre porque pode ser infectado com aos quatro diferentes sorotipos do vírus. Uma vez exposto a um determinado sorotipo, após a remissão da doença, o indivíduo para a ter imunidade para aquele sorotipo específico, ficando ainda susceptível aos demais. 
-            </p>
-          </article>
+                    <!-- Pergunta 47 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFourtySeven">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFourtySeven" aria-expanded="false" aria-controls="collapseFourtySeven">
+                                    Pergunta 47: Há vacina contra a chikungunya?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFourtySeven" class="collapse" aria-labelledby="headingFourtySeven" data-parent="#accordionChikungunya">
+                            <div class="card-body">
+                                <p>Não existem vacinas contra a chikungunya.</p>
+                            </div>
+                        </div>
+                    </div>
 
-          <!--pergunta #19-->
-          <article>
-            <h3>#19 Há de fato uma vacina contra a dengue?</h3>
-            <p>
-              <strong>Sim</strong>. O Ministério da Saúde incorporou em janeiro de 2024 a vacina contra dengue no <abbr title="Sistema Único de Saúde">SUS</abbr>. O Brasil é o primeiro país do mundo a oferecer o imunizante no sistema público universal.
-            </p>
-          </article>
+                </div>
+            </div>
+            </section>
 
-          <!--pergunta #20-->
-          <article>
-            <h3>#20 Por que não vacinam a população contra a dengue?</h3>
-            <p>
-              A vacina, conhecida como Qdenga, não será utilizada em larga escala em um primeiro momento, já que o laboratório fabricante, Takeda, afirmou que tem uma capacidade restrita de fornecimento de doses. Por isso, a vacinação, em 2024, será focada em público e regiões prioritárias.
-            </p>
-          </article>
+            <section class="bloco-perguntas" id="zika-faq">
+            <div class="container">
+                <div class="titulo-bloco">
+                    <h2>Zika</h2>
+                </div>
 
-          <!--pergunta #21-->
-          <article>
-            <h3>#21 Como diferenciar a dengue, da zika e da chikungunya?</h3>
-            <p>As três arboviroses podem apresentar febre sendo:</p>
-            <ul>
-              <li>Dengue: Febre alta com duração entre 4 e 7 dias (>38°C)</li>
-              <li>Zika: Sem febre ou subfebril com duração de 1 a 2 dias subfebril (≤38°C)</li>
-              <li>Chikungunya: Febre alta com duração de 2 a 3 dias (>38°C)</li>
-            </ul>
-            <p>Rash cutâneo (lesão avermelhada arredondada)</p>
-            <ul>
-              <li>Dengue: surge a partir do 4º dia entre 30 a 50% dos casos</li>
-              <li>Zika: surge no 1ºou 2º dia entre 90 a 100% dos casos</li>
-              <li>Chikungunya: Surge entre 2 e 5 dias em 50% dos casos</li>
-            </ul>
-            <p>Mialgia (dor muscular)</p>
-            <ul>
-              <li>Dengue: frequência alta</li>
-              <li>Zika: frequência média</li>
-              <li>Chikungunya: frequência baixa</li>
-            </ul>
-            <p>Artralgia (dor nas articulações)</p>
-            <ul>
-              <li>Dengue: frequência baixa</li>
-              <li>Zika: frequência média</li>
-              <li>Chikungunya: frequência alta</li>
-            </ul>
-            <p>Intensidade da dor articular</p>
-            <ul>
-              <li>Dengue: Leve</li>
-              <li>Zika: Leve/moderada</li>
-              <li>Chikungunya: Moderada/intensa</li>
-            </ul>
-            <p>Edema da articulação</p>
-            <ul>
-              <li>Dengue: raro</li>
-              <li>Zika: frequente e de leve intensidade</li>
-              <li>Chikungunya: frequente e de moderado a intenso</li>
-            </ul>
-            <p>Cefaleia</p>
-            <ul>
-              <li>Dengue: frequência alta</li>
-              <li>Zika: frequência média</li>
-              <li>Chikungunya: frequência média</li>
-            </ul>
-            <p>Leucopenia</p>
-            <ul>
-              <li>Frequência alta nas três.</li>
-            </ul>
-          </article>
+                <div class="accordion" id="accordionZika">
+                
+                    <!-- Pergunta 48 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFourtyEight">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFourtyEight" aria-expanded="true" aria-controls="collapseFourtyEight">
+                                    Pergunta 48: O que é Zika?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFourtyEight" class="collapse" aria-labelledby="headingFourtyEight" data-parent="#accordionZika">
+                            <div class="card-body">
+                                <p>
+                                    É uma arbovirose causada pelo vírus Zika (ZIKV). Arboviroses são doenças causadas por vírus (arbovírus) transmitidos por meio da picada de mosquitos infectados da espécie <i>Aedes aegypti</i>.
+                                  </p>
+                                    A maioria das infecções pelo Zika Virus são assintomáticas ou representam uma doença febril autolimitada semelhante às infecções por chikungunya e dengue. Entretanto, a associação da infecção viral com complicações neurológicas como microcefalia congênita e síndrome de Guillain-Barré (SGB) foi demonstrada por estudos realizados durante surtos da doença no Brasil e na Polinésia Francesa. 
+                                  <p>
+                                    <strong>
+                                      IMPORTANTE: Todos os sexos e faixas etárias são igualmente suscetíveis ao vírus Zika, porém mulheres grávidas e pessoas acima de 60 anos têm maiores riscos de desenvolver complicações da doença. Esses riscos podem aumentar quando a pessoa tem alguma comorbidade.
+                                    </strong>
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 49 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFourtyNine">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFourtyNine" aria-expanded="false" aria-controls="collapseFourtyNine">
+                                    Pergunta 49: Quais são os sinais e sintomas da Zika?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFourtyNine" class="collapse" aria-labelledby="headingFourtyNine" data-parent="#accordionZika">
+                            <div class="card-body">
+                                <p>
+                                    A infecção pelo vírus Zika pode ser assintomática ou sintomática. Quando sintomática, pode apresentar quadro clínico variável, desde manifestações brandas e autolimitadas até complicações neurológicas e malformações congênitas. Estudos recentes indicam que mais de 50% dos pacientes infectados por Zika tornam-se sintomáticos. O período de incubação da doença varia de 2 a 7 dias.
+                                  </p>
+                                  <p>Manifestações mais comuns:</p>
+                                  <ul>
+                                    <li>Febre baixa (≤38,5 ºC) ou ausente;</li>
+                                    <li>Exantema (geralmente pruriginoso e maculopapular craniocaudal) de início precoce;</li>
+                                    <li>Conjuntivite não purulenta;</li>
+                                    <li>Cefaleia, artralgia, astenia e mialgia;</li>
+                                    <li>Edema periarticular, linfonodomegalia.</li>
+                                  </ul>
+                                  <p>
+                                    Além da manifestação clínica exantemática febril leve da infecção pelo ZIKV, o prurido é um sintoma importante durante o período agudo, podendo afetar as atividades cotidianas e o sono.
+                                  </p>
+                                  <p>
+                                    Duas complicações neurológicas graves relacionadas ao ZIKV foram identificadas: Síndrome de Guillan-Barré (SGB), uma condição rara em que o sistema imunológico de uma pessoa ataca os nervos periféricos, e microcefalia, a manifestação mais grave de um espectro de defeitos congênitos. Gestantes infectadas podem transmitir o vírus ao feto e essa forma de transmissão da infecção pode resultar em aborto espontâneo, óbito fetal ou malformações congênitas, como a microcefalia.
+                                  </p>
+                                  <p>Deve-se ficar atento para o aparecimento de outros quadros neurológicos, tais como, encefalites, mielites e neurite óptica, entre outros.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 50 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFifty">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFifty" aria-expanded="false" aria-controls="collapseFifty">
+                                    Pergunta 50: Como ocorre a transmissão do vírus da Zika?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFifty" class="collapse" aria-labelledby="headingFifty" data-parent="#accordionZika">
+                            <div class="card-body">
+                                <p>
+                                    A principal forma de transmissão do Zika Virus aos humanos é por meio da picada de mosquitos vetores infectados da espécie <i>Aedes aegypti</i>. Esta espécie de mosquito também é responsável pela transmissão da dengue e chikungunya no Brasil. 
+                                  </p>
+                                  <p>
+                                    Outras formas não vetoriais de transmissão do ZIKV incluem da mãe para feto durante a gravidez (transmissão vertical), transmissão interpessoal durante o contato sexual e transmissão por transfusão de sangue. 
+                                  </p>
+                                  <p>
+                                    A transmissão vertical do Zika Virus pode ocorrer em todos os três trimestres da gestação, independentemente da presença ou ausência de sintomas na mãe. Aproximadamente 26% das mães infectadas transmitem o Zika Virus aos fetos, no entanto, o risco de desenvolver defeitos congênitos, incluindo anormalidades neurológicas como a microcefalia, foi maior entre as mulheres infectadas durante o primeiro trimestre. Em contraste, o risco de complicações neurológicas fetais foi menor entre as mulheres grávidas que adquiriram infecção pelo ZIKV durante o terceiro trimestre da infecção. 
+                                  </p>
+                                  <p>
+                                    Embora a infecção pelo Zika Virus do feto da mãe que adquiriu o ZIKV após a relação sexual tenha sido relatada, não está claro se o risco de infecção fetal é maior por meio da transmissão sexual para a mãe do que pela transmissão vetorial para a mãe. 
+                                  </p>
+                                  <p>
+                                    As taxas de detecção do Zika Virus no sêmen de homens infectados sintomáticos têm sido consistentes na maioria dos estudos, variando de 50% a 60% no primeiro mês do início dos sintomas. Quase todos os casos de transmissão sexual do Zika Virus foram identificados dentro de 20 dias após o início da doença do parceiro infectado. Acredita-se que a duração variável da excreção de ZIKA no sêmen dos homens seja devida a diferentes características virais e do hospedeiro. 
+                                  </p>
+                                  <p>
+                                    <strong>
+                                      IMPORTANTE: O Zika Virus já foi detectado na saliva, urina e leite materno, entretanto a transmissão por meio desses fluidos corporais ainda não foi evidenciada.
+                                    </strong>
+                                  </p> 
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 51 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFiftyOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFiftyOne" aria-expanded="false" aria-controls="collapseFiftyOne">
+                                    Pergunta 51: Como é feito o diagnóstico do Zika Vírus?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFiftyOne" class="collapse" aria-labelledby="headingFiftyOne" data-parent="#accordionZika">
+                            <div class="card-body">
+                                <p>
+                                    O diagnóstico do Zika vírus é clínico e feito por um médico. O resultado é confirmado por meio de exames laboratoriais de sorologia e biologia molecular. Todos os exames estão disponíveis no Sistema Único de Saúde (SUS).
+                                  </p>
+                                  <p>
+                                    Os recém-nascidos com suspeita de comprometimento neurológico necessitam de exames de imagem, como ultrassom. Tomografias ou ressonância magnética. Em caso de confirmação do Zika a notificação deve ser ao Ministério da Saúde em até 24 horas.
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Pergunta 52 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFiftyTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFiftyTwo" aria-expanded="false" aria-controls="collapseFiftyTwo">
+                                    Pergunta 52: Como é feito o tratamento da Zika?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFiftyTwo" class="collapse" aria-labelledby="headingFiftyTwo" data-parent="#accordionZika">
+                            <div class="card-body">
+                                <p>Ainda não existe antiviral disponível para tratamento específico da infecção pelo vírus Zika.</p>
+                                <p>Para os quadros sintomáticos, aplicam-se as principais medidas:</p>
+                                <ul>
+                                  <li>Repouso relativo, enquanto durar a febre;</li>
+                                  <li>Estímulo à ingestão de líquidos;</li>
+                                  <li>Administração de paracetamol ou dipirona em caso de dor ou febre;</li>
+                                  <li>Não administração de ácido acetilsalicílico;</li>
+                                  <li>Administração de anti-histamínicos;</li>
+                                  <li>Recomendação ao paciente para que retorne imediatamente ao serviço de saúde, em casos de                  sensação de formigamento de membros ou alterações do nível de consciência (para investigação de                 SGB e de outros quadros neurológicos);</li>
+                                  <li>Diante da queixa de alteração visual, encaminhamento ao oftalmologista para avaliação e                   tratamento.</li>
+                                </ul>
+                                <p>Gestantes com suspeita de Zika devem ser acompanhadas conforme protocolos vigentes para o                pré-natal, desenvolvidos pelo Ministério da Saúde do Brasil.  </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            </section>
 
-          <!--pergunta #22-->
-          <article>
-            <h3>#22 Como saber se já tive dengue, zika ou chukungunya?</h3>
-            <p>Por meio de exame de sorologia reagente para IGG.</p>
-          </article>
-
-
-        </section>
-
-        <section id="section3">
-          <h2>Vacinação (Dengue)</h2>
-
-          <!--pergunta #23-->
-          <article>
-            <h3>#23 Por que a vacina não é para toda a população?</h3>
-            <p>
-              A expansão da estratégia de vacinação contra a dengue no país será gradativa, à medida que novas doses da vacina sejam disponibilizadas pelo fabricante ao Ministério da Saúde. 
-            </p>
-            <p>
-              Nesse momento, a estratégia inicial para a vacinação contra a dengue contemplará indivíduos na faixa etária de 10 a 14 anos, 11 meses e 29 dias, que residem em localidades prioritárias, com critérios definidos a partir do cenário epidemiológico da doença no país.  
-            </p>
-            <p>
-              O Ministério da Saúde comprou o quantitativo total de doses disponibilizadas ao <a href="https://www.gov.br/saude/pt-br/acesso-a-informacao/acoes-e-programas/programa-nacional-de-imunizacoes-vacinacao">Programa Nacional de Imunização (PNI)</a>, pelo fabricante, neste primeiro momento. 
-            </p>
-            <p>
-              Para 2024, foram encomendadas 5,2 milhões de doses e para 2025, mais 9 milhões de doses. Neste ano, ao todo, o Brasil receberá 6,5 milhões de doses da vacina, sendo 1,3 milhão de doação pelo laboratório fornecedor e 5,2 milhões compradas pelo Ministério da Saúde. A distribuição das doses deverá ser escalonada ao longo do ano, conforme o cronograma de entregas da empresa. Com esse quantitativo total, a expectativa é vacinar cerca de 3,2 milhões de pessoas, uma vez que o esquema da vacina compreende duas doses por indivíduo.
-            </p>
-          </article>
-
-          <!--pergunta #24-->
-          <article>
-            <h3>#24 Neste momento, quem vai poder receber a vacina?</h3>
-            <p>
-              A vacinação será destinada ao público de 10 a 14 anos, 11 meses e 29 dias, que residem em localidades prioritárias, com critérios definidos a partir do cenário epidemiológico da doença no país e conforme decisão pactuada com estados e municípios em Comissão Intergestores Tripartite (CIT).
-            </p>
-          </article>
-
-          <!--pergunta #25-->
-          <article>
-            <h3>#25 A vacinação ocorrerá em todo o país?</h3>
-            <p>
-              <strong>Não</strong>.A vacinação terá como ponto de partida as Regiões de Saúde com municípios de grande porte, com alta transmissão nos últimos 10 anos (população residente igual ou maior do que 100 mil habitantes).
-            </p>
-
-            <p>A lista das regiões/municípios foi pactuada em Comissão Intergestores Tripartite (CIT), que reúne Ministério da Saúde e secretarias estaduais e municipais de saúde de todo o país.</p>
-          </article>
-
-          <!--pergunta #26-->
-          <article>
-            <h3>#26 Por que o meu município não recebeu a vacina? Posso tomar a vacina em outro município?</h3>
-            <p>Os territórios que irão receber as doses da vacina contra a dengue foram definidos por meio do cenário epidemiológico específico, considerando os municípios com elevado contingente populacional (acima de 100 mil habitantes) e pela taxa de incidência anual média em 10 anos. Dito isso os municípios irão receber o quantitativo para atender a população alvo (10 a 14 anos de idade) da vacina.</p>
-          </article>
-
-          <!--pergunta #27-->
-          <article>
-            <h3>#27 Quando deve começar a vacinação?</h3>
-            <p>A previsão é que a vacinação do público-alvo inicie no mês de fevereiro.</p>
-          </article>
-
-          <!--pergunta #28-->
-          <article>
-            <h3>#28 Essa vacina protege contra todos os sorotipos da dengue?</h3>
-            <p>
-              A eficácia da vacina em crianças e adolescentes foi comprovada contra DENV-1 (69,8%), DENV-2 (95,1%) e DENV-3 (48,9%). No entanto, a avaliação da eficácia contra DENV-4 foi inconclusiva devido à quantidade limitada de casos durante o estudo. Para adultos, foram avaliados apenas imunogenicidade e segurança da vacina.
-            </p>
-          </article>
-
-          <!--pergunta #29-->
-          <article>
-            <h3>#29 Essa vacina protege contra Zika, Febre Amarela e Chikungunya?</h3>
-            <p><strong>Não</strong>, a vacina adquirida pelo Ministério da Saúde não oferece proteção contra outras arboviroses. Sua eficácia é exclusiva para a prevenção da dengue.</p>
-          </article>
+            <div class="faq-atualiza">
+                <p>Atualizado em <time datetime="2024-3-18 10:58">18 de março de 2024 às 10:58</time>.</p>
+                <p>Extraído de: <a href="https://www.gov.br/saude/pt-br/composicao/svsa/resposta-a-emergencias/sala-de-situacao-de-saude/arboviroses/faq" target="_blank"><strong>Ministério da Saúde - Perguntas frequentes: arboviroses</strong></a></p>
       
-          <!--pergunta #30-->
-          <article>
-            <h3>#30 Qual é a eficácia contra hospitalização?</h3>
-            <p>
-              Em relação às hospitalizações por dengue confirmada laboratorialmente (DCV), a eficácia da vacina aponta 84,1% de proteção geral contra a doença, sendo de 85,9% entre soropositivos e 79,3% para os soronegativos.
-            </p>
-          </article>
+              </div>
 
-          <!--pergunta #31-->
-          <article>
-            <h3>#31 Qual é o esquema de doses da vacina adquirida pelo Ministério da Saúde?</h3>
-            <p>A vacina apresenta um esquema de duas doses, com intervalo mínimo de três meses entre 1ª e 2ª dose.</p>
-          </article>
+        </main>
+        
+        <footer>
 
-          <!--pergunta #32-->
-          <article>
-            <h3>#32 Será necessário tomar dose de reforço?</h3>
-            <p>
-              Não há dados, até o momento, que indiquem a necessidade de dose de reforço. Os estudos continuam em andamento para responder a essa questão. O acompanhamento de 4,5 anos até agora, considerando a data da administração da 2ª dose, não demonstrou a necessidade de reforço durante esse período.
-            </p>
-          </article>
-
-          <!--pergunta #33-->
-          <article>
-            <h3>#33 Quem não pode receber a vacina de dengue adquirida pelo Ministério da Saúde?</h3>
-              <ul>
-                <li>Crianças menores de 4 anos e idosos com 60 anos e mais;</li>
-                <li>Gestantes e lactantes (mulheres que estão amamentando);</li>
-                <li>Pessoas com hipersensibilidade aos componentes da vacina ou a uma dose anterior;</li>
-                <li>Pessoas com imunodeficiência congênita ou adquirida; e</li>
-                <li>Pessoas com infecção pelo HIV sintomática ou assintomática quando houver evidência de imunossupressão.</li>
-              </ul>
-
-          </article>
-
-          <!--pergunta #34-->
-          <article>
-            <h3>#34 Quem já teve dengue pode receber a vacina?</h3>
-            <p><strong>Sim</strong>. A vacina é indicada para proteção contra o vírus da dengue em crianças, adolescentes e adultos de 4 a 60 anos de idade, independentemente de infecção prévia (soropositivos e soronegativos).</p>
-          </article>
-
-          <!--pergunta #35-->
-          <article>
-            <h3>#35 Quanto tempo após a pessoa ter tido dengue posso receber a vacina?</h3>
-            <p>
-              Após uma infecção pelo vírus da dengue, recomenda-se um intervalo de 6 meses para a administração da vacina de dengue.
-            </p>
-          </article>
-
-          <!--pergunta #36-->
-          <article>
-            <h3>#36 Eu tive dengue após a primeira dose da vacina. Quanto tempo devo esperar para receber a segunda dose?</h3>
-            <p>
-              Após uma infecção pelo vírus da dengue, recomenda-se um intervalo de 6 meses para a administração vacina. Assim, tal recomendação também se aplica para os casos de dengue que ocorreram após a 1ª dose do imunizante.
-            </p>
-            <p>
-              Ressalta-se que, considerando o intervalo sugerido, não haverá comprometimento da resposta imunológica para a complementação do esquema. Não sendo, portanto, necessário reiniciar o esquema.
-            </p>
-          </article>
-
-          <!--pergunta #37-->
-          <article>
-            <h3>#37 A vacina não é a principal medida de proteção? Por quê?</h3>
-            <p>
-              O combate à proliferação do mosquito Aedes aegypti é a principal forma de proteção individual e em grupo. Portanto, mesmo com a oferta da vacina, que será destinada a um público específico, é importante que toda a população, juntamente, com os gestores públicos, fortaleça as ações de vigilância para reduzir a infestação de mosquitos por meio da eliminação de criadouros.
-            </p>
-            <p><strong>Entre as medidas estão:</strong></p>
-            <ul>
-              <li>Manter os reservatórios e qualquer local que possa acumular água totalmente cobertos com telas/capas/tampas, impedindo a postura de ovos do mosquito Aedes aegypti; </li>
-              <li>Medidas de proteção individual para evitar picadas de mosquitos devem ser adotadas por viajantes e residentes em áreas de transmissão;</li>
-              <li>Proteção contra picadas de mosquito, principalmente ao longo do dia, pois o Aedes aegypti é mais ativo durante o dia;</li>
-              <li>Proteção das áreas do corpo mais expostas, com o uso de calças e camisas de mangas compridas;</li>
-              <li>Uso de repelentes;</li>
-              <li>A utilização de mosquiteiros sobre a cama, uso de telas em portas e janelas, além de manter o ambiente limpo e arejado;</li>
-              <li>Manter a vigilância de ralos e demais recipientes que possam acumular água parada.</li>
-            </ul>
-
-          </article>
-
-          <!--pergunta #38-->
-          <article>
-            <h3>#38 Quem está vacinado pode desenvolver a dengue grave?</h3>
-            <p>
-              Até o momento, sabemos que os estudos clínicos sobre a vacina apresentaram eficácia de 84,1% de proteção geral contra a doença e não houve sinais de alarme para questões associadas a segurança. Todavia, a vacina está sob análise contínua no período inicial de implementação para averiguar se há algum risco maior na sua utilização na população.
-            </p>
-          </article>
-
-          <!--pergunta #39-->
-          <article>
-            <h3>#39 Quais são os possíveis efeitos colaterais da vacina?</h3>
-            <p>
-              Entre as reações sistêmicas, cefaleia foi o evento mais comum, seguido por dor, fadiga e cansaço físico. As reações raras incluíram irritabilidade (em crianças), sonolência, perda de apetite e febre. Assim como para as manifestações locais, as reações sistêmicas tendem a ser mais frequentes após a primeira dose, começando no dia da injeção ou na data subsequente.
-            </p>
-          </article>
-
-        </section>
-
-        <section id="section4">
-          <h2>Chikungunya</h2>
-
-          <!--pergunta #40-->
-          <article>
-            <h3>#40 O que é chikungunya?</h3>
-            <p>É uma arbovirose transmitida pela picada do mosquito do gênero <i>Aedes aegypti</i> infectado.</p>
-            <p>Destaca-se que a doença pode evoluir em três fases:</p>
-            <ul>
-              <li>Febril ou aguda: tem duração de 5 a 14 dias;</li>
-              <li>Pós-aguda: tem um curso de até 3 meses;</li>
-              <li>Crônica: Se os sintomas persistirem por mais de 3 meses após o início da doença, considera-se instalada a fase crônica.</li>
-            </ul>
-            <p> Em mais de 50% dos casos, a artralgia (dor nas articulações) torna-se crônica, podendo persistir por anos.</p>
-
-          </article>
-
-          <!--pergunta #41-->
-          <article>
-            <h3>#41 Quais são os sinais e sintomas da chikungunya?</h3>
-            <p>
-              Os principais sintomas são febre alta de início rápido, dores intensas nas articulações dos pés e mãos. Além de dedos, tornozelos e pulsos. Pode ocorrer ainda dor de cabeça, dores nos músculos e manchas vermelhas na pele.
-            </p>
-          </article>
-
-          <!--pergunta #42-->
-          <article>
-            <h3>#42 Quais os sinais de alarme da chikungunya?</h3>
-            <p>
-              Em áreas com circulação de CHIKV, podem ocorrer casos da doença com manifestações atípicas, caracterizadas pelo surgimento de manifestações clínicas menos frequentes (BRASIL, 2014b; GODAERT et al., 2017a). Um caso atípico é considerado grave quando requer hospitalização (RAJAPAKSE; RODRIGO; RAJAPAKSE, 2010).As formas graves da infecção pelo CHIKV acometem, com maior frequência, pacientes com doenças associadas (diabetes, hipertensão arterial sistêmica, asma, cardiopatia, alcoolismo, doenças reumatológicas, anemia falciforme, talassemia), crianças menores de 2 anos, pacientes com idade acima de 65 anos e aqueles que estão em uso de alguns fármacos. Para mais informações, consultar: Chikungunya: manejo clínico (BRASIL, 2017c). As manifestações atípicas e as doenças associadas listadas anteriormente estão relacionadas ao maior risco de evolução para o óbito. Todo paciente que apresentar sinais clínicos e/ou laboratoriais que indiquem a necessidade de internação em unidade de terapia intensiva ou risco de morte deve ser considerado como forma grave da doença. Durante epidemias, um cuidado especial dever ser tomado na investigação de possíveis quadros graves de chikungunya, que podem dar entrada em hospitais, sem suspeita anterior de chikungunya. Essa situação pode levar ao manejo inadequado do paciente e o quadro evoluir para o óbito.
-            </p>
-          </article>
-
-          <!--pergunta #43-->
-          <article>
-            <h3>#43 Como ocorre a transmissão do vírus da chikungunya?</h3>
-            <p>
-              O vírus da dengue (DENV) pode ser transmitido ao homem principalmente por via vetorial, pela picada de fêmeas de <i>Aedes aegypti</i> infectadas, no ciclo urbano humano–vetor–humano. Os relatos de transmissão por via vertical (de mãe para filho durante a gestação) e transfusional são raros.
-            </p>
-          </article>
-
-          <!--pergunta #44-->
-          <article>
-            <h3>#44 Como é feito o diagnóstico da chikungunya?</h3>
-            <p>
-              O diagnóstico da chikungunya é clínico e feito por um médico. Todos os exames estão disponíveis no Sistema Único de Saúde (SUS). Em caso de confirmação da doença a notificação deve ser feita ao Ministério da Saúde em até 24 horas.
-            </p>
-            <p>Em situações de epidemia a maioria dos casos serão confirmados por critério clínico.</p>
-          </article>
-
-          <!--pergunta #45-->
-          <article>
-            <h3>#45 Como é feito o tratamento da chikungunya?</h3>
-            <p>
-              O tratamento da chikungunya é feito de acordo com os sintomas. Até o momento, não há tratamento antiviral específico para chikungunya. A terapia utilizada é analgesia e suporte.
-            </p>
-            <p>
-              É necessário estimular a hidratação oral dos pacientes e a escolha dos medicamentos devem ser realizadas após a avaliação do paciente, com aplicação de escalas de dor apropriadas para cada idade e fase da doença. 
-            </p>
-            <p>Em casos de sequelas mais graves, e sob avaliação médica conforme cada caso, pode ser recomendada a fisioterapia.</p>
-            <p> 
-              Em caso de suspeita, com o surgimento de qualquer sintoma, é fundamental procurar um profissional de saúde para o correto diagnóstico e prescrição dos medicamentos, evitando sempre a automedicação. Os tratamentos são oferecidos de forma integral e gratuita por meio do Sistema Único de Saúde (SUS).
-            </p>
-          </article>
-
-          <!--pergunta #46-->
-          <article>
-            <h3>#46 Como se prevenir da chikungunya?</h3>
-            <p>O controle do vetor Aedes aegypti é o principal método para a prevenção e controle para a dengue e outras arboviroses urbanas (como chikungunya e Zika).</p>
-            <p>
-              Deve-se reduzir a infestação de mosquitos por meio da eliminação de criadouros, sempre que possível, ou manter os reservatórios e qualquer local que possa acumular água totalmente cobertos com telas/capas/tampas, impedindo a postura de ovos do mosquito <i>Aedes aegypti</i>.
-            </p>
-            <p>
-              Medidas de proteção individual para evitar picadas de mosquitos devem ser adotadas por viajantes e residentes em áreas de transmissão. A proteção contra picadas de mosquito é necessária principalmente ao longo do dia, pois o Aedes aegypti pica principalmente durante o dia.
-            </p>
-            <p>Recomenda-se as seguintes medidas de proteção individual:</p>
-            <ul>
-              <li>Proteger as áreas do corpo que o mosquito possa picar, com o uso de calças e camisas de mangas compridas.</li>
-              <li>Usar repelentes à base de DEET (N-N-dietilmetatoluamida), IR3535 ou de Icaridina nas partes expostas do corpo. Também pode ser aplicado sobre as roupas. O uso deve seguir as indicações do fabricante em relação à faixa etária e à frequência de aplicação. Deve ser observada a existência de registro em órgão competente. Repelentes de insetos contendo DEET, IR3535 ou Icaridina são seguros para uso durante a gravidez, quando usados de acordo com as instruções do fabricante. Em crianças menores de 2 anos de idade, não é recomendado o uso de repelente sem orientação médica. Para crianças entre 2 e 12 anos, usar concentrações até 10% de DEET, no máximo 3 vezes ao dia. A utilização de mosquiteiros sobre a cama, uso de telas em portas e janelas e, quando disponível, ar-condicionado.</li>
-            </ul>
-
-          </article>
-
-          <!--pergunta #47-->
-          <article>
-            <h3>#47 Há vacina contra a chikungunya?</h3>
-            <p>Não existem vacinas contra a chikungunya.</p>
-          </article>
-
-        </section>
-
-        <section id="section4">
-          <h2>Zika</h2>
-          
-          <!--pergunta #48-->
-          <article>
-            <h3>#48 O que é Zika?</h3>
-              <p>
-                É uma arbovirose causada pelo vírus Zika (ZIKV). Arboviroses são doenças causadas por vírus (arbovírus) transmitidos por meio da picada de mosquitos infectados da espécie <i>Aedes aegypti</i>.
-              </p>
-                A maioria das infecções pelo Zika Virus são assintomáticas ou representam uma doença febril autolimitada semelhante às infecções por chikungunya e dengue. Entretanto, a associação da infecção viral com complicações neurológicas como microcefalia congênita e síndrome de Guillain-Barré (SGB) foi demonstrada por estudos realizados durante surtos da doença no Brasil e na Polinésia Francesa. 
-              <p>
-                <strong>
-                  IMPORTANTE: Todos os sexos e faixas etárias são igualmente suscetíveis ao vírus Zika, porém mulheres grávidas e pessoas acima de 60 anos têm maiores riscos de desenvolver complicações da doença. Esses riscos podem aumentar quando a pessoa tem alguma comorbidade.
-                </strong>
-              </p>
-          </article>
-
-          <!--pergunta #49-->
-          <article>
-            <h3>#49 Quais são os sinais e sintomas da Zika?</h3>
-              <p>
-                A infecção pelo vírus Zika pode ser assintomática ou sintomática. Quando sintomática, pode apresentar quadro clínico variável, desde manifestações brandas e autolimitadas até complicações neurológicas e malformações congênitas. Estudos recentes indicam que mais de 50% dos pacientes infectados por Zika tornam-se sintomáticos. O período de incubação da doença varia de 2 a 7 dias.
-              </p>
-              <p>Manifestações mais comuns:</p>
-              <ul>
-                <li>Febre baixa (≤38,5 ºC) ou ausente;</li>
-                <li>Exantema (geralmente pruriginoso e maculopapular craniocaudal) de início precoce;</li>
-                <li>Conjuntivite não purulenta;</li>
-                <li>Cefaleia, artralgia, astenia e mialgia;</li>
-                <li>Edema periarticular, linfonodomegalia.</li>
-              </ul>
-              <p>
-                Além da manifestação clínica exantemática febril leve da infecção pelo ZIKV, o prurido é um sintoma importante durante o período agudo, podendo afetar as atividades cotidianas e o sono.
-              </p>
-              <p>
-                Duas complicações neurológicas graves relacionadas ao ZIKV foram identificadas: Síndrome de Guillan-Barré (SGB), uma condição rara em que o sistema imunológico de uma pessoa ataca os nervos periféricos, e microcefalia, a manifestação mais grave de um espectro de defeitos congênitos. Gestantes infectadas podem transmitir o vírus ao feto e essa forma de transmissão da infecção pode resultar em aborto espontâneo, óbito fetal ou malformações congênitas, como a microcefalia.
-              </p>
-              <p>Deve-se ficar atento para o aparecimento de outros quadros neurológicos, tais como, encefalites, mielites e neurite óptica, entre outros.</p>
-          </article>          
-
-          <!--pergunta #50-->
-          <article>
-            <h3>#50 Como ocorre a transmissão do vírus da Zika?</h3>
-              <p>
-                A principal forma de transmissão do Zika Virus aos humanos é por meio da picada de mosquitos vetores infectados da espécie <i>Aedes aegypti</i>. Esta espécie de mosquito também é responsável pela transmissão da dengue e chikungunya no Brasil. 
-              </p>
-              <p>
-                Outras formas não vetoriais de transmissão do ZIKV incluem da mãe para feto durante a gravidez (transmissão vertical), transmissão interpessoal durante o contato sexual e transmissão por transfusão de sangue. 
-              </p>
-              <p>
-                A transmissão vertical do Zika Virus pode ocorrer em todos os três trimestres da gestação, independentemente da presença ou ausência de sintomas na mãe. Aproximadamente 26% das mães infectadas transmitem o Zika Virus aos fetos, no entanto, o risco de desenvolver defeitos congênitos, incluindo anormalidades neurológicas como a microcefalia, foi maior entre as mulheres infectadas durante o primeiro trimestre. Em contraste, o risco de complicações neurológicas fetais foi menor entre as mulheres grávidas que adquiriram infecção pelo ZIKV durante o terceiro trimestre da infecção. 
-              </p>
-              <p>
-                Embora a infecção pelo Zika Virus do feto da mãe que adquiriu o ZIKV após a relação sexual tenha sido relatada, não está claro se o risco de infecção fetal é maior por meio da transmissão sexual para a mãe do que pela transmissão vetorial para a mãe. 
-              </p>
-              <p>
-                As taxas de detecção do Zika Virus no sêmen de homens infectados sintomáticos têm sido consistentes na maioria dos estudos, variando de 50% a 60% no primeiro mês do início dos sintomas. Quase todos os casos de transmissão sexual do Zika Virus foram identificados dentro de 20 dias após o início da doença do parceiro infectado. Acredita-se que a duração variável da excreção de ZIKA no sêmen dos homens seja devida a diferentes características virais e do hospedeiro. 
-              </p>
-              <p>
-                <strong>
-                  IMPORTANTE: O Zika Virus já foi detectado na saliva, urina e leite materno, entretanto a transmissão por meio desses fluidos corporais ainda não foi evidenciada.
-                </strong>
-              </p>
-          </article>
-          
-          <!--pergunta #51-->
-          <article>
-            <h3>#51 Como é feito o diagnóstico do Zika Vírus?</h3>
-              <p>
-                O diagnóstico do Zika vírus é clínico e feito por um médico. O resultado é confirmado por meio de exames laboratoriais de sorologia e biologia molecular. Todos os exames estão disponíveis no Sistema Único de Saúde (SUS).
-              </p>
-              <p>
-                Os recém-nascidos com suspeita de comprometimento neurológico necessitam de exames de imagem, como ultrassom. Tomografias ou ressonância magnética. Em caso de confirmação do Zika a notificação deve ser ao Ministério da Saúde em até 24 horas.
-              </p>
-          </article>
-          
-          <!--pergunta #52-->
-          <article>
-            <h3>#52 Como é feito o tratamento da Zika?</h3>
-              <p>Ainda não existe antiviral disponível para tratamento específico da infecção pelo vírus Zika.</p>
-              <p>Para os quadros sintomáticos, aplicam-se as principais medidas:</p>
-              <ul>
-                <li>Repouso relativo, enquanto durar a febre;</li>
-                <li>Estímulo à ingestão de líquidos;</li>
-                <li>Administração de paracetamol ou dipirona em caso de dor ou febre;</li>
-                <li>Não administração de ácido acetilsalicílico;</li>
-                <li>Administração de anti-histamínicos;</li>
-                <li>Recomendação ao paciente para que retorne imediatamente ao serviço de saúde, em casos de sensação de formigamento de membros ou alterações do nível de consciência (para investigação de SGB e de outros quadros neurológicos);</li>
-                <li>Diante da queixa de alteração visual, encaminhamento ao oftalmologista para avaliação e tratamento.</li>
-              </ul>
-              <p>Gestantes com suspeita de Zika devem ser acompanhadas conforme protocolos vigentes para o pré-natal, desenvolvidos pelo Ministério da Saúde do Brasil.  </p>
-          </article>
-
-        </section>
-
-        <div>
-          <p>Atualizado em <time datetime="2024-3-18 10:58">18 de março de 2024 às 10:58</time>.</p>
-          <p>Extraído de: <a href="https://www.gov.br/saude/pt-br/composicao/svsa/resposta-a-emergencias/sala-de-situacao-de-saude/arboviroses/faq" target="_blank"><strong>Ministério da Saúde - Perguntas frequentes: arboviroses</strong></a></p>
-
-        </div>
-
-
-    </main>
-
-
-    <!--inicio do footer-->
-    <footer>
-
-      <nav>
-          <div class="footer-logo">
-              <img src="../img/logo_contorno.png" width="150" alt="logo da empresa">
-          </div>
-
-          <div class="nav-footer">
-              <span>Informe-se</span>
-              <ul>
-                  <li><a href="./noticiashtml">Notícias</a></li>
-                  <li><a href="./mapa_casos.html">Mapa de Casos</a></li>
-                  <li><a href="./sobre_dengue.html">Sobre a Dengue</a></li>
-              </ul>
-          </div>
-          <div class="nav-footer">
-              <span>É com você</span>
-              <ul>
-                  <li><a href="https://youtu.be/8T6bmozcibQ?si=TRram_MY1nY5wJM4" target="_blank">10 minutos salvam
-                          vidas</a></li>
-                  <li><a href="https://www.youtube.com/watch?v=gzwF2BgtW-w">Vacinar é cuidar</a></li>
-                  <li><a href="./quiz.html">Quiz</a></li>
-              </ul>
-          </div>
-          <div class="nav-footer">
-              <span>Dengue News</span>
-              <ul>
-                  <li><a href="./quem_somos.html">Quem Somos</a></li>
-                  <li><a href="mailto:contato@denguenews.com.br">Fale Conosco</a></li>
-                  <li><a href="./newsletterhtml">Newsletter</a></li>
-              </ul>
-          </div>
-          <div class="nav-footer">
-              <span>Legal</span>
-              <ul>
-                  <li><a href="./legal.html">Privacidade</a></li>
-                  <li><a href="./legal.html">Termos e Condições</a></li>
-              </ul>
-          </div>
-      </nav>
-
-      <div class="dados-contato">
-          <address>
-              <ul>
-                  <li><a href=""><img src="../img/social_media/facebook.png" width="30"></a></li>
-                  <li><a href=""><img src="../img/social_media/instagram.png" width="30"></a></li>
-                  <li><a href=""><img src="../img/social_media/twitter.png" width="30"></a></li>
-              </ul>
-
-              <a href="mailto:contato@denguenews.com"><strong>contato@denguenews.com.br</strong></a>
-
-          </address>
-  <hr>
-
-
-          <div class="copyright">
-              
-              <p>&copy; 2024 Dengue News | Todos os direitos reservados.</p>
-          </div>
-
-      </div>
-
-  </footer>
-
-
+            <nav>
+                <div class="footer-logo">
+                    <img src="../img/logo_contorno.png" width="150" alt="logo da empresa">
+                </div>
     
-  
+                <div class="nav-footer">
+                    <span>Informe-se</span>
+                    <ul>
+                        <li><a href="./noticiashtml">Notícias</a></li>
+                        <li><a href="./mapa_casos.html">Mapa de Casos</a></li>
+                        <li><a href="./sobre_dengue.html">Sobre a Dengue</a></li>
+                    </ul>
+                </div>
+                <div class="nav-footer">
+                    <span>É com você</span>
+                    <ul>
+                        <li><a href="https://youtu.be/8T6bmozcibQ?si=TRram_MY1nY5wJM4" target="_blank">10 minutos salvam
+                                vidas</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=gzwF2BgtW-w">Vacinar é cuidar</a></li>
+                        <li><a href="./quiz.html">Quiz</a></li>
+                        <li><a href="./faq.html">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+                <div class="nav-footer">
+                    <span>Dengue News</span>
+                    <ul>
+                        <li><a href="./quem_somos.html">Quem Somos</a></li>
+                        <li><a href="mailto:contato@denguenews.com.br">Fale Conosco</a></li>
+                        <li><a href="javascript:void(0)" onclick="openPopup()">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="nav-footer">
+                    <span>Legal</span>
+                    <ul>
+                        <li><a href="./legal.html">Privacidade</a></li>
+                        <li><a href="./legal.html">Termos e Condições</a></li>
+                    </ul>
+                </div>
+            </nav>
     
-</body>
-</html>
+            <div class="dados-contato">
+                <address>
+                    <ul>
+                        <li><a href=""><img src="../img/social_media/facebook.png" width="30"></a></li>
+                        <li><a href=""><img src="../img/social_media/instagram.png" width="30"></a></li>
+                        <li><a href=""><img src="../img/social_media/twitter.png" width="30"></a></li>
+                    </ul>
+    
+                    <a href="mailto:contato@denguenews.com"><strong>contato@denguenews.com.br</strong></a>
+    
+                </address>
+        <hr>
+    
+    
+                <div class="copyright">
+                    
+                    <p>&copy; 2024 Dengue News | Todos os direitos reservados.</p>
+                </div>
+    
+            </div>
+    
+        </footer>
+
+    </body>
+    </html>

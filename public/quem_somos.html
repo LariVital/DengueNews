@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNews | Conheça o nosso time!</title>
     <!-- font Poppins -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1600;1,700;1,800;1,900&display=swap,400&family=Merriweather:ital,wght@0,300;0,4000,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- folha de estilos css -->
     <link rel="stylesheet" href="../styles.css" />
-
+    <!-- Javascript -->
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
 
     <!--inicio do header-->
     <header class="header-topo">
-        <a class="logo-top" href="index.html">
+        <a class="logo-top" href="../index.html">
             <img src="../img/logo_longa_center.png" alt="logo do site">
         </a>
         <nav>
@@ -41,57 +43,64 @@
     </header>
 
 <!--início do conteúdo principal-->
-    <main class="quem-somos">
-        <h1>Projeto Integrador</h1>
+    <main class="main-quemsomos">
+        <div class="quem-title">
+            <h1>Projeto Integrador</h1>
+        </div>
         <section class="projeto-integrador">
-            <div class="container" id="pi">
+            <div class="texto-pi">
                 <h2>Objetivos de Desenvolvimento Sustentável</h2>
                 <p>O Projeto Integrador é o trabalho final da <a href="https://pages.prozeducacao.com.br/proz-tecnologia"   target="_blank">Capacitação Gratuita em Tecnologia</a> promovida pela Proz Educação em parceria com Portal Tech,  Meta e AWS, no qual os alunos devem demonstrar o que aprenderam de forma prática. Pressupõe a criação de um site     de fácil utilização que resolva um problema real para as pessoas. Os alunos da turma 22 foram desafiados a  desenvolver solução web para tema-problema priorizado nos <a href="https://brasil.un.org/pt-br/sdgs">17 Objetivos    de Desenvolvimento Sustentável</a>. Os <abbr title="Objetivo de Desenvolvimento Sustentável">ODS</abbr> são metas  globais estabelecidas pela <abbr title="Organização das Nações Unidas">ONU</abbr> em 2015, as quais os   países-membros buscam alcançar como parte da Agenda 2030.<p>
             </div>
 
-            <div class="container" id="ods3">
-                <aside>
-                    <h3 id="ods-verde">ODS #3 Saúde e Bem-Estar</h3>
+            <div class="ods3">
+                <h3 id="ods-verde">ODS #3 Saúde e Bem-Estar</h3>
+                <div class="ods3-main">
                     <h4> Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades.</h4>
-                    <blockquote cite="https://www.ipea.gov.br/ods/ods3.html">
-                            <strong>Meta 3.3 - Brasil</strong><br />
-                            Até 2030 acabar, como problema de saúde pública, com as epidemias de AIDS, tuberculose,malária,    hepatites virais, doenças negligenciadas, doenças transmitidas pela água,arboviroses transmitidas     pelo <i>aedes aegypti</i> e outras doenças transmissíveis.
-                    </blockquote>
-                </aside>
-                <figure>
-                    <a href="https://www.ipea.gov.br/ods/ods3.html" target="_blank"><img src="../img/ODS3.jpg" width="200"     alt="Ícone verde com o número 3, texto ‘SAÚDE E BEM-ESTAR’ e um gráfico de batimentocardíaco formando um   coração ao final"></a>
-                </figure>
+                    <figure>
+                        <a href="https://www.ipea.gov.br/ods/ods3.html" target="_blank"><img src="../img/ODS3.jpg" width="200"     alt="Ícone verde com o número 3, texto ‘SAÚDE E BEM-ESTAR’ e um gráfico de batimento cardíaco formando um   coração ao final"></a>
+                    </figure>
+                </div>
+                <blockquote cite="https://www.ipea.gov.br/ods/ods3.html">
+                    <strong>Meta 3.3 - Brasil</strong><br />
+                    Até 2030 acabar, como problema de saúde pública, com as epidemias de AIDS, tuberculose,malária,    hepatites virais, doenças negligenciadas, doenças transmitidas pela água,arboviroses transmitidas     pelo <i>aedes aegypti</i> e outras doenças transmissíveis.
+                </blockquote>
             </div>
 
     
         </section>
 
         <section class="dengue-news">
-            <h2>Surgimento do Dengue News</h2>
-            <p> Os alunos do <strong>Grupo 3</strong> escolheram o <a href="https://www.ipea.gov.br/ods/ods3.html" target="_blank">ODS #3 - Saúde e Bem-Estar</a> devido a:
-                <ol>
-                    <li>Alta histórica de casos de dengue, zika e chikungunya no Brasil em 2024, com circulação inédita dos 4 sorotipos da dengue ao mesmo tempo;</li>
-                    <li>Pela primeira vez, disponibilização de vacinas contra a dengue no sistema público de saúde;</li>
-                    <li>Baixa adesão à campanha vacinal, possível reflexo de movimentos anti-vacina na atualidade.</li>
-                </ol>
-            </p>
+            <div class="surgimento">
+                <h2>Como surgiu a agência de notícias Dengue News</h2>
+                <p> Os alunos do <strong>Grupo 3</strong> escolheram o <a href="https://www.ipea.gov.br/ods/ods3.html" target="_blank">ODS #3 - Saúde e Bem-Estar</a> devido a:
+                    <ol>
+                        <li>Alta histórica de casos de dengue, zika e chikungunya no Brasil em 2024, com circulação inédita dos 4 sorotipos da dengue ao mesmo tempo;</li>
+                        <li>Pela primeira vez, disponibilização de vacinas contra a dengue no sistema público de saúde;</li>
+                        <li>Baixa adesão à campanha vacinal, possível reflexo de movimentos anti-vacina na atualidade.</li>
+                    </ol>
+                </p>
+                <figure><img src="../img/logo_longa_center.png"></figure>
+            </div>
+        </section>
             
-            <h3>Nosso Propósito</h3>
+        <section class="proposito"></section>
+        
             <div class="negocio-cards">
                 <article>
-                    <figure><img src="../img/icone_missao.png" width="70"></figure>
+                    <figure class="proposito"><img src="../img/icone_missao.png" width="70"></figure>
                     <h4>MISSÃO</h4>
                     <p>Apoiar o Brasil no cumprimento da Agenda 2030 quanto ao Objetivo de Desenvolvimento Sustentável #3.</p>
                 </article>
 
                 <article>
-                    <figure><img src="../img/icone_visao.png" width="70"></figure>
+                    <figure class="proposito"><img src="../img/icone_visao.png" width="70"></figure>
                     <h4>VISÃO</h4>
                     <p>Ser referência de informações confiáveis sobre arboviroses transmitidas pelo <i>aedes aegypti</i>.</p>
                 </article>
 
                 <article>
-                    <figure><img src="../img/icone_valores.png" width="70"></figure>
+                    <figure class="proposito"><img src="../img/icone_valores.png" width="70"></figure>
                     <h4>VALORES</h4>
                     <p>ODS #3 Saúde e Bem-Estar - assegurar uma vida saudável e promover o bem-estar para todos, em todas as    idades.</p>
                 </article>
@@ -100,7 +109,7 @@
         </section>
         
 
-        <h2>Nosso Time</h2>
+        <h2 id="nosso-time">Nosso Time</h2>
         <section class="members">
             <article>
                 <figure class="foto-perfil"><img src="../img/membros/caiki.png" alt=""></figure>
@@ -125,18 +134,20 @@
             <article>
                 <figure class="foto-perfil"><img src="../img/membros/larissa.png" alt=""></figure>
                 <h3>Larissa Vital</h3>
-                <h4>Advogada | Desenvolvedora em formação.</h4>
-                <p>Em uma empolgante transição de carreira para se tornar desenvolvedora</p>
+                <h4>Advogada | Desenvolvedora em formação</h4>
+                <p>Em uma empolgante transição de carreira para se tornar desenvolvedora.</p>
                 <div class="redes-prof">
                     <a href="https://www.linkedin.com/in/larissavital/" target="_blank"><img src="../img/social_media/linkedin_circle.png" width="30"></a>
                     <a href="https://github.com/LariVital/" target="_blank"><img src="../img/social_media/github_circle.png" width="30"></a>
                 </div>
             </article>
+        </section>
+        <section class="members" id="set-members2">
             <article>
                 <figure class="foto-perfil"><img src="../img/membros/lorena_color.png" alt=""></figure>
                 <h3>Lorena de Castro</h3>
-                <h4>Profissão</h4>
-                <p>Bacon ipsum dolor amet jerky chuck porchetta pig pastrami pork loin alcatra frankfurter meatloaf hamburger corned beef flankbresaolashort   loin.</p>
+                <h4>Instrutora de Informática</h4>
+                <p>Bacharel em Direito e em transição de carreira para a área de TI.</p>
                 <div class="redes-prof">
                     <a href="https://www.linkedin.com/in/username/" target="_blank"><img src="../img/social_media/linkedin_circle.png" width="30"></a>
                     <a href="https://www.github.com/username/" target="_blank"><img src="../img/social_media/github_circle.png" width="30"></a>
@@ -182,6 +193,7 @@
                             vidas</a></li>
                     <li><a href="https://www.youtube.com/watch?v=gzwF2BgtW-w">Vacinar é cuidar</a></li>
                     <li><a href="./quiz.html">Quiz</a></li>
+                    <li><a href="./faq.html">Perguntas Frequentes</a></li>
                 </ul>
             </div>
             <div class="nav-footer">
@@ -189,7 +201,7 @@
                 <ul>
                     <li><a href="./quem_somos.html">Quem Somos</a></li>
                     <li><a href="mailto:contato@denguenews.com.br">Fale Conosco</a></li>
-                    <li><a href="./newsletterhtml">Newsletter</a></li>
+                    <li><a href="javascript:void(0)" onclick="openPopup()">Newsletter</a></li>
                 </ul>
             </div>
             <div class="nav-footer">
@@ -224,7 +236,5 @@
 
     </footer>
 
-
-    
 </body>
 </html>

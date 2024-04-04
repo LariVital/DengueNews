@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNews | Assine nossa newsletter!</title>
+    <link rel="stylesheet" href="../styles.css">
+    
 </head>
-<body>
+
+<body class="body-news">
     <main>
-        <div class="container">
-            <form>
-                <label for="email">Cadastre-se para receber nosso boletim semanal</label><br /><br />
-                <input type="text" id="email" name="email" value="Digite seu e-mail"><input type="submit" value="Enviar">
+        <div class="container" id="mailbox">
+            <form class="form-news">
+                <label for="email">Cadastre-se para receber nosso boletim semanal!</label>
+                <div id="digite-email">
+                    <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
+                    <button type="submit">Cadastrar</button>
+                </div>
             </form>
         </div>
-
-
     </main>
-    <footer></footer>
-    
 </body>
+
 </html>

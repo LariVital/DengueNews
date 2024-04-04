@@ -1,16 +1,59 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Roboto';
 }
+
+/* atributos em comum */
+
+h1 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 20px;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    text-size-adjust: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+h4 {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+p {
+    font-size: 1rem;
+    padding-bottom: 6px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: lightgray;
+    
+}
+
 
 /* cabeçalho de navegação */
 .header-topo {
     background-color: #f8f9fa;
     display: flex;
     justify-content: space-between;
-    padding: 16x;
+    padding: 0px 40px;
     margin-bottom: 10px;
 }
 
@@ -28,6 +71,7 @@
 }
 
 .header-topo nav a {
+    font-family: roboto;
     text-decoration: none;
     color: #000000a6
 }
@@ -41,7 +85,12 @@
 .header-topo img {
     height: 70px;
     width: auto;
-    margin-left: 8px;
+    margin: 8px 8px 8px 16px;
+}
+
+.header-topo img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 /* formulário de pesquisa */
@@ -51,7 +100,7 @@ form.busca {
     
 }
 
-button.botao-busca {
+button {
     padding: 6px 12px;
     font-size: 16px;
     color:#FFC107;
@@ -64,22 +113,25 @@ button.botao-busca {
     transition-duration: 0.4s;
   }
     
-  button.botao-busca:hover {
+  button:hover {
     background-color:#FFC107;
     color: #ffffff;
   }
 
-input.form-control {
+input {
     border-width: 1px 1px 1px 1px;
+    border: 1px solid #ffffff;
+    outline:#ffffff;
     padding: 6px 12px;
     border-radius: 6px;
-    border-color: #ffffff;
-    color: #000000a6;
+    color: #212121;
     font-size: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border-style:solid;
     margin-right: 8px;
 }
+
+
 
 /* conteúdo principal */
 
@@ -89,6 +141,7 @@ main {
 
 /* footer */
 footer {
+    padding: 20px 4px;
     background-color: #f8f9fa ;
 }
 
@@ -119,6 +172,10 @@ footer nav img {
 
 }
 
+footer span {
+    font-weight: 600;
+}
+
 address {
     padding-bottom: 8px;
 }
@@ -133,6 +190,10 @@ address {
     text-decoration: none;
 }
 
+.dados-contato img:hover{
+    transform:scale(1.3);
+    transition: 0.3s;
+}
 
 .dados-contato ul {
     display: flex;
@@ -185,87 +246,144 @@ footer strong {
     padding: 8px;
 }
 
-h1 {
-    text-size: 4rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-family: "Poppins", sans-serif;
-    text-size-adjust: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 6px;
-}
-
-h3 {
-    text-size: 1.2rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    margin-bottom: 6px;
-}
-
-h4 {
-    text-size: 1rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    margin-bottom: 4px;
-}
-
-p {
-    text-size: 1rem;
-}
-
 /* quem somos */
+
+.main-quemsomos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 900px;
+}
+
+.quem-title {
+    display: flex;
+    justify-content: center;
+}
+
 
 .projeto-integrador {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: 20px 10p;
+    padding-top: 20px;
 }
 
-div#pi.container {
-    display: block;
-    margin-right: 25px;
-    width: 100%;
+
+.texto-pi {
+    margin-right: 20px;
+    width: 50%;
 }
 
-div#ods3.container {
+.ods3 {
     display: flex;
-    margin: 25px 0px;
-    padding: 25px;
-    color:#757575;
-    background-color: #f8f9fa;
+    flex-direction: column;
+    margin-left: 10px;
+    padding: 30px;
+    border: 1px solid #4CA146;
+    color:#000000;
     border-radius: 20px;
-    width: 100%;
+    width: 50%;
+}
+
+.ods3-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ods3 img {
+    margin-top: 10px;
+    margin-left: 16px;
+    width: 9rem;
 }
 
 #ods-verde {
     color:#4CA146;
 }
 
-div.negocio-cards {
+.dengue-news {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
+
+}
+
+.surgimento {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-
-}
-
-div.negocio-cards article {
-    padding: 30px;
-    width: 15%;
+    padding: 20px 50px;
     background-color: #f8f9fa;
-    margin: 15px;
     border-radius: 20px;
+
 }
 
-div.negocio-cards figure {
+.surgimento h2 {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.surgimento ol {
+    padding: 8px 30px 30px 30px;
+}
+
+.surgimento h2 {
+    justify-self: center;
+}
+
+.dengue-news figure {
+    display: flex;
+    justify-content: center;
+
+}
+
+.dengue-news img {
+    width: 70%;
+    height: auto;
+    padding: 25px;
+}
+
+.negocio-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+
+}
+
+.negocio-cards article {
+    padding: 25px;
+    width: 50%;
+    background-color: #fff2cc;
+    margin: 15px 0px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.negocio-cards article:first-of-type {
+    margin-right: 20px;
+}
+
+.negocio-cards article:last-of-type {
+    margin-left: 20px;
+}
+
+
+.negocio-cards figure {
     display: flex;
     justify-content: center;
 }
 
-div.negocio-cards h4 {
+.proposito img:hover {
+    transform:scale(1.3);
+    transition: 0.3s;
+}
+
+.negocio-cards h4 {
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -275,13 +393,34 @@ div.negocio-cards h4 {
 .members {
     display: flex;
     justify-content: space-evenly;
+    background-image: linear-gradient(180deg, #FFF, #fff2cc);
+    padding-bottom: 30px;
+}
+
+#nosso-time {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
 }
 
 .members article {
-    width: 15%;
-    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    padding: 25px 25px 10px 25px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #fff;
+    border-radius: 20px;
 }
 
+#set-members2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(360deg, #FFF, #fff2cc);
+    margin-bottom: 5px;
+}
 .members figure {
     align-items: center;
 }
@@ -290,13 +429,11 @@ div.negocio-cards h4 {
     display: flex;
     justify-content: center;
     font-weight: 500;
-    
 }
 
 .foto-perfil {
     display: flex;
     justify-content: center;
-
 }
 
 .foto-perfil img {
@@ -305,34 +442,26 @@ div.negocio-cards h4 {
     margin-bottom: 10px;
 }
 
-div.redes-prof img {
+.redes-prof img {
     margin-top: 15px;
     
 }
-/* Página Notícias */
-.main-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 20px;
-    align-items: center;
-    padding: 15px 30px;
-}
-.container-content{
-    padding: 30px 10px;
-    background-color: #f3f3f3;
-   
+
+.redes-prof img:hover {
+    transform:scale(1.3);
+    transition: 0.3s;
 }
 
-.page-title {
-    padding: 30px ;
-    font-size: 39px;
-    font-family:"merriweather",sans-serif;
-    font-weight: 700;
-    margin: 10px 0 10px 10px;
+
+/* Página Notícias */
+.main-noticias {
     display: flex;
-   text-align: center;
-   justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 900px;
+    margin: 0 auto;
 }
+
 .news-article {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Distribui o espaço em duas colunas */
@@ -354,43 +483,176 @@ div.redes-prof img {
    padding: 10px 0 10px;
    text-align:left;
    justify-content:center;
+}
 
-   font-family:"roboto", sans-serif;
-   font-size:28px;
-   font-weight:medium;
+.main-noticias h1 {
+    padding: 0;
+}
+
+
+.bloco-noticias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.bloco-noticias article {
+    display: flex;
+    margin: 32px;
 
 }
-.one p{
-    padding: 10px 0;
-    font: size 15px; 
-    font-family: "monserrat", sans-serif;
-    font-weight: 300;
-    margin-bottom: 20px;
-    
 
+
+.bloco-noticias figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.one a{
-    padding: 6px 12px;
-   
-    transition-duration: 0.4s;
-    background-color: #ffc107;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 6px;
-    border-width: 1px;
-    border-style: solid;
-    margin-right: 8px;
-    color: #212121;
-    text-decoration: solid;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    
+
+
+.bloco-noticias figure:hover {
+    transform: scale(1.1);
+    transition: 0.3;
+}
+
+.bloco-noticias img {
+    padding: 0;
+    border-radius: 10px;
+}
+
+
+.one {
+    margin-left: 40px;
 }
  
-.one a:hover{
+.one p:last-of-type {
+    margin-bottom: 20px;
+}
+
+
+.one a {
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #F0F0F0;
+    color:#FFC107;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-color:#FFC107;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style:solid;
+    margin-right: 8px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+  }
+    
+.one a:hover {
     background-color:#FFC107;
     color: #ffffff;
+  }
+
+
+
+/*  newsletter */
+
+.body-news {
+    background-image: url("./img/aedes_fundoAmarelo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-   
-  
+
+#mailbox {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 50px;
+    width: 100vh;
+
+}
+
+#mailbox label {
+    margin-bottom: 1rem;
+}
+
+.form-news {
+    display: flex;
+    flex-direction: column;
+}
+
+#digite-email {
+    display: flex;
+    justify-content: end;
+    margin: 0;
+}
+
+#digite-email input {
+    width: 100%;
+}
+
+/* faq */
+
+.main-faq {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 900px;
+}
+
+.main-faq h1 {
+    align-self: center;
+}
+
+.titulo-bloco {
+    height: 5rem;
+    color: #000000;
+    background-image: url("./img/background/mosquito2.png");
+    background-size: 50%;
+    background-position: center;
+    font-weight: 500;
+    margin: 0;
+}
+
+.titulo-bloco h2 {
+    color:#FFC107;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+}
+
+
+.collapse ul li {
+    margin-left: 30px;
+}
+
+.faq-atualiza {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.btn.btn-link {
+    text-align: left;
+}
+
+.faq-title {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 20px;
+}
+
+/* sobre a dengue */
+.main-sobre {
+    width: 900px;
+    margin: 0 auto;
+}
+>>>>>>> 13ea9d19d91310e869fbfd22665d570704214012

@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | DNews</title>
     <!-- font Poppins -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- folha de estilos css -->
     <link rel="stylesheet" href="../styles.css" />
+    <!-- Javascript -->
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <!--inicio do header-->
     <header class="header-topo">
-        <a class="logo-top" href="index.html">
+        <a class="logo-top" href="./index.html">
             <img src="../img/logo_longa_center.png" alt="logo do site">
         </a>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="./noticias.html">Notícias</a></li>
-                <li><a href="./mapa_casos.html">Mapa de Casos</a></li>
-                <li><a href="./sobre_dengue.html">Sobre a Dengue</a></li>
-                <li><a href="./quiz.html">Quiz</a></li>
-                <li><a href="./FAQ.html">FAQ</a></li>
-                <li><a href="./quem_somos.html">Quem Somos</a></li>
+                <li><a href="./public/noticias.html">Notícias</a></li>
+                <li><a href="./public/mapa_casos.html">Mapa de Casos</a></li>
+                <li><a href="./public/sobre_dengue.html">Sobre a Dengue</a></li>
+                <li><a href="./public/quiz.html">Quiz</a></li>
+                <li><a href="./public/FAQ.html">FAQ</a></li>
+                <li><a href="./public/quem_somos.html">Quem Somos</a></li>
             </ul>
         </nav>
         <form class="busca" role="search">
@@ -176,9 +179,10 @@
             <div class="nav-footer">
                 <span>Informe-se</span>
                 <ul>
-                    <li><a href="./noticiashtml">Notícias</a></li>
+                    <li><a href="./noticias.html">Notícias</a></li>
                     <li><a href="./mapa_casos.html">Mapa de Casos</a></li>
                     <li><a href="./sobre_dengue.html">Sobre a Dengue</a></li>
+                    <li><a href="./faq.html">Perguntas Frequentes</a></li>
                 </ul>
             </div>
             <div class="nav-footer">
@@ -186,23 +190,23 @@
                 <ul>
                     <li><a href="https://youtu.be/8T6bmozcibQ?si=TRram_MY1nY5wJM4" target="_blank">10 minutos salvam
                             vidas</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=gzwF2BgtW-w">Vacinar é cuidar</a></li>
-                    <li><a href="./quiz.html">Quiz</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=gzwF2BgtW-w" target="_blank">Vacinar é cuidar</a></li>
+                    <li><a href="./public/quiz.html">Quiz</a></li>
                 </ul>
             </div>
             <div class="nav-footer">
                 <span>Dengue News</span>
                 <ul>
-                    <li><a href="./quem_somos.html">Quem Somos</a></li>
+                    <li><a href="./public/quem_somos.html">Quem Somos</a></li>
                     <li><a href="mailto:contato@denguenews.com.br">Fale Conosco</a></li>
-                    <li><a href="./newsletterhtml">Newsletter</a></li>
+                    <li><a href="javascript:void(0)" onclick="openPopup()">Newsletter</a></li>
                 </ul>
             </div>
             <div class="nav-footer">
                 <span>Legal</span>
                 <ul>
-                    <li><a href="./legal.html">Privacidade</a></li>
-                    <li><a href="./legal.html">Termos e Condições</a></li>
+                    <li><a href="./public/legal.html">Privacidade</a></li>
+                    <li><a href="./public/legal.html">Termos e Condições</a></li>
                 </ul>
             </div>
         </nav>
@@ -210,9 +214,9 @@
         <div class="dados-contato">
             <address>
                 <ul>
-                    <li><a href=""><img src="../img/social_media/facebook.png" width="30"></a></li>
-                    <li><a href=""><img src="../img/social_media/instagram.png" width="30"></a></li>
-                    <li><a href=""><img src="../img/social_media/twitter.png" width="30"></a></li>
+                    <li><a href="#"><img src="../img/social_media/facebook.png" width="30"></a></li>
+                    <li><a href="#"><img src="../img/social_media/instagram.png" width="30"></a></li>
+                    <li><a href="#"><img src="../img/social_media/twitter.png" width="30"></a></li>
                 </ul>
 
                 <a href="mailto:contato@denguenews.com"><strong>contato@denguenews.com.br</strong></a>
@@ -229,5 +233,6 @@
         </div>
 
     </footer>
+
 </body>
 </html>

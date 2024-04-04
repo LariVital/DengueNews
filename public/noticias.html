@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNews | Fique por dentro das últimas notícias!</title>
     <!-- font Poppins -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- folha de estilos css -->
     <link rel="stylesheet" href="../styles.css" />
+
 
 </head>
 
@@ -19,7 +21,7 @@
 
     <!--inicio do header-->
     <header class="header-topo">
-        <a class="logo-top" href="index.html">
+        <a class="logo-top" href="../index.html">
             <img src="../img/logo_longa_center.png" alt="logo do site">
         </a>
         <nav>
@@ -43,89 +45,80 @@
     </header>
 
     <!--início do conteúdo principal-->
-    <main>
-        <h1 class="page-title">Últimas notícias: situação da dengue, zika e chikungunha no Brasil
-
-        </h1>
-        <section class="main-container">
-            <div class="container-content">
-                <article class="news-article">
-                    <div class="image-container">
-                    
-                        <a href="https://www.estadao.com.br/saude/vacina-contra-a-dengue-e-solucao-de-longo-prazo/" target="_blank"><img width="300rem" src="../img/noticia-01.jpeg" alt="imagem vacinação" title="Vacina contrra a dengue é solução a longo prazo"></a>
-                    </div>
-                    
-                    <div class="one">
-                        <h2>Vacina contra dengue é solução de longo prazo</h2>
-                        <p>A vacinação contra a dengue é uma estratégia essencial para o controle a longo prazo dessa doença que afeta milhares de pessoas todos os anos. Através da imunização, é possível reduzir significativamente a incidência da dengue, protegendo a população e evitando surtos e epidemias. </p>
-                        <span><a href="https://www.estadao.com.br/saude/vacina-contra-a-dengue-e-solucao-de-longo-prazo/" target="_blank">Leia Sobre</a></span>
-
-                    </div>
-                </article>
-                <hr>
-                <div class="container-content">
-                    <article class="news-article">
-                        <div class="image-container">
-
-                            <a href="https://veja.abril.com.br/saude/em-menos-de-tres-meses-brasil-supera-casos-de-dengue-de-2023/" target="_blank"><img width="300rem" src="../img/noticia-02.webp" alt="Mosquito aedes aegypti" title="Em menos de três meses, Brasil supera casos de dengue de 2023"></a>
-                        </div>
-                        
-                        <div class="one">
-                            <h2>Em menos de três meses, Brasil supera casos de dengue de 2023</h2>
-                            <p>Antes de fechar os três primeiros meses de 2024, o número de casos de dengue no Brasil ultrapassou os registros de todo o ano de 2023, segundo atualização, do painel de arboviroses do Ministério da Saúde.</p>
-                            <span><a href="https://veja.abril.com.br/saude/em-menos-de-tres-meses-brasil-supera-casos-de-dengue-de-2023/" target="_blank">Leia Sobre</a></span>
-                        </div>
-                    </article>
+    <main class="main-noticias">
+        <h1>Últimas notícias: situação da dengue, chikungunya e zika no Brasil</h1>
+        <section class="bloco-noticias">
+            <article>
+                <figure>
+                    <a href="https://www.estadao.com.br/saude/vacina-contra-a-dengue-e-solucao-de-longo-prazo/"     target="_blank"><img width="300rem" src="../img/noticia-01.jpeg" alt="imagem vacinação"     title="Vacina contrra a dengue é solução a longo prazo"></a>
+                </figure>
+                <div class="one">
+                    <h2>Vacina contra dengue é solução de longo prazo</h2>
+                    <p>
+                        A vacinação contra a dengue é uma estratégia essencial para o controle a longo prazo dessa doença que afeta milhares de pessoas todos os anos. Através da imunização é possível reduzir significativamente a incidência da dengue, protegenda população e evitando surtos e epidemias.
+                    </p>
+                    <span><a class="button-news" href="https://www.estadao.com.br/  saudvacina-contra-a-dengue-e-solucao-de-longo-prazo/" target="_blank">Leia sobre</a><span>
                 </div>
-                
-        
-                <div class="container-content">
-                    <article class="news-article">
-                        <div class="image-container">
-
-                            <a href="https://g1.globo.com/bemestar/noticia/2015/12/veja-como-combater-o-aedes-aegypti-e-entenda-vacina-contra-dengue.html" target="_blank"><img width="300rem" src="../img/noticia-03.jpg" title="Veja como combater o Aedes aegypti"></a>
-                        </div>
-                        
-                        <div class="one">
-                            <h2>Veja como combater o Aedes aegypti</h2>
-                            <p>O Aedes aegypti transmite a dengue, chikungunya e zika vírus.<br>Com a temporada de chuvas se aproximando, é crucial estar preparado para combater a Dengue. 
-                            Descubra agora as medidas preventivas essenciais para proteger você e sua família contra esta doença transmitida por mosquitos. <br>De dicas simples a estratégias eficazes, saiba como eliminar criadouros, usar repelentes e manter-se informado sobre os sintomas.</p>
-                            <span><a href="https://g1.globo.com/bemestar/noticia/2015/12/veja-como-combater-o-aedes-aegypti-e-entenda-vacina-contra-dengue.html" target="_blank">Leia Sobre</a></span>
-                        </div>
-                    </article>
+            </article>
+            <hr>
+            <article>
+                <figure>
+                    <a href="https://veja.abril.com.br/saude/em-menos-de-tres-meses-brasil-supera-casos-de-dengue-de-2023/" target="_blank"><img width="300rem" src="../img/noticia-02.webp" alt="Mosquito aedes aegypti" title="Em menos de três meses, Brasil supera casos de dengue de 2023"></a>
+                </figure>
+                <div class="one">
+                    <h2>Em menos de três meses, Brasil supera casos de dengue de 2023</h2>
+                    <p>
+                        Antes de fechar os três primeiros meses de 2024, o número de casos de dengue no Brasil ultrapassou os registros de todo o ano de 2023, segundo atualização do painel de arboviroses do Ministério da Saúde.
+                    </p>
+                    <span><a href="https://veja.abril.com.br/saude/em-menos-de-tres-meses-brasil-supera-casos-de-dengue-de-2023/" target="_blank">Leia sobre</a></span>
                 </div>
-                
-                <div class="container-content">
-                    <article class="news-article">
-                        <div class="image-container">
-                            <a href="https://saude.abril.com.br/medicina/tecnologias-para-combate-a-dengue/#google_vignette" target="_blank"><img width="300rem" src="../img/noticia-04.jpeg" alt="Uso da tecnologia no combate a dengue" title="Uso da tecnologia no combate ao mosquito Aedes aegypti."></a>
-                        </div>
-                        
-                        <div class="one">
-                            <h2>Tecnologias inovadoras para combater a dengue</h2>
-                            <p>Drones, camisetas repelentes... diante de um vírus perigoso e de um mosquito altamente adaptado ao nosso meio, surgem formas modernas de prevenção  </p>
-                            <span><a href="https://saude.abril.com.br/medicina/tecnologias-para-combate-a-dengue/" target="_blank">Leia Sobre</a></span>
-                        </div>
-
-                    </article>
+            </article>
+            <hr>
+            <article>
+                <figure>
+                    <a href="https://g1.globo.com/bemestar/noticia/2015/12/veja-como-combater-o-aedes-aegypti-e-entenda-vacina-contra-dengue.html" target="_blank"><img width="300rem" src="../img/noticia-03.jpg" title="Veja como combater o Aedes aegypti"></a>
+                </figure>
+                <div class="one">
+                    <h2>Veja como combater o Aedes aegypti</h2>
+                    <p>
+                        O <i>Aedes aegypti</i> transmite a dengue, chikungunya e zika vírus. Com a temporada de chuvas se aproximando é crucial estar preparado para combater a Dengue.
+                    </p>
+                    <p>
+                        Descubra agora as medidas preventivas essenciais para proteger você e sua família contra esta doença transmitida por mosquitos. De dicas simples a estratégias eficazes, saiba como eliminar criadouros, usar repelentes e manter-se informado sobre os sintomas.
+                    </p>
+                    <span><a href="https://g1.globo.com/bemestar/noticia/2015/12/veja-como-combater-o-aedes-aegypti-e-entenda-vacina-contra-dengue.html" target="_blank">Leia sobre</a></span>
                 </div>
-                
-        
-                <div class= "container-content">
-                    <article class="news-article">
-                        
-                            <div class="image-container">
-                                <a href="https://g1.globo.com/saude/dengue/noticia/2024/03/20/alerta-para-o-mundo-como-dengue-no-brasil-virou-preocupacao-internacional.ghtml" target="_blank"><img width="300rem" src="../img/noticia-05.avif" alt="Preocupação internacional" title="Dengue no Brasil: preocupação internacional"></a>
-                            </div>
-                        
-                        <div class="one">
-                            <h2>Alerta para o mundo: como dengue no Brasil virou preocupação internacional</h2>
-                            <p>O número de casos de dengue em 2024 no país é recorde na série histórica oficial  e o total registrado (casos prováveis e confirmados) se aproxima dos 2 milhões em meados de março, segundo o Ministério da Saúde.<br>As reportagens em veículos estrangeiros discutem, principalmente, o que o avanço recorde de casos dengue no Brasil e em outros lugares significa para a saúde global nos próximos anos.</br> </p>
-                            <span><a href="https://g1.globo.com/saude/dengue/noticia/2024/03/20/alerta-para-o-mundo-como-dengue-no-brasil-virou-preocupacao-internacional.ghtml" target="_blank">Leia Sobre</a></span>
-
-                    </article>
+            </article>
+            <hr>
+            <article>
+                <figure>
+                    <a href="https://saude.abril.com.br/medicina/tecnologias-para-combate-a-dengue/#google_vignette" target="_blank"><img width="300rem" src="../img/noticia-04.jpeg" alt="Uso da tecnologia no combate a dengue" title="Uso da tecnologia no combate ao mosquito Aedes aegypti."></a>
+                </figure>        
+                <div class="one">
+                    <h2>Tecnologias inovadoras para combater a dengue</h2>
+                    <p>
+                        Drones, camisetas repelentes... diante de um vírus perigoso e de um mosquito altamente adaptado ao nosso meio, surgem formas modernas de prevenção.
+                    </p>
+                    <span><a href="https://saude.abril.com.br/medicintecnologias-para-combate-a-dengue/" target="_blank">Leia sobre</a></span>
                 </div>
-                
+            </article>
+            <hr>
+            <article>
+                <figure>
+                    <a href="https://g1.globo.com/saude/dengue/noticia/2024/03/20/alerta-para-o-mundo-como-dengue-no-brasil-virou-preocupacao-internacional.ghtml" target="_blank"><img width="300rem" src="../img/noticia-05.avif" alt="Preocupação internacional" title="Dengue no Brasil: preocupação internacional"></a>
+                </figure>
+                <div class="one">
+                    <h2>Alerta para o mundo: como dengue no Brasil virou preocupação internacional</h2>
+                    <p>
+                        O número de casos de dengue em 2024 no país é recorde na série histórica oficial — e o total registrado (casos prováveis e confirmados) se aproxima dos milhões em meados de março, segundo o Ministério da Saúde.
+                    </p>
+                    <p>
+                        As reportagens e veículos estrangeiros discutem, principalmente, o que o avanço recorde de casos dengue no Brasil e em outros lugares significa para a saúde global nos próximos anos.
+                    </p>
+                    <span><a href="https://g1.globo.com/saude/dengue/noticia/2024/03/2alerta-para-o-mundo-como-dengue-no-brasil-virou-preocupacao-internacional.ghtml" target="_blank">Leia sobre</a></span>
+                </div>
+            </article>
+            <hr>       
         </section>
     </main>
 
@@ -152,6 +145,7 @@
                             vidas</a></li>
                     <li><a href="https://www.youtube.com/watch?v=gzwF2BgtW-w">Vacinar é cuidar</a></li>
                     <li><a href="./quiz.html">Quiz</a></li>
+                    <li><a href="./faq.html">Perguntas Frequentes</a></li>
                 </ul>
             </div>
             <div class="nav-footer">
@@ -159,7 +153,7 @@
                 <ul>
                     <li><a href="./quem_somos.html">Quem Somos</a></li>
                     <li><a href="mailto:contato@denguenews.com.br">Fale Conosco</a></li>
-                    <li><a href="./newsletterhtml">Newsletter</a></li>
+                    <li><a href="javascript:void(0)" onclick="openPopup()">Newsletter</a></li>
                 </ul>
             </div>
             <div class="nav-footer">
@@ -193,9 +187,6 @@
         </div>
 
     </footer>
-
-
-
 
 
 </body>

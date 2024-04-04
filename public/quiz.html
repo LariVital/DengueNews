@@ -5,12 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DNews | Teste seus conhecimentos!</title>
-    <!-- font Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- folha de estilos css -->
-    <link rel="stylesheet" href="../styles.css" />
+  <!-- font Poppins -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1800;1,900&display=swap,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- folha de estilos css -->
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Javascript -->
+  <script src="./script.js" defer></script>
 
 </head>
 
@@ -19,7 +22,7 @@
 
     <!--inicio do header-->
     <header class="header-topo">
-        <a class="logo-top" href="index.html">
+        <a class="logo-top" href="../index.html">
             <img src="../img/logo_longa_center.png" alt="logo do site">
         </a>
         <nav>
@@ -164,6 +167,7 @@
                         vidas</a></li>
                 <li><a href="https://www.youtube.com/watch?v=gzwF2BgtW-w">Vacinar é cuidar</a></li>
                 <li><a href="./quiz.html">Quiz</a></li>
+                <li><a href="./faq.html">Perguntas Frequentes</a></li>
             </ul>
         </div>
         <div class="nav-footer">
@@ -171,7 +175,7 @@
             <ul>
                 <li><a href="./quem_somos.html">Quem Somos</a></li>
                 <li><a href="mailto:contato@denguenews.com.br">Fale Conosco</a></li>
-                <li><a href="./newsletterhtml">Newsletter</a></li>
+                <li><a href="javascript:void(0)" onclick="openPopup()">Newsletter</a></li>
             </ul>
         </div>
         <div class="nav-footer">
@@ -205,7 +209,6 @@
     </div>
 
 </footer>
-
 
 
 </body>
