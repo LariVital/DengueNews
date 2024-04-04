@@ -251,10 +251,13 @@ footer strong {
 .main-quemsomos {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
     margin: 0 auto;
     width: 900px;
+}
+
+.quem-title {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -614,4 +617,17 @@ footer strong {
 
 .btn.btn-link {
     text-align: left;
+}
+
+.faq-title {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 20px;
+}
+
+/* sobre a dengue */
+.main-sobre {
+    width: 900px;
+    margin: 0 auto;
 }
