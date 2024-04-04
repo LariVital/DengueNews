@@ -251,8 +251,8 @@ footer strong {
 .main-quemsomos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     margin: 0 auto;
     width: 900px;
 }
@@ -342,8 +342,6 @@ footer strong {
     padding: 25px;
 }
 
-
-
 .negocio-cards {
     display: flex;
     justify-content: space-between;
@@ -418,7 +416,8 @@ footer strong {
     display: flex;
     justify-content: space-evenly;
     background-image: linear-gradient(360deg, #FFF, #fff2cc);
-    margin-bottom: 5px;
+    margin-b
+    ottom: 5px;
 }
 .members figure {
     align-items: center;
@@ -428,13 +427,11 @@ footer strong {
     display: flex;
     justify-content: center;
     font-weight: 500;
-    
 }
 
 .foto-perfil {
     display: flex;
     justify-content: center;
-
 }
 
 .foto-perfil img {
@@ -448,7 +445,7 @@ footer strong {
     
 }
 
-.redes-prof img:hover{
+.redes-prof img:hover {
     transform:scale(1.3);
     transition: 0.3s;
 }
