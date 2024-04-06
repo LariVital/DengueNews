@@ -139,8 +139,12 @@ main {
 
 /* footer */
 footer {
-    padding: 20px 4px;
+    padding: 20px 4px 0px 4px;
     background-color: #f8f9fa ;
+}
+
+footer hr {
+    margin: 0px;
 }
 
 
@@ -175,7 +179,8 @@ footer span {
 }
 
 address {
-    padding-bottom: 8px;
+    padding-bottom: 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .dados-contato{
@@ -242,6 +247,7 @@ footer strong {
 
 .copyright p {
     padding: 8px;
+    margin-bottom: 0px;
 }
 
 /* quem somos */
