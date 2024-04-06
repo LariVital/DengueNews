@@ -157,7 +157,22 @@ section.carousel {
     text-align: center;
     margin-top: 3%;
 }
-
+.second-title{
+    text-align: center;
+    margin-top: 1%;
+}
+.cards-home{
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+}
+.card-first{
+    
+}
+.img-cards{
+    width: 10rem;
+    height: 10rem;
+}
 /* formulário de pesquisa */
 form.busca {
     display: flex;
