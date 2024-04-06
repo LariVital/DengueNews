@@ -23,14 +23,12 @@ h2 {
 
 h3 {
     font-size: 1.2rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 6px;
 }
 
 h4 {
     font-size: 1rem;
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     margin-bottom: 4px;
 }
@@ -323,12 +321,18 @@ footer strong {
 .surgimento h2 {
     align-self: center;
     margin-bottom: 10px;
+    margin-top: 25px;
 }
 
 .surgimento ol {
     padding: 8px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
 }
 
+.surgimento li {
+    padding-bottom: 4px;
+}
 .surgimento h2 {
     justify-self: center;
 }
@@ -384,6 +388,7 @@ footer strong {
 }
 
 .negocio-cards h4 {
+    font-weight: bold;
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -428,7 +433,7 @@ footer strong {
 .members h3 {
     display: flex;
     justify-content: center;
-    font-weight: 500;
+
 }
 
 .foto-perfil {
