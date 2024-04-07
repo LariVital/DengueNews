@@ -6,3 +6,18 @@ function openPopup() {
         window.open('./newsletter.html', 'popup', 'width=800,height=400');
     }
 }
+
+//Carousel página inicial
+var radio = document.querySelector('.manual-btn')
+var cont = 1
+document.getElementById('radio1').checked = true
+setInterval(() => {
+    proximaImg()
+}, 5000)
+function proximaImg(){
+    cont++
+    if(cont > 3){
+        cont = 1
+    }
+document.getElementById('radio'+cont).checked = true    
+}
