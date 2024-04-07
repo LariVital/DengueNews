@@ -161,14 +161,61 @@ section.carousel {
     text-align: center;
     margin-top: 1%;
 }
+.hr-carousel{
+    margin-top: 1%;
+}
+.block-cards{
+    background-color: #ffffff;
+    margin-top: 1%;
+}
 .cards-home{
     display: flex;
     justify-content: center;
-    gap: 1rem; 
+    text-align: center;
+    gap: 2rem; 
+}
+.card-square{
+    display: flex;
+    flex-direction: column;
 }
 .img-cards{
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    height: 13rem;
+    border: 1px solid #666666;
+    border-bottom: none;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+.card-square p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #666666;
+    height: 3rem;
+    background-color: #FFC107;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+.third-title{
+    text-align: center;
+    margin-top: 1%;
+}
+.block-big-cards{
+    background-color: #F8F9FA;
+    width: 100%;
+    height: 30rem;
+}
+.big-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.big-cards-first{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+
 }
 /* formulário de pesquisa */
 form.busca {
@@ -191,7 +238,7 @@ button {
   button:hover {
     background-color:#FFC107;
     color: #ffffff;
-  }
+    }
 
 input {
     border-width: 1px 1px 1px 1px;
