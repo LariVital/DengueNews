@@ -11,9 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1800;1,900&display=swap,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <!-- folha de estilos css -->
-  <link rel="stylesheet" href="../styles.css" />
+  <!-- <link rel="stylesheet" href="../styles.css" /> -->
+  <link rel="stylesheet" href="../styleQuiz.css">
   <!-- Javascript -->
-  <script src="./script.js" defer></script>
+  <!-- <script src="./script.js" defer></script> -->
 
 </head>
 
@@ -46,106 +47,77 @@
     </header>
 
   <!--inicio do conteúdo principal-->
-  <main>
-    <h1>Teste seus Conhecimentos</h1>
-    <div id="quiz">
-      <div class="quizItem">
-        <h3>Pergunta 01: Qual é o agente transmissor da dengue?</h3>
-        <input type="radio" name="q1" value="A"><label for="q1a">A) Aedes aegypti</label><br>
-        <input type="radio" name="q1" value="B"><label for="q1b">B) Culex quinquefasciatus</label><br>
-        <input type="radio" name="q1" value="C"><label for="q1c">C) Anopheles gambiae</label><br>
-        <input type="radio" name="q1" value="D"><label for="q1d">D) Ixodes ricinus</label>
-        <!-- Resposta correta: A -->
-      </div>
-      <div class="quizItem">
-        <h3>Pergunta 02: Qual é o principal sintoma da dengue?</h3>
-        <input type="radio" name="q2" value="A"><label for="q2a">A) Dor de cabeça</label><br>
-        <input type="radio" name="q2" value="B"><label for="q2b">B) Febre alta</label><br>
-        <input type="radio" name="q2" value="C"><label for="q2c">C) Erupção cutânea</label><br>
-        <input type="radio" name="q2" value="D"><label for="q2d">D) Tosse persistente</label>
-        <!-- Resposta correta: B -->
-      </div>
-      <div class="quizItem">
-        <h3>Pergunta 03: Qual é a melhor maneira de prevenir a dengue?</h3>
-        <input type="radio" name="q3" value="A"><label for="q3a">A) Beber água de coco</label><br>
-        <input type="radio" name="q3" value="B"><label for="q3b">B) Usar repelente</label><br>
-        <input type="radio" name="q3" value="C"><label for="q3c">C) Tomar banho de sol</label><br>
-        <input type="radio" name="q3" value="D"><label for="q3d">D) Consumir vitamina C</label>
-        <!-- Resposta correta: B -->
-      </div>
-      <div class="quizItem">
-        <h3>Pergunta 04: Qual é o período de incubação da dengue?</h3>
-        <input type="radio" name="q4" value="A"><label for="q4a">A) 24 horas</label><br>
-        <input type="radio" name="q4" value="B"><label for="q4b">B) 7 dias</label><br>
-        <input type="radio" name="q4" value="C"><label for="q4c">C) 14 dias</label><br>
-        <input type="radio" name="q4" value="D"><label for="q4d">D) 21 dias</label>
-        <!-- Resposta correta: C -->
-      </div>
-      <div class="quizItem">
-        <h3>Pergunta 05: Qual é o nome do exame usado para diagnosticar a dengue?</h3>
-        <input type="radio" name="q5" value="A"><label for="q5a">A) Hemograma completo</label><br>
-        <input type="radio" name="q5" value="B"><label for="q5b">B) Tomografia computadorizada</label><br>
-        <input type="radio" name="q5" value="C"><label for="q5c">C) Teste de gravidez</label><br>
-        <input type="radio" name="q5" value="D"><label for="q5d">D) ELISA</label>
-        <!-- Resposta correta: D -->
-      </div>
-      <div class="quizItem">
-        <h3>Pergunta 06: Qual é a complicação mais grave da dengue?</h3>
-        <input type="radio" name="q6" value="A"><label for="q6a">A) Diarreia</label><br>
-        <input type="radio" name="q6" value="B"><label for="q6b">B) Insuficiência renal</label><br>
-        <input type="radio" name="q6" value="C"><label for="q6c">C) Dor de garganta</label><br>
-        <input type="radio" name="q6" value="D"><label for="q6d">D) Dermatite</label>
-        <!-- Resposta correta: B -->
-      </div>
-      <div class="quizItem">
-        <h3> Pergunta 07: Qual é o tratamento recomendado para a dengue?</h3>
-        <input type="radio" name="q7" value="A"><label for="q7a">A) Antibióticos</label><br>
-        <input type="radio" name="q7" value="B"><label for="q7b">B) Anti-histamínicos</label><br>
-        <input type="radio" name="q7" value="C"><label for="q7c">C) Hidratação e Repouso</label><br>
-        <input type="radio" name="q7" value="D"><label for="q7d">D) Corticosteroides</label>
-      </div>
-      <!-- Resposta correta: C -->
+  <main class="main-quiz">
+    <div class="container">
+        <section class="quiz-section">
+            <div class="quiz-box">
+                <h1>Dengue<span class="highlight">N</span>ews Quiz</h1>
+                <div class="quiz-header">
+                    <span class="header-score">Questões: 0 / 10</span>
+                </div>
 
-      <div class="quizItem">
-        <h3>Pergunta 08: Quais são os quatro tipos de vírus da dengue?</h3>
-        <input type="radio" name="q8" value="A"><label for="q8a">A) DENV-1, DENV-2, DENV-3, DENV-4</label><br>
-        <input type="radio" name="q8" value="B"><label for="q8b">B) DENV-A, DENV-B, DENV-C, DENV-D</label><br>
-        <input type="radio" name="q8" value="C"><label for="q8c">C) DENV-alpha, DENV-beta, DENV-gamma,
-          DENV-delta</label><br>
-        <input type="radio" name="q8" value="D"><label for="q8d">D) DENV-I, DENV-II, DENV-III, DENV-IV</label>
-      </div>
-      <!-- Resposta correta: A -->
+                <h2 class="questions-text">Pergunta 01: Qual é o agente transmissor da dengue?</h2>
 
-      <div class="quizItem">
-        <h3> Pergunta 09: Qual é o nome do processo de transmissão do vírus da dengue de uma pessoa para outra através
-          do mosquito?</h3>
-        <input type="radio" name="q9" value="A"><label for="q9a">A) Transmissão vertical</label><br>
-        <input type="radio" name="q9" value="B"><label for="q9b">B) Transmissão sexual</label><br>
-        <input type="radio" name="q9" value="C"><label for="q9c">C) Transmissão vetorial</label><br>
-        <input type="radio" name="q9" value="D"><label for="q9d">D) Transmissão oral</label>
-      </div>
-      <!-- Resposta correta: A -->
+                <div class="option-list">
+                    <div class="option">
+                        <span>A. Aedes aegypti</span>
+                    </div>
+                    <div class="option">
+                        <span>B. Culex quinquefasciatus</span>
+                    </div>
+                    <div class="option">
+                        <span>C. Anopheles gambiae</span>
+                    </div>
+                    <div class="option">
+                        <span>D. Ixodes ricinus</span>
+                    </div>
+                </div>
 
-      <div class="quizItem">
-        <h3>Pergunta 10: Qual é o período de vida aproximado de um mosquito Aedes aegypti?</h3>
-        <input type="radio" name="q10" value="A"><label for="q10a">A) 1 semana</label><br>
-        <input type="radio" name="q10" value="B"><label for="q10b">B) 1 mês</label><br>
-        <input type="radio" name="q10" value="C"><label for="q10c">C) 3 semanas</label><br>
-        <input type="radio" name="q10" value="D"><label for="q10d">D) 3 meses</label>
-      </div>
-      <!-- Resposta correta: D -->
-      <div id="acertos">
-        <strong>Acertos</strong>
-        <span>0 de 10</span>
-      </div>
-
-
+                <div class="quiz-footer">
+                    <span class="question-total"> 1  de 10 Questões</span>
+                    <button class="next-btn">Próximo</button>
+                </div>
+           </div>
+           
+           <div class="result-box">
+                <h2>Resultado Quiz Dengue<span class="highlight">N</span>ews</h2>
+                <div class="percentage-container">
+                    <div class="circular-progress">
+                        <span class="progress-value">0%</span>
+                    </div>
+                    
+                <span class="score-text"> Seu Score 0 de 10</span>
+                </div>
+                <div class="buttons">
+                    <button class="tryAgain-btn">Tente Novamente</button>
+                    <button class="goHome-btn">Home</button>
+                    </div>
+           </div>
+        </section>
+        <section class="Quiz">
+            <div class="Quiz-content">
+                <h1>Dengue<span class="highlight"><strong>N</strong></span>ews Quiz</h1>
+                
+                <p>Mostre que você está por dentro de tudo sobre a dengue! Teste seus conhecimentos com o nosso quiz e descubra se você está pronto para combater o mosquito <i>Aedes aegyptit</i>.</p>
+                <button class="start-btn" type="button">Start Quiz</button>
+            </div>
+        </section>
+    </div>
   </main>
 
-
+  <div class="popup-info">
+    <h2>Quiz Guide</h2>
+   <span class="info">1. O quiz contém 10 perguntas.</span>
+   <span class="info">2. As respostas estão em formato de múltipla escolha (A, B, C, D)</span>
+   <span class="info">3. Apenas uma resposta é a correta.</span>
+   
+   <div class="btn-group">
+    <button class="info-btn exit-btn">Sair do Quiz</button>
+    <a href="#" class="info-btn continue-btn">Continue</a>
+   </div>
 
   <!--inicio do footer-->
-  <footer>
+  <!-- <footer>
 
     <nav>
         <div class="footer-logo">
@@ -208,9 +180,10 @@
 
     </div>
 
-</footer>
+</footer> -->
 
-
+  <script src="questions.js"></script>
+  <script src="scriptquiz.js"></script>
 </body>
 
 </html>
