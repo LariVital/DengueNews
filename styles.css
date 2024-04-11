@@ -793,3 +793,25 @@ footer strong {
     margin: 0 auto;
 }
 
+/* estilos dinâmicos validação formulários */
+input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    color: #206620;
+  }
+  
+  .error-text {
+    display: none;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #992020;
+  }
+  
+  .visible {
+    display: block;
+  }

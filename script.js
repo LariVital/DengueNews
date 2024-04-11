@@ -1,3 +1,4 @@
+// NEWSLETTER
 // abre a página newsletter como pop-up
 function openPopup() {
     if (window.location.pathname === '/index.html') {
