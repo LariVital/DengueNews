@@ -530,8 +530,9 @@ footer strong {
 .members {
     display: flex;
     justify-content: space-evenly;
-    background-image: linear-gradient(180deg, #FFF, #fff2cc);
+    background-image: linear-gradient(180deg, #fff2cc, #00BCD4);
     padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 #nosso-time {
@@ -555,7 +556,7 @@ footer strong {
 #set-members2 {
     display: flex;
     justify-content: space-evenly;
-    background-image: linear-gradient(360deg, #FFF, #fff2cc);
+    background-image: linear-gradient(360deg, #FFF, #00BCD4);
     margin-bottom: 5px;
 }
 .members figure {
