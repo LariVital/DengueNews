@@ -80,7 +80,7 @@ hr {
 
 
 .header-topo nav a:hover {
-    color: #000000
+    color: #000000;
 }
 
 /* logo superior */
@@ -699,8 +699,8 @@ footer strong {
 
 
 .tempo-publicacao {
-    color: #888; /* Cor cinza para o texto do tempo de publicação */
-    font-size: 0.9em; /* Tamanho de fonte menor para o texto do tempo de publicação */
+    color: #888; 
+    font-size: 0.9em; 
 }
 
 

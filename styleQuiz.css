@@ -14,15 +14,9 @@ body {
     background-color: #f8f9fa;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 10% ;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
+    padding: 0px 40px;
+    margin-bottom: 10px;
 }
-
 
 .header-topo nav ul li {
     margin-left: 35px;
@@ -37,17 +31,16 @@ body {
 
 }
 
+
 .header-topo nav a {
     font-family: roboto;
-    font-size: 18px;
     text-decoration: none;
-    color: #000000a6;
-    transition: .3s;
+    color: #000000a6
 }
 
 
 .header-topo nav a:hover {
-    color: #000000
+    color: #000000;
 }
 
 /* logo superior */
@@ -62,6 +55,8 @@ body {
     transform: scale(1.1);
     transition: 0.3s;
 }
+
+
 /* formulário de pesquisa */
 form.busca {
     display: flex;
