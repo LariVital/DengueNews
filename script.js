@@ -1,6 +1,5 @@
 // NEWSLETTER
 // abre a página newsletter como pop-up
-
 let newsPopUp = document.getElementsByClassName("news-pop")[0];
 console.log(newsPopUp)
 
@@ -11,6 +10,7 @@ newsPopUp.addEventListener("click", () => {
         window.open('./newsletter.html', 'popup', 'width=800,height=400');
     }
 })
+
 
 //Carousel página inicial
 var radio = document.querySelector('.manual-btn')

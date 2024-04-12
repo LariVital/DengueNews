@@ -12,10 +12,11 @@
     <main>
         <div class="container" id="mailbox">
             <form class="form-news">
-                <label for="email">Cadastre-se para receber nosso boletim semanal!</label>
+                <label for="news-email">Cadastre-se para receber nosso boletim semanal!</label>
                 <div id="digite-email">
-                    <input type="text" id="email" class="text-error" name="email" placeholder="Digite seu e-mail">
-                    <button type="submit">Cadastrar</button>
+                    <input type="email" id="news-email" name="news-email" placeholder="Digite seu e-mail">
+                    <p class="error-text">*E-mail inválido</p>
+                    <button id="news-botao" type="submit">Cadastrar</button>
                 </div>
             </form>
         </div>
