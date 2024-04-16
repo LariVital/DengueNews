@@ -27,11 +27,6 @@ h3 {
     margin-bottom: 6px;
 }
 
-h4 {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 4px;
-}
 
 ul li {
     margin-left: 30px;
@@ -570,8 +565,7 @@ footer strong {
     display: flex;
     justify-content: space-evenly;
     background-image: linear-gradient(180deg, #fff2cc, #00BCD4);
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding: 15px;
 }
 
 #nosso-time {
@@ -583,24 +577,27 @@ footer strong {
 .members article {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 250px;
-    padding: 25px 25px 10px 25px;
+    justify-content: justify-between;
+    width: 22%;
+    padding: 15px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.6);
     border: 1px solid #fff;
-    border-radius: 20px;
 }
 
-#set-members2 {
+/* #set-members2 {
     display: flex;
     justify-content: space-evenly;
     background-image: linear-gradient(360deg, #FFF, #00BCD4);
     margin-bottom: 5px;
-}
-.members figure {
+} */
+
+/* .members figure {
     align-items: center;
-}
+    width: 100%;
+    padding: 0;
+    margin: 0;
+} */
 
 .members h3 {
     display: flex;
@@ -611,13 +608,38 @@ footer strong {
 .foto-perfil {
     display: flex;
     justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .foto-perfil img {
-    width: 200px;
+    width: 100%;
     align-items: center;
     margin-bottom: 10px;
+    padding: 0;
+    margin: 0;
 }
+
+.box-membro-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%
+}
+
+
+.nome-membro {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.descricao-membro > p, h4 {
+    font-size: 0.9rem;
+
+}
+
 
 .redes-prof img {
     margin-top: 15px;
@@ -628,6 +650,7 @@ footer strong {
     transform:scale(1.3);
     transition: 0.3s;
 }
+
 
 
 /* Página Notícias */
