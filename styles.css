@@ -55,7 +55,7 @@ hr {
     width: 100%;
     left: 0;
     top: 0;
-    position: fixed;
+    /* position: fixed; */
 
    
 }
@@ -237,13 +237,35 @@ section.carousel {
 }
 /* Missão */
 .section-home {
-    width: 80%;
-    height: 30rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
 .section-div {
+    padding: 25px;
+    width: 50%;
+    background-color: transparent;
+    margin: 15px 0px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.section-home div:first-of-type {
+    margin-right: 20px;
+}
+.section-home div:last-of-type {
+    margin-left: 20px;
+}
+.section-home img {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+}
+.img-mission img:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
 }
 /* Aside home, informações para cadastro */
 .aside-home-one{
@@ -304,7 +326,7 @@ main {
 footer {
     padding: 10px 4px;
     background-color: #f8f9fa ;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     left: 0;
     width: 100%;
