@@ -1,4 +1,4 @@
-body {
+main {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -6,6 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #0097a7;
+    margin: 0;
   }
   .title{
     display: flex;
@@ -19,7 +20,7 @@ body {
     font-weight: 700;
     background: linear-gradient(45deg, transparent, #f0b541, transparent);
     border-radius: 6px;
-    margin: 0;
+    margin-top: 60px;
     padding: 0;
   }
  

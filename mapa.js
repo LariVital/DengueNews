@@ -16,8 +16,10 @@ const description = document.querySelector(".tooltip");
 
 				//pega a sigla do estado selecionado
 				const estadoSelecionado = event.target.id;
+				console.log(estadoSelecionado)
+			
 				// atribui ao link a ser direcionado
-				const link = `https://www.google.com.br/search?q=${estadoSelecionado}`;
+				const link = `https://info.dengue.mat.br/alerta/${estadoSelecionado}/dengue`;
 
 				// alert(estadoSelecionado);			
 				// Abre o link em uma nova aba
