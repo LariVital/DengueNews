@@ -324,7 +324,7 @@ main {
 
 /* footer */
 footer {
-    padding: 10px 4px;
+    padding: 10px 4px 0px 10px;
     background-color: #f8f9fa ;
     /* position: fixed; */
     bottom: 0;
@@ -588,6 +588,7 @@ footer strong {
     justify-content: space-evenly;
     background-image: linear-gradient(180deg, #fff2cc, #00BCD4);
     padding: 15px;
+    margin-bottom: 20px;
 }
 
 #nosso-time {
