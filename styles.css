@@ -334,6 +334,19 @@ footer {
     
 }
 
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-logo img {
+    height: 120px;
+    width: auto;
+}
+
+
 .footer-logo a img:hover{
     transform:scale(1.1);
     transition: 0.3s;
@@ -363,13 +376,6 @@ footer ul li {
     margin: 0px;
 }
 
-
-footer nav img {
-    height: 150px;
-    width: auto;
-  
-
-}
 
 footer span {
     font-weight: 600;
