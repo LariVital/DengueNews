@@ -127,59 +127,57 @@
             </div>
         </section>
          <!--Quarta seção missão Brasil ODS-->
-        <section class="section-home">
-            <h3>Juntos por um Brasil melhor</h3>
-            <div class="section-div">
-                <img class="img-mission" width="35rem" src="./img/icone_missao.png" alt="missão">
-                <h5>Missão</h5>
-                <p>Apoiar o Brasil no cumprimento da Agenda 2030 quanto ao Objetivo de Desenvolvimento Sustentável #3.</p>
-            </div>
-            <div class="section-div" >
-                <img class="img-mission" width="35rem" src="./img/icone_visao.png" alt="visão">
-                <h5>Visão</h5>
-                <p>Ser referência de informações confiáveis sobre arboviroses transmitidas pelo aedes aegypti.</p>
-            </div>
-            <div class="section-div" >
-                <img class="img-mission" width="35rem" src="./img/icone_valores.png" alt="valores">
-                <h5>Valores</h5>
-                <p>ODS #3 Saúde e Bem-Estar - assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades.</p>
+        <section>
+            <h3 class="ods-home">Juntos por um Brasil melhor</h3>
+            <div class="section-home">
+                <div class="section-div">
+                    <img class="img-mission" width="35rem" src="./img/icone_missao.png" alt="missão">
+                    <h5>Missão</h5>
+                    <p>Apoiar o Brasil no cumprimento da Agenda 2030 quanto ao Objetivo de Desenvolvimento Sustentável
+                        #3.</p>
+                </div>
+                <div class="section-div">
+                    <img class="img-mission" width="35rem" src="./img/icone_visao.png" alt="visão">
+                    <h5>Visão</h5>
+                    <p>Ser referência de informações confiáveis sobre arboviroses transmitidas pelo aedes aegypti.</p>
+                </div>
+                <div class="section-div">
+                    <img class="img-mission" width="35rem" src="./img/icone_valores.png" alt="valores">
+                    <h5>Valores</h5>
+                    <p>ODS #3 Saúde e Bem-Estar - assegurar uma vida saudável e promover o bem-estar para todos, em
+                        todas as idades.</p>
+                </div>
             </div>
         </section>
         <!--Aside para cadastro de usuários-->
-        <aside class="aside-home-one">
-            <div class="aside-home">
-                <h2>Cadastre-se para receber nosso boletim semanal!</h2>
-                <form>
-                    <input type="email" placeholder="Digite seu e-mail">
-                    <button type="submit">Enviar</button>
-                </form>
-        </div>
-        </aside>
+        <section class="button-cadastro-modal">
+                <div class="aside-home">
+                    <h4>Cadastre-se para receber nosso boletim semanal!</h4>
+                    <a href="./public/newsletter.html" target="_blank"><button id="button-aside-home" type="submit">Cadastrar</button></a>
+                </div>
+                <div class="aside-home-two">
+                    <h4>Se preferir, Fale Conosco!</h4>
+                    <button id="openModalHome">Fale Conosco</button>
+                </div>
+        </section>
         <!--Fale conosco tópico junto ao cadastro de usuários-->
-        <div id="modalFaleConosco" class="modal">
-            <h2>Fale Conosco</h2>
-            <form>
-              <label for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" required><br>
-              <label for="telefone">Telefone:</label>
-              <input type="tel" id="telefone" name="telefone" required><br>
-              <label for="email">E-mail:</label>
-              <input type="email" id="email" name="email" required><br>
-              <label for="mensagem">Mensagem:</label>
-              <textarea id="mensagem" name="mensagem" required></textarea><br>
-              <button type="submit">Enviar</button>
-            </form>
-            <div class="dados-contato">
-                <address>
-                    <ul>
-                        <li><a href=""><img src="../img/social_media/facebook.png" width="30"></a></li>
-                        <li><a href=""><img src="../img/social_media/instagram.png" width="30"></a></li>
-                        <li><a href=""><img src="../img/social_media/twitter.png" width="30"></a></li>
-                    </ul>
-                    <a href="mailto:contato@denguenews.com"><strong>contato@denguenews.com.br</strong></a>
-                </address>
+        <div id="modalFaleConosco" class="modal-home">
+            <div class="modal-content-home">
+                <span class="close">&times</span>
+                <h2>Fale Conosco</h2>
+                <form class="form-home">
+                    <label id="label-home" for="nome">Nome:</label>
+                    <input id="input-home" type="text" id="nome" name="nome" required><br>
+                    <label id="label-home" for="telefone">Telefone:</label>
+                    <input id="input-home" type="tel" id="telefone" name="telefone" required><br>
+                    <label id="label-home" for="email">E-mail:</label>
+                    <input id="input-home" type="email" id="email" name="email" required><br>
+                    <label id="label-home" for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea><br>
+                    <button id="button-fale-home" type="submit">Enviar</button>
+                </form>
             </div>
-          </div>
+        </div>
     </main>
     <!--inicio do footer-->
     <footer>
@@ -211,7 +209,7 @@
                 <span>Dengue News</span>
                 <ul>
                     <li><a href="./public/quem_somos.html">Quem Somos</a></li>
-                    <li><a href="mailto:contato@denguenews.com.br">Fale Conosco</a></li>
+                    <li><a href="openModalHome">Fale Conosco</a></li>
                     <li><a href="#" class="news-pop">Newsletter</a></li>
                 </ul>
             </div>
