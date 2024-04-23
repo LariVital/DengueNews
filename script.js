@@ -52,5 +52,21 @@ function proximaImg(){
     }
 document.getElementById('radio'+cont).checked = true    
 }
+//Modal Página inicial 
+const openModalBtn = document.getElementById('openModalHome');
+const modal = document.getElementById('modalFaleConosco');
+const closeModalBtn = document.getElementsByClassName('close')[0];
 
+openModalHome.addEventListener('click', () => {
+    modal.style.display = 'block';
+});
 
+closeModalBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
