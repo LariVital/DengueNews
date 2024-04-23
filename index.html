@@ -14,7 +14,7 @@
     <!-- Javascript -->
     <script src="script.js" defer></script>
 </head>
-<body>
+<body class="body-main">
     <!--inicio do header-->
     <header class="header-topo">
         <a class="logo-top" href="./index.html">
@@ -38,7 +38,7 @@
         </nav>
     </header>
     <!--início do conteúdo principal-->
-    <main>
+    <main class="main-home">
         <!--Conteúdo principal Carousel-->
         <section class="carousel">
             <div class="carousel-container">
@@ -77,19 +77,19 @@
                 <div class="cards-home">
                     <div class="card-square">
                         <img class="img-cards" src="./img/dengue-news-home-1.jpg" alt="Educação e conscientização">
-                        <p>Educação e conscientização</p>
+                        <p>Educação e<br />conscientização</p>
                     </div>
                     <div class="card-square">
                         <img class="img-cards" src="./img/dengue-news-home-3.jpg" alt="Exterminando o mosquito">
-                        <p>Exterminar o mosquito</p>
+                        <p>Exterminar o<br />mosquito</p>
                     </div>
                     <div class="card-square">
                         <img class="img-cards" src="./img/dengue-news-home-2.jpg" alt="Não deixar água parada">
-                        <p>Não deixar água parada</p>
+                        <p>Não deixar<br />água parada</p>
                     </div>
                     <div class="card-square">
                         <img class="img-cards" src="./img/dengue-news-home-4.jpg" alt="Aderir à campanha vacinal">
-                        <p>Aderir à campanha vacinal</p>
+                        <p>Aderir à<br />campanha vacinal</p>
                     </div>
                     <div class="card-square">
                         <img class="img-cards" src="./img/dengue-news-home-5.png" alt="Permanecer alerta">
@@ -106,22 +106,23 @@
                 </div>
                 <div class="big-cards">
                     <div class="big-cards-home">
-                        <img id="img-big-cards" src="./img/dengue-news-home-9.png" alt="Salvar vidas">
+                        <a href="https://youtu.be/8T6bmozcibQ?si=TRram_MY1nY5wJM4" target="_blank"><img id="img-big-cards" src="./img/dengue-news-home-9.png" alt="Salvar vidas"></a>
                         <h5>10 minutos Salvam Vidas</h5>
                         <p>A dengue é uma doença transmitida por mosquitos que se tornou uma preocupação global de saúde pública. Diante de uma onda de casos de dengue, é crucial agir rapidamente para prevenir a propagação da doença e salvar vidas. Cada minuto conta, e ações simples podem fazer uma grande diferença.</p>
-                        <button class="button-big-cards">Participar</button>
+                        <span><a class="button-big-cards" href="https://youtu.be/8T6bmozcibQ?si=TRram_MY1nY5wJM4" target="_blank">Participar</a></span>
+
                     </div>
                     <div class="big-cards-home">
-                        <img id="img-big-cards" src="./img/dengue-news-home-8.png" alt="Vacinar é cuidar">
+                        <a href="https://www.youtube.com/watch?v=gzwF2BgtW-w" target="_blank"><img id="img-big-cards" src="./img/dengue-news-home-8.png" alt="Vacinar é cuidar"></a>
                         <h5>Vacinar é cuidar</h5>
                         <p>A vacinação é uma das ferramentas mais poderosas no combate à dengue e desempenha um papel crucial na proteção individual e coletiva contra a doença. Entender que "Vacinar é cuidar" é fundamental para promover a saúde pública e reduzir os impactos da dengue em comunidades.</p>
-                        <button class="button-big-cards">Saiba mais</button>
+                        <span><a class="button-big-cards" href="https://www.youtube.com/watch?v=gzwF2BgtW-w" target="_blank">Saiba mais</a></span>
                     </div>
                     <div class="big-cards-home">
-                        <img id="img-big-cards" src="./img/dengue-news-home-10.jpg" alt="Quiz">
+                        <a href="./public/quiz.html"><img id="img-big-cards" src="./img/dengue-news-home-10.jpg" alt="Quiz"></a>
                         <h5>Quiz</h5>
                         <p>É essencial entender sobre a dengue para adotar medidas preventivas e responder de forma eficaz em situações de surtos. Participar de um quiz sobre a dengue pode despertar a curiosidade e motivar as pessoas a conhecerem mais sobre essa doença séria transmitida por mosquitos.</p>
-                        <button class="button-big-cards">Iniciar!</button>
+                        <span><a class="button-big-cards" href="./public/quiz.html">Iniciar !</a></span>
                     </div>
                 </div>
             </div>
@@ -149,11 +150,8 @@
         <aside class="aside-home-one">
             <div class="aside-home">
                 <h2>Cadastre-se para receber nosso boletim semanal!</h2>
-                <form>
-                    <input type="email" placeholder="Digite seu e-mail">
-                    <button type="submit">Enviar</button>
-                </form>
-        </div>
+                <span class="button-boletim"><a href="#" class="news-pop news-home" #news-pop>Quero receber !</a></span>
+            </div>
         </aside>
         <!--Fale conosco tópico junto ao cadastro de usuários-->
         <div id="modalFaleConosco" class="modal">
@@ -169,7 +167,7 @@
               <textarea id="mensagem" name="mensagem" required></textarea><br>
               <button type="submit">Enviar</button>
             </form>
-            <div class="dados-contato">
+            <!-- <div class="dados-contato">
                 <address>
                     <ul>
                         <li><a href=""><img src="../img/social_media/facebook.png" width="30"></a></li>
@@ -178,7 +176,7 @@
                     </ul>
                     <a href="mailto:contato@denguenews.com"><strong>contato@denguenews.com.br</strong></a>
                 </address>
-            </div>
+            </div> -->
           </div>
     </main>
     <!--inicio do footer-->
