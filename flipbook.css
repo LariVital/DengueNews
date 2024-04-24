@@ -1,0 +1,306 @@
+body {
+	font-family: "Poppin", sans-serif;
+	font-size: 18px;
+	background-color: #fff8cb;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -4%;
+}
+.book {
+	width: 350px;
+	height: 450px;
+	position: relative;
+	transition-duration: 1s;
+	perspective: 1500;
+}
+input {
+	display: none;
+}
+.cover, .back-cover {
+	background-color: #fcf2a7;
+	width: 180%;
+	height: 130%;
+	border-radius: 0 15px 15px 0;
+	box-shadow: 0 0 5px rgb(41, 41, 41);
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	transform-origin: center left;
+}
+.cover {
+	position: absolute;
+	z-index: 26;
+	transition: transform 1s;
+}
+.cover label {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.back-cover {
+	position: relative;
+	z-index: -1;
+}
+.page {
+	position: absolute;
+	background-color: rgb(255, 251, 206);
+	width: 170%;
+	height: 125%;
+	border-radius: 0 15px 15px 0;
+	margin-top: 10px;
+	transform-origin: left;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transition-duration: 1.5s;
+}
+.page img {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px 0 0 15px;
+}
+.front-page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	box-sizing: border-box;
+	padding: 1rem;
+}
+.back-page {
+	transform: rotateY(180deg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	z-index: 99;
+}
+.next, .prev {
+	position: absolute;
+	bottom: 1em;
+	cursor: pointer;
+}
+.next {
+	right: 1em;
+}
+.prev {
+	left: 1em;
+}
+#page1 {
+	z-index: 25;
+}
+#page2 {
+	z-index: 24;
+}
+#page3 {
+	z-index: 23;
+}
+#page4 {
+	z-index: 22;
+}
+#page5 {
+	z-index: 21;
+}
+#page6 {
+	z-index: 20;
+}
+#page7 {
+	z-index: 19;
+}
+#page8 {
+	z-index: 18;
+}
+#page9 {
+	z-index: 17;
+}
+#page10 {
+	z-index: 16;
+}
+#page11 {
+	z-index: 15;
+}
+#page12 {
+	z-index: 14;
+}
+#page13 {
+	z-index: 13;
+}
+#page14 {
+	z-index: 12;
+}
+#page15 {
+	z-index: 11;
+}
+#page16 {
+	z-index: 10;
+}
+#page17 {
+	z-index: 9;
+}
+#page18 {
+	z-index: 8;
+}
+#page19 {
+	z-index: 7;
+}
+#page20 {
+	z-index: 6;
+}
+#page21 {
+	z-index: 5;
+}
+#page22 {
+	z-index: 4;
+}
+#page23 {
+	z-index: 3;
+}
+#page24 {
+	z-index: 2;
+}
+#page25 {
+	z-index: 1;
+}
+
+#checkbox-cover:checked ~ .book {
+	transform: translateX(200px);
+}
+#checkbox-cover:checked ~ .book .cover {
+	transition: transform 1.5s, z-index 0.5s 0.5s;
+	transform: rotateY(-180deg);
+	z-index: 1;
+}
+#checkbox-cover:checked ~ .book .page {
+	box-shadow: 0 0 3px rgb(99, 98, 98);
+}
+#checkbox-page1:checked ~ .book #page1 {
+	transform: rotateY(-180deg);
+	z-index: 2;
+}
+#checkbox-page2:checked ~ .book #page2 {
+	transform: rotateY(-180deg);
+	z-index: 3;
+}
+#checkbox-page3:checked ~ .book #page3 {
+	transform: rotateY(-180deg);
+	z-index: 4;
+}
+#checkbox-page4:checked ~ .book #page4 {
+	transform: rotateY(-180deg);
+	z-index: 5;
+}
+#checkbox-page5:checked ~ .book #page5 {
+	transform: rotateY(-180deg);
+	z-index: 6;
+}
+#checkbox-page6:checked ~ .book #page6 {
+	transform: rotateY(-180deg);
+	z-index: 7;
+}
+#checkbox-page7:checked ~ .book #page7 {
+	transform: rotateY(-180deg);
+	z-index: 8;
+}
+#checkbox-page8:checked ~ .book #page8 {
+	transform: rotateY(-180deg);
+	z-index: 9;
+}
+#checkbox-page9:checked ~ .book #page9 {
+	transform: rotateY(-180deg);
+	z-index: 10;
+}
+#checkbox-page10:checked ~ .book #page10 {
+	transform: rotateY(-180deg);
+	z-index: 11;
+}
+#checkbox-page11:checked ~ .book #page11 {
+	transform: rotateY(-180deg);
+	z-index: 12;
+}
+#checkbox-page12:checked ~ .book #page12 {
+	transform: rotateY(-180deg);
+	z-index: 13;
+}
+#checkbox-page13:checked ~ .book #page13 {
+	transform: rotateY(-180deg);
+	z-index: 14;
+}
+#checkbox-page14:checked ~ .book #page14 {
+	transform: rotateY(-180deg);
+	z-index: 15;
+}
+#checkbox-page15:checked ~ .book #page15 {
+	transform: rotateY(-180deg);
+	z-index: 16;
+}
+#checkbox-page16:checked ~ .book #page16 {
+	transform: rotateY(-180deg);
+	z-index: 17;
+}
+#checkbox-page17:checked ~ .book #page17 {
+	transform: rotateY(-180deg);
+	z-index: 18;
+}
+#checkbox-page18:checked ~ .book #page18 {
+	transform: rotateY(-180deg);
+	z-index: 19;
+}
+#checkbox-page19:checked ~ .book #page19 {
+	transform: rotateY(-180deg);
+	z-index: 20;
+}
+#checkbox-page20:checked ~ .book #page20 {
+	transform: rotateY(-180deg);
+	z-index: 21;
+}
+#checkbox-page21:checked ~ .book #page21 {
+	transform: rotateY(-180deg);
+	z-index: 22;
+}
+#checkbox-page22:checked ~ .book #page22 {
+	transform: rotateY(-180deg);
+	z-index: 23;
+}
+#checkbox-page23:checked ~ .book #page23 {
+	transform: rotateY(-180deg);
+	z-index: 24;
+}
+#checkbox-page24:checked ~ .book #page24 {
+	transform: rotateY(-180deg);
+	z-index: 25;
+}
+#checkbox-page25:checked ~ .book #page25 {
+	transform: rotateY(-180deg);
+	z-index: 26;
+}
+
+.cover p{
+	font-size: 30px;
+	padding-right: 22%;
+}
+
+#monica{
+	width: 550px;
+	height: 250px;
+}
+
+#meme{
+	width: 550px;
+	height: 280px;
+}
+
+#tratamento{
+	width: 530px;
+	height: 225px;
+}
+
+#quadrinho{
+	width: 560px;
+	height: 430px;
+}
+
+#denguestop{
+	width: 350px;
+	height: 350px;
+}
