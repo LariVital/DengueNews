@@ -3,11 +3,24 @@
 let newsPopUp = document.getElementsByClassName("news-pop")[0];
 console.log(newsPopUp)
 
-newsPopUp.addEventListener("click", () => {
+newsPopUp.addEventListener("click", (e) => {
     if (window.location.pathname === '/index.html') {
         window.open('./public/newsletter.html', 'popup', 'width=800,height=400');
     } else {
         window.open('./newsletter.html', 'popup', 'width=800,height=400');
+    }
+})
+
+// SOBRE A DENGUE
+// abre o flipbook como pop-up
+let bookPopUp = document.getElementsByClassName("book-pop")[0];
+console.log(bookPopUp)
+
+bookPopUp.addEventListener("click", (e) => {
+    if (window.location.pathname === '/index.html') {
+        window.open('./public/flipbook.html', 'popup', 'width=1920,height=1080');
+    } else {
+        window.open('./flipbook.html', 'popup', 'width=1920,height=1080');
     }
 })
 
