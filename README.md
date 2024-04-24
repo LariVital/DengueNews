@@ -9,8 +9,12 @@ O Dengue News coleta dados de fontes confiáveis, analisa tendências e padrões
 ## Tecnologias Utilizadas
 O projeto DengueNews utiliza as seguintes tecnologias e ferramentas:
 
-Git: Sistema de controle de versão utilizado para o gerenciamento do código-fonte.
-GitHub: Plataforma de hospedagem de código-fonte e colaboração.
-HTML: Linguagem de marcação utilizada para criar a estrutura básica das páginas web.
-CSS: Linguagem de estilo utilizada para estilizar as páginas web e torná-las visualmente atraentes.
-JavaScript: Linguagem de programação utilizada para adicionar interatividade e dinamismo às páginas web.
+- **Git:** Sistema de controle de versão utilizado para o gerenciamento do código-fonte.
+
+- **GitHub:** Plataforma de hospedagem de código-fonte e colaboração.
+
+- **HTML:** Linguagem de marcação utilizada para criar a estrutura básica das páginas web.
+
+- **CSS:** Linguagem de estilo utilizada para estilizar as páginas web e torná-las visualmente atraentes.
+
+- **JavaScript:** Linguagem de programação utilizada para adicionar interatividade e dinamismo às páginas web.
