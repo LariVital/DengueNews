@@ -937,22 +937,28 @@ footer strong {
 
 /* faq */
 
+.body-faq {
+    background-image: linear-gradient(180deg, #ffffff, #f0f0f0, #e2e2e2, #d4d4d4, #c5c5c5, #b7b7b7, #a9a9a9, #9a9a9a,#8c8c8c, #7e7e7e, #707070, #707070, #7e7e7e, #8c8c8c, #9a9a9a, #a9a9a9, #b7b7b7, #c5c5c5, #d4d4d4, #e2e2e2, #f0f0f0, #ffffff);
+}
+
 .main-faq {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     width: 900px;
+    /* background-image: linear-gradient(180deg, #FFFFFF, #BABABA,#BABABA, #707070, #707070, #BABABA, #BABABA, #FFFFFF); */
 }
 
 .main-faq h1 {
     align-self: center;
+    color: black;
 }
 
 .titulo-bloco {
     height: 5rem;
-    color: #000000;
+    /* color: #000000; */
     background-image: url("./img/background/mosquito2.png");
-    background-size: 50%;
+    background-size: 70%;
     background-position: center;
     font-weight: 500;
     margin: 0;
@@ -970,10 +976,16 @@ footer strong {
 } */
 
 .faq-atualiza {
-    margin-top: 50px;
+    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+.faq-atualiza p {
+    margin-bottom: 0px;
+    padding-right: 10px;
 }
 
 
@@ -987,6 +999,9 @@ footer strong {
     font-weight: 500;
     margin: 20px;
 }
+
+
+
 
 /* sobre a dengue */
 .main-sobre {
