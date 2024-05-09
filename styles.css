@@ -911,7 +911,7 @@ footer strong {
     align-self: center;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
-    padding: 50px;
+    padding: 40px;
     width: 100vh;
 
 }
@@ -927,12 +927,23 @@ footer strong {
 
 #digite-email {
     display: flex;
+    flex-direction: column;
     justify-content: end;
-    margin: 0;
+    /* margin: 0px;
+    padding-bottom: 0px; */
+}
+
+#digite-email label {
+    margin-bottom: 0px;
 }
 
 #digite-email input {
     width: 100%;
+}
+
+#news-botao {
+    width: 25%;
+    align-self: center;
 }
 
 /* faq */
