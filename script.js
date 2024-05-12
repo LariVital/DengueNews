@@ -1,4 +1,4 @@
-NEWSLETTER
+// NEWSLETTER
 // abre a página newsletter como pop-up
 let newsPopUp = document.getElementsByClassName("news-pop")[0];
 console.log(newsPopUp)
