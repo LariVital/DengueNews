@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../styles.css" />
     <!-- Javascript -->
     <script src="script.js" defer></script>
+    <script src="formulario.js" defer></script>
 </head>
 <body>
     <!--inicio do header-->
@@ -165,15 +166,18 @@
             <div class="modal-content-home">
                 <span class="close">&times</span>
                 <h2>Fale Conosco</h2>
-                <form class="form-home">
+                <form class="form-home" id="formHome">
                     <label id="label-home" for="nome">Nome:</label>
-                    <input id="input-home" type="text" id="nome" name="nome" required><br>
+                    <input type="text" id="campoName" name="nome"><br>
+                    <span id="spans">Nome deve ter no mínimo 3 caracteres</span>
                     <label id="label-home" for="telefone">Telefone:</label>
-                    <input id="input-home" type="tel" id="telefone" name="telefone" required><br>
+                    <input type="tel" id="telefone" name="telefone"><br>
+                    <span id="spans">Digite um número válido</span>
                     <label id="label-home" for="email">E-mail:</label>
-                    <input id="input-home" type="email" id="email" name="email" required><br>
+                    <input type="email" id="email" name="email"><br>
+                    <span id="spans">Digite um email válido</span>
                     <label id="label-home" for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" required></textarea><br>
+                    <textarea id="mensagem" name="mensagem"></textarea><br>
                     <button id="button-fale-home" type="submit">Enviar</button>
                 </form>
             </div>
