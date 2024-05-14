@@ -345,7 +345,8 @@ section.carousel {
     justify-content: center;
     width: 100%;
     margin-top: 2rem;
-    gap: 3rem;
+    gap: 10rem;
+    margin-left: 5rem;
     
 }
 .aside-home {
