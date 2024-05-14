@@ -310,11 +310,17 @@ section.carousel {
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    width: 80%;
+    width: 50%;
     height: 10rem;
     margin-top: 1rem;
     margin-left: 11rem;
     background-color: #F8F9FA;
+}
+
+#button-fale-home {
+    width: 50%;
+    font-size: 1.2rem;
+    align-self: center;
 }
 /* .aside-home{
     display: flex;
@@ -338,7 +344,7 @@ section.carousel {
     font-size: 1rem;
 } */
 #button-aside-home{
-    width: 9rem;
+    width: 50%;
     height: 2.5rem;
     font-size: 1.2rem;
     border-radius: 8px;
