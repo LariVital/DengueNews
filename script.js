@@ -1,14 +1,20 @@
 // NEWSLETTER
 // abre a página newsletter como pop-up
-let newsPopUp = document.getElementsByClassName("news-pop")[0];
-console.log(newsPopUp)
+const newsPopUp = document.getElementById("button-aside-home");
+const newsPopUpFooter = document.querySelector(".news-pop");
+const modalNews = document.querySelector(".body-news")
+const closeModalNews = document.querySelector(".body-news .close")
 
-newsPopUp.addEventListener("click", (e) => {
-    if (window.location.pathname === '/index.html') {
-        window.open('./public/newsletter.html', 'popup', 'width=800,height=400');
-    } else {
-        window.open('./newsletter.html', 'popup', 'width=800,height=400');
-    }
+newsPopUp.addEventListener("click", () => {
+    modalNews.showModal()
+})
+
+newsPopUpFooter.addEventListener("click", () => {
+    modalNews.showModal()
+})
+
+closeModalNews.addEventListener("click", () => {
+    modalNews.close()
 })
 
 // // SOBRE A DENGUE
@@ -65,22 +71,22 @@ function proximaImg(){
     }
 document.getElementById('radio'+cont).checked = true    
 }
-//Modal Página inicial 
-const openModalBtn = document.getElementById('openModalHome');
-const modal = document.getElementById('modalFaleConosco');
-const closeModalBtn = document.getElementsByClassName('close')[0];
+//Modal Página inicial - ANTIGO MODAL FALE CONOSCO 
+// const openModalBtn = document.getElementById('openModalHome');
+// const modal = document.getElementById('modalFaleConosco');
+// const closeModalBtn = document.getElementsByClassName('close')[0];
 
-openModalHome.addEventListener('click', () => {
-    modal.style.display = 'block';
-});
+// openModalHome.addEventListener('click', () => {
+//     modal.style.display = 'block';
+// });
 
-closeModalBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-});
+// closeModalBtn.addEventListener('click', () => {
+//     modal.style.display = 'none';
+// });
 
-window.addEventListener('click', (event) => {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-});
+// window.addEventListener('click', (event) => {
+//     if (event.target === modal) {
+//         modal.style.display = 'none';
+//     }
+// });
 

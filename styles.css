@@ -5,6 +5,10 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Roboto';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* atributos em comum */
 
 h1 {
@@ -186,7 +190,6 @@ section.carousel {
 .img-cards{
     width: 13rem;
     height: 13rem;
-    border: 1px solid #666666;
     border-bottom: none;
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
@@ -195,7 +198,6 @@ section.carousel {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #666666;
     height: 3rem;
     background-color: #FFC107;
     border-bottom-left-radius: 0.3rem;
@@ -289,7 +291,7 @@ section.carousel {
     margin-left: 11rem;
     background-color: #F8F9FA;
 }
-.aside-home{
+/* .aside-home{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -306,13 +308,30 @@ section.carousel {
 }
 .aside-home-two h4{
     font-size: 1.1rem;
-}
+} */
+/* .aside-home p{
+    font-size: 1rem;
+} */
 #button-aside-home{
     width: 9rem;
     height: 2.5rem;
     font-size: 1.2rem;
     border-radius: 8px;
     font-weight: 400;
+}
+
+/* Boletim semanal */
+.contact{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.imgBoletim{
+    width: 18rem;
+    height: 18rem;
+}
+.modalFaleConosco{
+    display: flex;
 }
 #openModalHome {
     width: 9rem;
@@ -321,7 +340,54 @@ section.carousel {
     border-radius: 8px;
     font-weight: 400;
 }
-.modal-home {
+.modal-content-home {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 3rem;
+    
+}
+.aside-home {
+    width: 23rem;
+    background-color: #F8F9FA;
+    /* border: solid 1px #666666; */
+    box-shadow: 2px 2px 22px 0px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 35px;
+}
+.form-home {
+    width: 23rem;
+    background-color: #F8F9FA;
+    /* border: solid 1px #666666; */
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 35px;
+    box-shadow: 2px 2px 22px 0px rgba(0,0,0,0.15);
+}
+#faleConosco {
+    font-size: 1.2rem;
+}
+.inputHome {
+    padding: .2rem .5rem;
+    border: solid 1px #000000;
+    border-radius: 0px;
+}
+.labelHome {
+    width: 10rem;
+    
+}
+form textarea {
+    padding: .5rem .5rem;
+}
+
+/* ANTIGO FALE CONOSCO FEITO COM MODAL  */
+/* .modal-home {
     display: none;
     position: fixed;
     top: 0;
@@ -379,8 +445,8 @@ section.carousel {
     height: 3rem;
     font-size: 1.3rem;
     font-weight: 400;
-}
-/* formulário de pesquisa */
+} */
+/* formulário de pesquisa header*/
 form.busca {
     display: flex;
     align-items: center;
@@ -398,10 +464,10 @@ button {
     transition-duration: 0.4s;
   }
     
-  button:hover {
+button:hover {
     background-color:#FFC107;
     color: #ffffff;
-    }
+}
 
 input {
     border-width: 1px 1px 1px 1px;
@@ -894,15 +960,40 @@ footer strong {
 
 /*  newsletter */
 
+.body-news::backdrop {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+}
+
 .body-news {
     background-image: url("./img/aedes_fundoAmarelo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center;
+    width: 50vh;
+    height: 50vh;
+    margin: 16rem auto 0;
+    border: 0;
+    border-radius: 8px;
+}
+
+.body-news .modal-content {
+    position: relative;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+}
+
+.body-news .modal-content .close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    color: #FFF;
 }
 
 #mailbox {
@@ -912,7 +1003,7 @@ footer strong {
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     padding: 40px;
-    width: 100vh;
+    width: 80%;
 
 }
 
@@ -1021,7 +1112,7 @@ footer strong {
 }
 
 /* estilos dinâmicos validação formulários */
-input.error {
+/* input.error {
     border: solid 2px #992020;
     background-color: #CCBBBB;
     color: #662020;
@@ -1041,4 +1132,4 @@ input.error {
   
   .visible {
     display: block;
-  }
+  } */

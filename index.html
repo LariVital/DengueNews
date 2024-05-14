@@ -26,7 +26,7 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./public/noticias.html">Notícias</a></li>
                 <li><a href="./public/mapa_casos.html">Mapa de Casos</a></li>
-                <li><a class="book-pop" href="#">Sobre a Dengue</a></li>
+                <li><a class="book-pop" href="./public/sobre_dengue.html">Sobre a Dengue</a></li>
                 <li><a href="./public/quiz.html">Quiz</a></li>
                 <li><a href="./public/FAQ.html">FAQ</a></li>
                 <li><a href="./public/quem_somos.html">Quem Somos</a></li>
@@ -151,39 +151,63 @@
             </div>
         </section>
         <!--Aside para cadastro de usuários-->
-        <section class="button-cadastro-modal">
+        <!-- <section class="button-cadastro-modal">
                 <div class="aside-home">
                     <h4>Cadastre-se para receber nosso boletim semanal!</h4>
                     <a class="news-pop" href="#"><button id="button-aside-home" type="submit">Cadastrar</button></a>
-                </div>
-                <div class="aside-home-two">
+                </div> -->
+                <!--ANTIGO BOTÃO DE MODAL PARA ABRIR FALE CONOSCO-->
+                <!-- <div class="aside-home-two">
                     <h4>Se preferir, Fale Conosco!</h4>
                     <button id="openModalHome">Fale Conosco</button>
-                </div>
-        </section>
+                </div> -->
+        <!-- </section> -->
         <!--Fale conosco tópico junto ao cadastro de usuários-->
         <div id="modalFaleConosco" class="modal-home">
+            <h2 class="contact">Contato</h2>
             <div class="modal-content-home">
-                <span class="close">&times</span>
-                <h2>Fale Conosco</h2>
+                <!--BOTÃO PARA FECHAR FALE CONOSCO-->
+                <!-- <span class="close">&times</span> -->
+                <div class="aside-home">
+                    <img class="imgBoletim" src="./img/boletim.jpg" alt="Boletim Semanal">
+                    <p>Cadastre-se para receber o boletim semanal!</p>
+                    <button id="button-aside-home">Cadastrar</button>
+                </div>
+                <dialog class="body-news">
+                    <div class="modal-content">
+                        <button class="close">&times;</button>
+                        <div id="mailbox">
+                            <form class="form-news">
+                                <label for="news-email"><strong>Cadastre-se para receber nosso boletim semanal!</strong></label>
+                                <div id="digite-email">
+                                    <label for="news-name">Nome:</label>
+                                    <input type="text" id="news-name" name="news-name" placeholder="Digite seu nome" required minlength="3"><br />
+                                    <label for="news-email">E-mail:</label>
+                                    <input type="email" id="news-email" name="news-email" placeholder="Digite seu e-mail" required><br />
+                                    <button id="news-botao" type="submit">Cadastrar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
+                
                 <form class="form-home" id="formHome">
+                    <h2 id="faleConosco">Fale Conosco</h2>
+                    <label class="labelHome" id="labelHome" for="username">*Nome:</label>
+                    <input class="inputHome" type="text" id="username" name="username" required minlength="3" maxlength="15"><br>
+                    <!-- <span id="spansName" class="helper-text">Nome deve ter no mínimo 3 caracteres</span> -->
 
-                    <label id="labelHome" for="username">Nome:</label>
-                    <input type="text" id="username" name="username"><br>
-                    <span id="spans" class="helper-text">Nome deve ter no mínimo 3 caracteres</span>
+                    <label class="labelHome" id="labelHome" for="telefone">Telefone:</label>
+                    <input class="inputHome" type="tel" id="telefone" name="telefone" required min="13" max="14"><br>
+                    <!-- <span id="spansTel" class="helper-text" >Digite um número válido</span> -->
 
-                    <label id="labelHome" for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone"><br>
-                    <span id="spans" class="helper-text" >Digite um número válido</span>
+                    <label class="labelHome" id="labelHome" for="email">*E-mail:</label>
+                    <input class="inputHome" type="email" id="email" name="email" required><br>
+                    <!-- <span id="spansEmail" class="helper-text" >Digite um email válido</span> -->
 
-                    <label id="labelHome" for="email">E-mail:</label>
-                    <input type="email" id="email" name="email"><br>
-                    <span id="spans" class="helper-text" >Digite um email válido</span>
-
-                    <label id="labelHome" for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem"></textarea><br>
+                    <label class="labelHome" id="labelHome" for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea><br>
                     <button id="button-fale-home" type="submit">Enviar</button>
-
                 </form>
             </div>
         </div>
@@ -218,8 +242,8 @@
                 <span>Dengue News</span>
                 <ul>
                     <li><a href="./public/quem_somos.html">Quem Somos</a></li>
-                    <li><a href="openModalHome">Fale Conosco</a></li>
-                    <li><a href="#" class="news-pop">Newsletter</a></li>
+                    <li><a href="#formHome">Fale Conosco</a></li>
+                    <li><a class="news-pop">Newsletter</a></li>
                 </ul>
             </div>
             <div class="nav-footer">
