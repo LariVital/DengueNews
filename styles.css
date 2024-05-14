@@ -321,18 +321,30 @@ section.carousel {
 }
 
 /* Boletim semanal */
+.modal-home{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #f8f9fa; */
+    height: 37rem;
+    width: 80%;
+    margin-left: 11rem;
+}
 .contact{
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-family: "Poppins", sans-serif;
 }
 .imgBoletim{
     width: 18rem;
     height: 18rem;
 }
-.modalFaleConosco{
+/* .modalFaleConosco{
+    background-color: #4CA146;
     display: flex;
-}
+} */
 #openModalHome {
     width: 9rem;
     height: 2.5rem;
@@ -345,7 +357,7 @@ section.carousel {
     justify-content: center;
     width: 100%;
     margin-top: 2rem;
-    gap: 10rem;
+    gap: 11rem;
     margin-left: 5rem;
     
 }
