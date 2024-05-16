@@ -19,7 +19,9 @@ CREATE TABLE equipe (
  id SERIAL PRIMARY KEY,
  nome VARCHAR(20) NOT NULL,
  profissao VARCHAR(50) NOT NULL, 
- descricao VARCHAR(100) NOT NULL 
+ descricao VARCHAR(100) NOT NULL,
+ linkedin VARCHAR(100) NOT NULL,
+ github VARCHAR(100) NOT NULL
 ); 
 
 --FAQ
@@ -29,7 +31,7 @@ CREATE TABLE categoria (
 ); 
 
 CREATE TABLE faq ( 
- numero SERIAL PRIMARY KEY,  
+ numero INT PRIMARY KEY,  
  pergunta TEXT NOT NULL,  
  resposta TEXT NOT NULL,  
  id_categoria INT NOT NULL,
@@ -39,10 +41,10 @@ CREATE TABLE faq (
 
 CREATE TABLE noticia ( 
  id SERIAL PRIMARY KEY,  
- data DATE NOT NULL,  
- titulo VARCHAR(100) NOT NULL,  
- resumo VARCHAR(255) NOT NULL,  
- url VARCHAR(255) NOT NULL  
+ data TIMESTAMP NOT NULL,  
+ titulo TEXT NOT NULL,  
+ resumo TEXT NOT NULL,  
+ url TEXT NOT NULL  
 ); 
 
 CREATE TABLE mapa ( 
@@ -53,23 +55,23 @@ CREATE TABLE mapa (
 
 --QUIZ
 CREATE TABLE pergunta ( 
- id_pergunta SERIAL PRIMARY KEY,  
+ id_pergunta VARCHAR(3) PRIMARY KEY NOT NULL,  
  pergunta VARCHAR(100) NOt NULL
 ); 
 
 CREATE TABLE opcao ( 
- id_pergunta INT not NULL, 
- id_opcao VARCHAR(2) PRIMARY KEY,  
- opcao VARCHAR(50) NOT NULL,  
- e_correta INT NOT NULL,
+ id_pergunta VARCHAR(3) not NULL, 
+ id_opcao VARCHAR(4) PRIMARY KEY,  
+ opcao TEXT NOT NULL,  
+ e_correta BOOLEAN NOT NULL,
   CONSTRAINT fk_pergunta FOREIGN KEY (id_pergunta)
   	REFERENCES pergunta(id_pergunta)
 ); 
 
 CREATE TABLE interacao_usuario ( 
  id_interacao SERIAL PRIMARY KEY,  
- id_pergunta INT NOT NULL,  
- id_opcao VARCHAR(2) NOT NULL,
+ id_pergunta VARCHAR(3) NOT NULL,  
+ id_opcao VARCHAR(4) NOT NULL,
  score INT,
   CONSTRAINT fk_id_pergunta FOREIGN KEY (id_pergunta)
   	REFERENCES pergunta (id_pergunta),
