@@ -7,15 +7,29 @@
 ## 📝 Análise de Requisitos
 Entender os requisitos do website e quais dados precisam ser armazenados:
 - [ ] identificar as entidades principais
-- [ ] identificar os relacionamentos entre elas
-- [ ] identificar os tipos de consultas que serão executadas no banco de dados
+
+| Fale Conosco | Newsletter | FAQ       | Mapa de Casos | Notícias | Quem Somos   | Quiz                  |
+| ------------ | ---------- | ----------| ------------- | -------- | ------------ | --------------------- |
+| nome         | nome       | categoria | sigla         | título   | nome         | pergunta              |
+| e-mail       | e-mail     | pergunta  | estado        | data     | profissao    | 4 opções de resposta  |
+| mensagem     |            | resposta  | url           | resumo   | descricao    | score                 |
+|              |            |           |               | url      | linkedin     |                       |
+|              |            |           |               |          | github       |                       |
+
+### Normalização
+**Minimizar erros**) O atributo 'categoria' da tabela FAQ possui mais de duas opções. Para minimizar erros de digitação é recomendável que seja promovido a entidade (tabela de referência).
+
+**1FN**) Transformar o atributo multivalorado 'opção de resposta' em nova tabela pois o mesmo contém 4 valores distintos.
+  
+**2FN**) Em confomidade: não há atributos não-chave com dependência parcial da chave primária da tabela.
+  
+**3FN**) Na tabela Quiz, o atributo 'score' tem dependência com outro atributo não-chave (opção de resposta). Disso a surge a necessidade de definir outra entidade 'interação do usuário' ao qual 'score' é característica. Logo a tabela Quiz será substituída por outras 3: Pergunta, Opção e Interação do Usuário.
+
 ## 🧩 Modelagem de Dados
 ### [Projeto Conceitual](https://app.brmodeloweb.com/#!/publicview/6645e4209c4fbe1c0ef2029d)
-![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/8987f848-4a7d-4d34-9dfa-c9abef12bac5)
-
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/fe6743a2-4c61-4b50-a72e-99ac0c83cd30)
 ### [Projeto Lógico](https://app.brmodeloweb.com/#!/publicview/66460f2b9c4fbe1c0ef21e1c)
-![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/05435258-33d7-4e44-b772-dd4364ec749e)
-
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/4cce42c2-5a9d-4b13-b804-15fcb90e4314)
 ## 🗃 Criação do Esquema do Banco de Dados (Projeto Físico) 
 Escolher o SGBD - Sistema de Gerenciamento de Banco de Dados para criar o esquema do banco de dados:
 - [ ] criar as tabelas
