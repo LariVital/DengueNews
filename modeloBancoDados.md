@@ -38,84 +38,68 @@ Escolher o SGBD - Sistema de Gerenciamento de Banco de Dados para criar o esquem
   * definir chaves estrangeiras FK
   * definir as restrições de integridade
 - [ ] realizar consultas SQL para recuperar, inserir, atualizar e excluir dados conforme necessário
-### [Script de criação das tabelas](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/criar_tabelas.sql)
+### Scripts
+* [Criação das tabelas](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/criar_tabelas.sql)
+
+  ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/3850500d-73c5-490b-9c9a-153c1bad38c2)
+
+* [Inserção de valores nas tabelas](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/inserir_valores.sql)
+
+**Assinante**
 ```
---Fale Conosco
-CREATE TABLE atendimento ( 
- protocolo SERIAL PRIMARY KEY,  
- nome VARCHAR(50) NOT NULL,  
- email VARCHAR(30) NOT NULL,  
- mensagem VARCHAR(255) NOT NULL
-); 
+SELECT * FROM assinante;
+```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/4b74b2e8-69a4-4e71-98b5-b431c260a233)
 
---Newsletter
-CREATE TABLE assinante  ( 
- id SERIAL PRIMARY KEY,  
- nome VARCHAR(50) NOT NULL,  
- email VARCHAR(30) NOT NULL 
-); 
+**Atendimento**
+```
+SELECT * FROM atendimento;
+```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/d40760da-b038-4280-968b-58c19c8fea59)
 
---Quem Somos
-CREATE TABLE equipe (  
- id SERIAL PRIMARY KEY,
- nome VARCHAR(20) NOT NULL,
- profissao VARCHAR(50) NOT NULL, 
- descricao VARCHAR(100) NOT NULL 
-); 
+**Equipe**
+```
+SELECT * FROM equipe;
+```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/30ae710a-79ba-494c-9694-a6fbe2eabcd4)
 
---FAQ
-CREATE TABLE categoria ( 
- id SERIAL PRIMARY KEY,  
- assunto VARCHAR(20) not NULL
-); 
+**FAQ**
+```
+SELECT * FROM faq;
+```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/38f05cef-7c21-4651-a1b3-e58b6e6d4cbf)
 
-CREATE TABLE faq ( 
- numero SERIAL PRIMARY KEY,  
- pergunta TEXT NOT NULL,  
- resposta TEXT NOT NULL,  
- id_categoria INT NOT NULL,
-  CONSTRAINT fk_categoria FOREIGN KEY (id_categoria)
-  	REFERENCES categoria(id)
-); 
 
-CREATE TABLE noticia ( 
- id SERIAL PRIMARY KEY,  
- data DATE NOT NULL,  
- titulo VARCHAR(100) NOT NULL,  
- resumo VARCHAR(255) NOT NULL,  
- url VARCHAR(255) NOT NULL  
-); 
+**Categoria**
+```
+SELECT * FROM categoria;
+```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/1838df05-b436-4c5d-ba96-b2fbfa40306c)
 
-CREATE TABLE mapa ( 
- sigla VARCHAR(2) PRIMARY KEY,  
- estado VARCHAR(20) NOT NULL, 
- url VARCHAR(50) NOT NULL 
-); 
+**Mapa**
+```
+SELECT * FROM mapa;
+```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/73b7f3fa-db67-4289-8749-1acbcb74670c)
 
---QUIZ
-CREATE TABLE pergunta ( 
- id_pergunta SERIAL PRIMARY KEY,  
- pergunta VARCHAR(100) NOT NULL
-); 
+**Noticia**
+```
+SELECT * FROM noticia;
+```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/2988943f-b743-4f3f-a69b-1e861bde9592)
 
-CREATE TABLE opcao ( 
- id_pergunta INT NOT NULL, 
- id_opcao VARCHAR(2) PRIMARY KEY,  
- opcao VARCHAR(50) NOT NULL,  
- e_correta INT NOT NULL,
-  CONSTRAINT fk_pergunta FOREIGN KEY (id_pergunta)
-  	REFERENCES pergunta(id_pergunta)
-); 
+**Pergunta**
+```
+SELECT * FROM pergunta;
+```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/57627b67-0541-4602-8004-00c0e30f8af5)
 
-CREATE TABLE interacao_usuario ( 
- id_interacao SERIAL PRIMARY KEY,  
- id_pergunta INT NOT NULL,  
- id_opcao VARCHAR(2) NOT NULL,
- score INT,
-  CONSTRAINT fk_id_pergunta FOREIGN KEY (id_pergunta)
-  	REFERENCES pergunta (id_pergunta),
-  CONSTRAINT fk_opcao foreign key (id_opcao)
-  	REFERENCES opcao(id_opcao)
-); 
+**Opção**
+```
+SELECT * FROM opcao;
+```
 
+**Interação do Usuário**
+```
+SELECT * FROM interacao_usuario;
 ```
