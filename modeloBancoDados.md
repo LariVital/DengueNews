@@ -98,6 +98,7 @@ SELECT * FROM pergunta;
 ```
 SELECT * FROM opcao;
 ```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/a2ed987d-8562-4592-b7a8-8b618c8d788c)
 
 **Interação do Usuário**
 ```
