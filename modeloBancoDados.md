@@ -105,7 +105,8 @@ SELECT * FROM opcao;
 SELECT * FROM interacao_usuario;
 ```
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/9c8d6a20-84c3-49a8-81bb-a4d92fd0dd3b)
-* criar uma *view* com a soma dos valores de 'score'
+
+* [*View* com a pontuação total do jogador](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/view-score.sql)
 ```
 CREATE VIEW points_sum AS
 SELECT sum(score) AS
@@ -114,7 +115,8 @@ pontos_disponiveis
 FROM interacao_usuario
 ```
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/bcf8554b-971d-4ee1-a5f8-5c23e56bd867)
-* projetar a *view* 'points_sum'
+
+Projetar a *view* 'points_sum':
 ```
 SELECT * from points_sum;
 ```
