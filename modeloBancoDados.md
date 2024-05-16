@@ -39,11 +39,11 @@ Escolher o SGBD - Sistema de Gerenciamento de Banco de Dados para criar o esquem
   * definir as restrições de integridade
 - [ ] realizar consultas SQL para recuperar, inserir, atualizar e excluir dados conforme necessário
 ### Scripts
-* [Criação das tabelas](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/criar_tabelas.sql)
+* [Criação das tabelas](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/criar-tabelas.sql)
 
   ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/3850500d-73c5-490b-9c9a-153c1bad38c2)
 
-* [Inserção de valores nas tabelas](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/inserir_valores.sql)
+* [Inserção de valores nas tabelas](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/inserir-dados.sql)
 
 **Assinante**
 ```
