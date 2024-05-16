@@ -92,15 +92,16 @@ SELECT * FROM noticia;
 ```
 SELECT * FROM pergunta;
 ```
-![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/57627b67-0541-4602-8004-00c0e30f8af5)
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/21110863-294d-4a96-8e50-59b1a20de56f)
 
 **Opção**
 ```
 SELECT * FROM opcao;
 ```
-![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/a2ed987d-8562-4592-b7a8-8b618c8d788c)
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/b2b2d84d-4f6f-498f-8b24-0b86139a712c)
 
 **Interação do Usuário**
 ```
 SELECT * FROM interacao_usuario;
 ```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/9c8d6a20-84c3-49a8-81bb-a4d92fd0dd3b)
