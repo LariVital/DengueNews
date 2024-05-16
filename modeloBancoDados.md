@@ -105,3 +105,18 @@ SELECT * FROM opcao;
 SELECT * FROM interacao_usuario;
 ```
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/9c8d6a20-84c3-49a8-81bb-a4d92fd0dd3b)
+* criar uma *view* com a soma dos valores de 'score'
+```
+CREATE VIEW points_sum AS
+SELECT sum(score) AS
+pontos_recebidos, COUNT(score) AS
+pontos_disponiveis
+FROM interacao_usuario
+```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/bcf8554b-971d-4ee1-a5f8-5c23e56bd867)
+* projetar a *view* 'points_sum'
+```
+SELECT * from points_sum;
+```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/ae7d5376-06ef-4735-aac6-66f7b400c19a)
+
