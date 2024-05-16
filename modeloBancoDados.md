@@ -23,7 +23,7 @@ Entender os requisitos do website e quais dados precisam ser armazenados:
   
 **2FN**) Em confomidade: não há atributos não-chave com dependência parcial da chave primária da tabela.
   
-**3FN**) Na tabela Quiz, o atributo 'score' tem dependência com outro atributo não-chave (opção de resposta). Disso a surge a necessidade de definir outra entidade 'interação do usuário' ao qual 'score' é característica. Logo a tabela Quiz será substituída por outras 3: Pergunta, Opção e Interação do Usuário.
+**3FN**) Na tabela Quiz, o atributo 'score' tem dependência com outro atributo não-chave (opção de resposta). Disso surge a necessidade de definir outra entidade da qual 'score' é característica - Interação do Usuário. Logo a tabela Quiz será substituída por: Pergunta, Opção e Interação do Usuário.
 
 ## 🧩 Modelagem de Dados
 ### [Projeto Conceitual](https://app.brmodeloweb.com/#!/publicview/6645e4209c4fbe1c0ef2029d)
