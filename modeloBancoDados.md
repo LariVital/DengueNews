@@ -25,19 +25,19 @@ Entender os requisitos do website e quais dados precisam ser armazenados:
   
 **3FN**) Na tabela Quiz, o atributo 'score' tem dependência com outro atributo não-chave (opção de resposta). Disso surge a necessidade de definir outra entidade da qual 'score' é característica - Interação do Usuário. Logo a tabela Quiz será substituída por: Pergunta, Opção e Interação do Usuário.
 
-## 🧩 Modelagem de Dados
-### [Projeto Conceitual](https://app.brmodeloweb.com/#!/publicview/6645e4209c4fbe1c0ef2029d)
+## 👁‍🗨 [Modelo Conceitual](https://app.brmodeloweb.com/#!/publicview/6645e4209c4fbe1c0ef2029d)
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/fe6743a2-4c61-4b50-a72e-99ac0c83cd30)
-### [Projeto Lógico](https://app.brmodeloweb.com/#!/publicview/66460f2b9c4fbe1c0ef21e1c)
-![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/4cce42c2-5a9d-4b13-b804-15fcb90e4314)
-## 🗃 Criação do Esquema do Banco de Dados (Projeto Físico) 
+## 🧠 [Modelo Lógico](https://app.brmodeloweb.com/#!/publicview/66460f2b9c4fbe1c0ef21e1c)
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/e40a0670-9715-43e1-949d-1c769d8f95b9)
+
+## 💪🏼 Modelo Físico 
 Escolher o SGBD - Sistema de Gerenciamento de Banco de Dados para criar o esquema do banco de dados:
 - [ ] criar as tabelas
   * definir os domínios dos atributos
   * definir chaves primárias PK
   * definir chaves estrangeiras FK
   * definir as restrições de integridade
-- [ ] realizar consultas SQL para recuperar, inserir, atualizar e excluir dados conforme necessário
+
 ### Scripts
 * [Criação das tabelas](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/criar-tabelas.sql)
 
@@ -106,6 +106,7 @@ SELECT * FROM interacao_usuario;
 ```
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/9c8d6a20-84c3-49a8-81bb-a4d92fd0dd3b)
 
+- [ ] realizar consultas SQL para recuperar, inserir, atualizar e excluir dados conforme necessário
 * [*View* com a pontuação total do jogador](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/view-score.sql)
 ```
 CREATE VIEW points_sum AS
