@@ -123,6 +123,8 @@ CREATE TRIGGER score_trigger
 BEFORE INSERT OR UPDATE ON interacao_usuario
 FOR EACH ROW EXECUTE PROCEDURE atualiza_score();
 ```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/a7f33be1-7acb-42c6-8e6e-53b9e8c60567)
+
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/6f109c2f-a988-4b22-adb8-9c9577a87a02)
 
 * [*View* com a pontuação total do jogador](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/view-score.sql)
