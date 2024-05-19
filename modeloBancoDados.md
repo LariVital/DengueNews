@@ -101,10 +101,6 @@ SELECT * FROM opcao;
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/b2b2d84d-4f6f-498f-8b24-0b86139a712c)
 
 **Interação do Usuário**
-```
-SELECT * FROM interacao_usuario;
-```
-![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/9c8d6a20-84c3-49a8-81bb-a4d92fd0dd3b)
 
 * [*Trigger* para atribuir pontos às respostas](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/trigger.sql)
 ```
@@ -124,6 +120,10 @@ BEFORE INSERT OR UPDATE ON interacao_usuario
 FOR EACH ROW EXECUTE PROCEDURE atualiza_score();
 ```
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/a7f33be1-7acb-42c6-8e6e-53b9e8c60567)
+
+```
+SELECT * FROM interacao_usuario;
+```
 
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/6f109c2f-a988-4b22-adb8-9c9577a87a02)
 
