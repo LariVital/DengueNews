@@ -134,7 +134,6 @@ ON categoria.id = faq.id_categoria;
 ```
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/d0cf1013-74dd-43de-89fa-1bdfd0cdf0ff)
 
-**
 **Listar as perguntas com as respostas do usuário e conferir se estão corretas**
 ```
 SELECT pergunta.pergunta, opcao.opcao, opcao.e_correta
