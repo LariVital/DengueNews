@@ -122,7 +122,7 @@ SELECT * from points_sum;
 ```
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/ae7d5376-06ef-4735-aac6-66f7b400c19a)
 
-### Consultas
+### [Consultas](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/consultas.sql)
 - [ ] realizar consultas SQL para recuperar, inserir, atualizar e excluir dados conforme necessário
 
 **Classificar as perguntas frequentes por assunto**
