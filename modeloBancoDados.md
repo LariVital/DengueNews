@@ -106,7 +106,7 @@ SELECT * FROM interacao_usuario;
 ```
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/9c8d6a20-84c3-49a8-81bb-a4d92fd0dd3b)
 
-* [*Trigger* para atribuir pontos às respostas]()
+* [*Trigger* para atribuir pontos às respostas](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/trigger.sql)
 ```
 CREATE OR REPLACE FUNCTION atualiza_score() RETURNS TRIGGER AS $$
 BEGIN
