@@ -1,3 +1,9 @@
+INSERT INTO atendimento (nome, email, mensagem) VALUES
+	('Aline Santos', 'aline.santos@example.com', 'Sou formada em jornalismo, gostaria de enviar meu currículo para que fosse considerada para alguma oportunidade enquanto colunista. A quem devo me reportar?'),
+	('Ricardo Oliveira', 'ricardo.oliveira@example.com', 'Boa tarde! Gostaria de sugerir que incluíssem informações sobre os postos de saúde mais próximos.'),
+	('Patrícia Lima', 'patricia.lima@example.com', 'Eu sou professora de Ciências e gostaria de saber se possuem material educativo para escolas. Obrigada.'),
+	('Lucas Silva', 'lucas.silva@example.com', 'TESTE TESTE');
+    
 INSERT INTO assinante (nome, email) VALUES
 	('João da Silva', 'joao.silva@example.com'),
 	('Maria Oliveira', 'maria.oliveira@example.com'),
@@ -9,21 +15,6 @@ INSERT INTO assinante (nome, email) VALUES
 	('Rodrigo Almeida', 'rodrigo.almeida@example.com'),
 	('Juliana Lima', 'juliana.lima@example.com'),
 	('Gustavo Ferreira', 'gustavo.ferreira@example.com');
-
-INSERT INTO atendimento (nome, email, mensagem) VALUES
-	('Aline Santos', 'aline.santos@example.com', 'Sou formada em jornalismo, gostaria de enviar meu currículo para que fosse considerada para alguma oportunidade enquanto colunista. A quem devo me reportar?'),
-	('Ricardo Oliveira', 'ricardo.oliveira@example.com', 'Boa tarde! Gostaria de sugerir que incluíssem informações sobre os postos de saúde mais próximos.'),
-	('Patrícia Lima', 'patricia.lima@example.com', 'Eu sou professora de Ciências e gostaria de saber se possuem material educativo para escolas. Obrigada.'),
-	('Lucas Silva', 'lucas.silva@example.com', 'TESTE TESTE');
-
-INSERT INTO categoria (assunto) VALUES
-	('Mosquito'),
-    ('Dengue'),
-    ('Vacinação (Dengue)'),
-    ('Chikungunya'),
-    ('Zika');
-
-
 
 INSERT INTO equipe (nome, profissao, descricao, linkedin, github) VALUES
 	('Caiki Luiz', 'Estudante', 'Buscando desafios na área tecnológica.', 
@@ -41,6 +32,13 @@ INSERT INTO equipe (nome, profissao, descricao, linkedin, github) VALUES
      'Bacharel em Direito e em transição de carreira para a área de TI.', 
      'https://www.linkedin.com/in/username/', 
      'https://www.github.com/username/');
+
+INSERT INTO categoria (assunto) VALUES
+	('Mosquito'),
+    ('Dengue'),
+    ('Vacinação (Dengue)'),
+    ('Chikungunya'),
+    ('Zika');
 
 INSERT INTO faq (numero, pergunta, resposta, id_categoria) VALUES
 	(1, 'Como controlar o aedes aegypti?', 'O controle mais efetivo da proliferação do mosquito é a manutenção ambiental principalmente
@@ -80,7 +78,17 @@ INSERT INTO faq (numero, pergunta, resposta, id_categoria) VALUES
      demonstrada por estudos realizados durante surtos da doença no Brasil e na Polinésia Francesa. IMPORTANTE: Todos os sexos e 
      faixas etárias são igualmente suscetíveis ao vírus Zika, porém mulheres grávidas e pessoas acima de 60 anos têm maiores riscos 
      de desenvolver complicações da doença. Esses riscos podem aumentar quando a pessoa tem alguma comorbidade.', 5);
-        
+       
+
+INSERT INTO noticia (data, titulo, resumo, url) VALUES
+	('2015-12-29 09:27:00','Veja como combater o Aedes aegypti','O Aedes aegypti transmite a dengue, chikungunya e zika vírus. Com a temporada de chuvas se aproximando é crucial estar preparado para combater a Dengue. Descubra agora as medidas preventivas essenciais para proteger você e sua família contra esta doença transmitida por mosquitos. De dicas simples a estratégias eficazes, saiba como eliminar criadouros, usar repelentes e manter-se informado sobre os sintomas.', 'https://g1.globo.com/bemestar/noticia/2015/12/veja-como-combater-o-aedes-aegypti-e-entenda-vacina-contra-dengue.html'),
+    ('2024-03-20 09:27:00', 'Alerta para o mundo: como dengue no Brasil virou preocupação internacional', 'O número de casos de dengue em 2024 no país é recorde na série histórica oficial — e o total registrado (casos prováveis e confirmados) se aproxima dos milhões em meados de março, segundo o Ministério da Saúde. As reportagens e veículos estrangeiros discutem, principalmente, o que o avanço recorde de casos dengue no Brasil e em outros lugares significa para a saúde global nos próximos anos.', 'https://www.bbc.com/portuguese/articles/c7201vvv7lno'),
+	('2024-03-20 09:27:00', 'Tecnologias inovadoras para combater a dengue', 'Drones, camisetas repelentes... diante de um vírus perigoso e de um mosquito altamente adaptado ao nosso meio, surgem formas modernas de prevenção.', 'https://www.bbc.com/portuguese/articles/c7201vvv7lno'),
+	('2024-03-15 10:44:00','Em menos de três meses, Brasil supera casos de dengue de 2023', 'Antes de fechar os três primeiros meses de 2024, o número de casos de dengue no Brasil ultrapassou os registros de todo o ano de 2023, segundo atualização do painel de arboviroses do Ministério da Saúde.', 'https://veja.abril.com.br/saude/em-menos-de-tres-meses-brasil-supera-casos-de-dengue-de-2023/'),
+	('2024-03-21 09:27:00','Vacina contra dengue é solução de longo prazo', 'A vacinação contra a dengue é uma estratégia essencial para o controle a longo prazo dessa doença que afeta milhares de pessoas todos os anos. Através da imunização é possível reduzir significativamente a incidência da dengue, protegenda população e evitando surtos e epidemias.','https://www.estadao.com.br/saude/vacina-contra-a-dengue-e-solucao-de-longo-prazo/'),
+	('2024-04-11 21:05:00','Avanço de casos de dengue aumenta significativamente o registro de doenças raras provocadas pela infecção','Em pouco mais de três meses, o país registrou mais de 3 milhões de casos. Já é o pior ano da série histórica, que começou em 2000.','https://g1.globo.com/jornal-nacional/noticia/2024/04/11/avanco-de-casos-de-dengue-aumenta-significativamente-o-registro-de-doencas-raras-provocadas-pela-infeccao.ghtml'),
+	('2024-04-22 12:01:00', 'Minas Gerais bate recorde de mortes por dengue', 'Estado já confirmou 288 óbitos em 2024. Último recorde foi em 2016, quando 281 mortes foram registradas.','https://g1.globo.com/mg/minas-gerais/noticia/2024/04/22/minas-gerais-bate-recorde-de-mortes-por-dengue.ghtml');
+
 INSERT INTO mapa (sigla, estado, url) VALUES
 	('AC', 'Acre', 'https://info.dengue.mat.br/alerta/AC/dengue'),
 	('AL', 'Alagoas', 'https://info.dengue.mat.br/alerta/AL/dengue'),
@@ -109,16 +117,7 @@ INSERT INTO mapa (sigla, estado, url) VALUES
 	('SP', 'São Paulo', 'https://info.dengue.mat.br/alerta/SP/dengue'),
 	('SE', 'Sergipe', 'https://info.dengue.mat.br/alerta/SE/dengue'),
 	('TO', 'Tocantins', 'https://info.dengue.mat.br/alerta/TO/dengue');
-
-INSERT INTO noticia (data, titulo, resumo, url) VALUES
-	('2015-12-29 09:27:00','Veja como combater o Aedes aegypti','O Aedes aegypti transmite a dengue, chikungunya e zika vírus. Com a temporada de chuvas se aproximando é crucial estar preparado para combater a Dengue. Descubra agora as medidas preventivas essenciais para proteger você e sua família contra esta doença transmitida por mosquitos. De dicas simples a estratégias eficazes, saiba como eliminar criadouros, usar repelentes e manter-se informado sobre os sintomas.', 'https://g1.globo.com/bemestar/noticia/2015/12/veja-como-combater-o-aedes-aegypti-e-entenda-vacina-contra-dengue.html'),
-    ('2024-03-20 09:27:00', 'Alerta para o mundo: como dengue no Brasil virou preocupação internacional', 'O número de casos de dengue em 2024 no país é recorde na série histórica oficial — e o total registrado (casos prováveis e confirmados) se aproxima dos milhões em meados de março, segundo o Ministério da Saúde. As reportagens e veículos estrangeiros discutem, principalmente, o que o avanço recorde de casos dengue no Brasil e em outros lugares significa para a saúde global nos próximos anos.', 'https://www.bbc.com/portuguese/articles/c7201vvv7lno'),
-	('2024-03-20 09:27:00', 'Tecnologias inovadoras para combater a dengue', 'Drones, camisetas repelentes... diante de um vírus perigoso e de um mosquito altamente adaptado ao nosso meio, surgem formas modernas de prevenção.', 'https://www.bbc.com/portuguese/articles/c7201vvv7lno'),
-	('2024-03-15 10:44:00','Em menos de três meses, Brasil supera casos de dengue de 2023', 'Antes de fechar os três primeiros meses de 2024, o número de casos de dengue no Brasil ultrapassou os registros de todo o ano de 2023, segundo atualização do painel de arboviroses do Ministério da Saúde.', 'https://veja.abril.com.br/saude/em-menos-de-tres-meses-brasil-supera-casos-de-dengue-de-2023/'),
-	('2024-03-21 09:27:00','Vacina contra dengue é solução de longo prazo', 'A vacinação contra a dengue é uma estratégia essencial para o controle a longo prazo dessa doença que afeta milhares de pessoas todos os anos. Através da imunização é possível reduzir significativamente a incidência da dengue, protegenda população e evitando surtos e epidemias.','https://www.estadao.com.br/saude/vacina-contra-a-dengue-e-solucao-de-longo-prazo/'),
-	('2024-04-11 21:05:00','Avanço de casos de dengue aumenta significativamente o registro de doenças raras provocadas pela infecção','Em pouco mais de três meses, o país registrou mais de 3 milhões de casos. Já é o pior ano da série histórica, que começou em 2000.','https://g1.globo.com/jornal-nacional/noticia/2024/04/11/avanco-de-casos-de-dengue-aumenta-significativamente-o-registro-de-doencas-raras-provocadas-pela-infeccao.ghtml'),
-	('2024-04-22 12:01:00', 'Minas Gerais bate recorde de mortes por dengue', 'Estado já confirmou 288 óbitos em 2024. Último recorde foi em 2016, quando 281 mortes foram registradas.','https://g1.globo.com/mg/minas-gerais/noticia/2024/04/22/minas-gerais-bate-recorde-de-mortes-por-dengue.ghtml');
-
+    
 INSERT INTO pergunta (id_pergunta, pergunta) VALUES
 	('q1','Qual é o agente transmissor da dengue?'),
     ('q2','Qual é o principal sintoma da dengue?'),

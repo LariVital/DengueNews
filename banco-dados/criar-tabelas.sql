@@ -19,7 +19,7 @@ CREATE TABLE equipe (
  id SERIAL PRIMARY KEY,
  nome VARCHAR(20) NOT NULL,
  profissao VARCHAR(50) NOT NULL, 
- descricao VARCHAR(100) NOT NULL,
+ descricao TEXT NOT NULL,
  linkedin VARCHAR(100) NOT NULL,
  github VARCHAR(100) NOT NULL
 ); 
@@ -56,7 +56,7 @@ CREATE TABLE mapa (
 --QUIZ
 CREATE TABLE pergunta ( 
  id_pergunta VARCHAR(3) PRIMARY KEY NOT NULL,  
- pergunta VARCHAR(100) NOt NULL
+ pergunta TEXT NOt NULL
 ); 
 
 CREATE TABLE opcao ( 
