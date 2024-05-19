@@ -106,6 +106,25 @@ SELECT * FROM interacao_usuario;
 ```
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/9c8d6a20-84c3-49a8-81bb-a4d92fd0dd3b)
 
+* [*Trigger* para atribuir pontos às respostas]()
+```
+CREATE OR REPLACE FUNCTION atualiza_score() RETURNS TRIGGER AS $$
+BEGIN
+  IF NEW.e_correta THEN
+    NEW.score := 1;
+  ELSE
+    NEW.score := 0;
+  END IF;
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER score_trigger
+BEFORE INSERT OR UPDATE ON interacao_usuario
+FOR EACH ROW EXECUTE PROCEDURE atualiza_score();
+```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/6f109c2f-a988-4b22-adb8-9c9577a87a02)
+
 * [*View* com a pontuação total do jogador](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/view-score.sql)
 ```
 CREATE VIEW points_sum AS
