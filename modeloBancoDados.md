@@ -106,7 +106,6 @@ SELECT * FROM interacao_usuario;
 ```
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/9c8d6a20-84c3-49a8-81bb-a4d92fd0dd3b)
 
-- [ ] realizar consultas SQL para recuperar, inserir, atualizar e excluir dados conforme necessário
 * [*View* com a pontuação total do jogador](https://github.com/LariVital/PDI-DengueNews/tree/main/banco-dados/view-score.sql)
 ```
 CREATE VIEW points_sum AS
@@ -122,4 +121,27 @@ Projetar a *view* 'points_sum':
 SELECT * from points_sum;
 ```
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/ae7d5376-06ef-4735-aac6-66f7b400c19a)
+
+### Consultas
+- [ ] realizar consultas SQL para recuperar, inserir, atualizar e excluir dados conforme necessário
+
+**Classificar as perguntas frequentes por assunto**
+```
+SELECT assunto, pergunta
+FROM categoria
+JOIN faq
+ON categoria.id = faq.id_categoria;
+```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/d0cf1013-74dd-43de-89fa-1bdfd0cdf0ff)
+
+**
+**Listar as perguntas com as respostas do usuário e conferir se estão corretas**
+```
+SELECT pergunta.pergunta, opcao.opcao, opcao.e_correta
+FROM interacao_usuario
+JOIN opcao on interacao_usuario.id_opcao = opcao.id_opcao
+JOIN pergunta ON opcao.id_pergunta = pergunta.id_pergunta;
+```
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/b5ea5ec5-eac0-47ea-9767-5dcf2764f89d)
+
 
