@@ -26,7 +26,8 @@ Entender os requisitos do website e quais dados precisam ser armazenados:
 **3FN**) Na tabela Quiz, o atributo 'score' tem dependência com outro atributo não-chave (opção de resposta). Disso surge a necessidade de definir outra entidade da qual 'score' é característica - Interação do Usuário. Logo a tabela Quiz será substituída por: Pergunta, Opção e Interação do Usuário.
 
 ## 👁‍🗨 [Modelo Conceitual](https://app.brmodeloweb.com/#!/publicview/6645e4209c4fbe1c0ef2029d)
-![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/31e9ae45-79cb-46a1-b7db-fd53a1a7c78b)
+![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/cfcf5c64-b5b7-47c9-84c7-e40d0cb75f99)
+
 
 ## 🧠 [Modelo Lógico](https://app.brmodeloweb.com/#!/publicview/66460f2b9c4fbe1c0ef21e1c)
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/e40a0670-9715-43e1-949d-1c769d8f95b9)
