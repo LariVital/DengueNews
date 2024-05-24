@@ -6,10 +6,9 @@
 
   <title>Dengue News</title>
 
-  <link rel="stylesheet" href="../flipbook.css">
+  <link rel="stylesheet" href="/flipbook.css">
 
   <script src="https://kit.fontawesome.com/1cad54f882.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -45,8 +44,8 @@
 
         <div class="cover">
             <label for="checkbox-cover"></label>
-            <p>Sobre a Dengue<br><br>
-            <img src="/img/mosquito.jpg" alt="Ícone" width="350" height="350"></p>
+            <h1>Sobre a Dengue</h1>
+            <p><img id="mosquito" src="/img/mosquito.jpg"></p>
         </div>
 
         <div class="page" id="page1">
@@ -61,65 +60,45 @@
             </div>
 
             <div class="back-page">
-                <img src="/img/aedes.jpg">
+                <img id="egito" src="/img/aedes.jpg">
                 <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
 
         <div class="page" id="page2">
             <div class="front-page">
-                <p><img src="/img/AEDES-MOSQUITO-DENGOSO-4-IMIGRANTE.jpg.jpeg" width="1000" height="400"/></p>
-                <p><img src="/img/AEDES-O-MOSQUITO-DENGOSO-2.jpg" width="1000" height="400"/></p>
+                <img id="dengoso1" src="/img/AEDES-MOSQUITO-DENGOSO-4-IMIGRANTE.jpg.jpeg"/>
+                <img id="dengoso2" src="/img/AEDES-O-MOSQUITO-DENGOSO-2.jpg"/>
                 <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
             </div>
             
-            <div class="back-page">               
+            <div class="back-page" style="text-align: justify"><br>
+                <h2>Risco</h2>
+                <p>Pessoas de todas as idades são vulneráveis à doença, mas idosos e indivíduos com condições crônicas, como diabetes e hipertensão, correm maior risco de desenvolver complicações graves, inclusive fatais.<br>
+                A dengue pode causar uma série de complicações e riscos para a saúde, variando desde sintomas leves até formas graves da doença. Alguns dos principais riscos associados à dengue incluem:</p><br>
+                <b>Dengue Clássica:</b> A forma leve da doença, caracterizada por sintomas como febre, dor de cabeça, dores musculares e articulares, fadiga e erupções cutâneas. Embora desconfortáveis, esses sintomas geralmente não representam um risco significativo para a vida.
+                <p><b>Dengue Hemorrágica (DH) e Síndrome de Choque da Dengue (SCD):</b> Essas formas graves da doença podem se desenvolver em alguns casos. A DH é caracterizada por sangramento, plaquetas baixas e aumento da permeabilidade vascular, o que pode levar a complicações sérias, como choque e falência de múltiplos órgãos. A SCD é uma complicação da DH que causa um rápido declínio na pressão arterial, levando a um estado de choque.</p>            
                 <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
         
         <div class="page" id="page3">
-            <div class="front-page" style="text-align: justify;">
-                <h2>Risco</h2>
-                <p>Pessoas de todas as idades são vulneráveis à doença, mas idosos e indivíduos com condições crônicas, como diabetes e hipertensão, correm maior risco de desenvolver complicações graves, inclusive fatais.<br>
-                A dengue pode causar uma série de complicações e riscos para a saúde, variando desde sintomas leves até formas graves da doença. Alguns dos principais riscos associados à dengue incluem:</p><br>
-                <b>Dengue Clássica:</b> A forma leve da doença, caracterizada por sintomas como febre, dor de cabeça, dores musculares e articulares, fadiga e erupções cutâneas. Embora desconfortáveis, esses sintomas geralmente não representam um risco significativo para a vida.
-                <p><b>Dengue Hemorrágica (DH) e Síndrome de Choque da Dengue (SCD):</b> Essas formas graves da doença podem se desenvolver em alguns casos. A DH é caracterizada por sangramento, plaquetas baixas e aumento da permeabilidade vascular, o que pode levar a complicações sérias, como choque e falência de múltiplos órgãos. A SCD é uma complicação da DH que causa um rápido declínio na pressão arterial, levando a um estado de choque.</p>
+            <div class="front-page" style="text-align: justify;"><br><br><br><br>
+                <p><b>Síndrome de Capilar Permeável:</b> Esta é uma complicação potencialmente fatal da dengue grave, em que os vasos sanguíneos tornam-se permeáveis, resultando em vazamento de fluido dos vasos para os tecidos circundantes. Isso pode levar a edema pulmonar, hemorragias graves e falência de múltiplos órgãos.</p>
+                <p><b>Complicações em Grupos de Risco:</b> Como mencionado anteriormente, pessoas idosas e aquelas com condições médicas crônicas, como diabetes e hipertensão, têm um risco aumentado de desenvolver formas graves da doença e podem ter complicações mais sérias.</p>
+                <p><b>Reinfecção por Diferentes Sorotipos:</b> Após a recuperação de uma infecção por dengue, a pessoa fica imune ao sorotipo específico que contraiu, mas ainda pode ser infectada pelos outros três sorotipos. Uma reinfecção por um sorotipo diferente aumenta o risco de desenvolver formas graves da doença, como a DH ou SCD.</p>
+                <p>Em resumo, a dengue pode representar um risco significativo para a saúde, especialmente em casos de formas graves da doença, e certos grupos de pessoas estão em maior risco de complicações graves e morte.</p>
                 <label class="next" for="checkbox-page3"><i class="fas fa-chevron-right"></i></label>
             </div>
 
-            <div class="back-page">
+            <div class="back-page"><br><br>
+                <p><img id="quadrinho1" src="/img/quadrinho 1.png"/></p>
                 <label class="prev" for="checkbox-page3"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
 
         <div class="page" id="page4">
             <div class="front-page" style="text-align: justify;"><br>
-                <p><b>Síndrome de Capilar Permeável:</b> Esta é uma complicação potencialmente fatal da dengue grave, em que os vasos sanguíneos tornam-se permeáveis, resultando em vazamento de fluido dos vasos para os tecidos circundantes. Isso pode levar a edema pulmonar, hemorragias graves e falência de múltiplos órgãos.</p>
-                <p><b>Complicações em Grupos de Risco:</b> Como mencionado anteriormente, pessoas idosas e aquelas com condições médicas crônicas, como diabetes e hipertensão, têm um risco aumentado de desenvolver formas graves da doença e podem ter complicações mais sérias.</p>
-                <p><b>Reinfecção por Diferentes Sorotipos:</b> Após a recuperação de uma infecção por dengue, a pessoa fica imune ao sorotipo específico que contraiu, mas ainda pode ser infectada pelos outros três sorotipos. Uma reinfecção por um sorotipo diferente aumenta o risco de desenvolver formas graves da doença, como a DH ou SCD.</p>
-                <p>Em resumo, a dengue pode representar um risco significativo para a saúde, especialmente em casos de formas graves da doença, e certos grupos de pessoas estão em maior risco de complicações graves e morte.</p>
-                <label class="next" for="checkbox-page4"><i class="fas fa-chevron-right"></i></label>
-            </div>
-
-            <div class="back-page">
-                <label class="prev" for="checkbox-page4"><i class="fas fa-chevron-left"></i></label>
-            </div>
-        </div>
-
-        <div class="page" id="page5">
-            <div class="front-page" style="text-align: justify;"><br>
-                <p><img src="/img/quadrinho 1.png"/></p>
-                <label class="next" for="checkbox-page5"><i class="fas fa-chevron-right"></i></label>
-            </div>
-
-            <div class="back-page">
-                <label class="prev" for="checkbox-page5"><i class="fas fa-chevron-left"></i></label>
-            </div>
-        </div>
-
-        <div class="page" id="page6">
-            <div class="front-page" style="text-align: justify;">
                 <h2>Sinais e sintomas</h2>
                 <p>A dengue é uma doença febril aguda que pode se tornar grave, com risco de óbito. A maioria dos pacientes se recupera, mas alguns podem progredir para formas graves.<br>
                     A prevenção de mortes depende da qualidade da assistência médica. Sintomas como febre súbita, dor de cabeça e dores musculares devem levar o paciente a buscar atendimento médico imediato.<br>
@@ -133,117 +112,72 @@
                     5. letargia e/ou irritabilidade;<br>
                     6. aumento do tamanho do fígado (hepatomegalia) > 2cm;<br>
                     7. sangramento de mucosa; e<br>
-                    8. aumento progressivo do hematócrito.<br>         
-                <label class="next" for="checkbox-page6"><i class="fas fa-chevron-right"></i></label>
+                    8. aumento progressivo do hematócrito.<br>  
+                <label class="next" for="checkbox-page4"><i class="fas fa-chevron-right"></i></label>
             </div>
 
-            <div class="back-page">
-                <label class="prev" for="checkbox-page6"><i class="fas fa-chevron-left"></i></label>
+            <div class="back-page" style="text-align: justify;"><br><br>
+                <p>Após a fase crítica da dengue, o paciente pode entrar na fase de recuperação, mas a doença pode se tornar grave, com risco de óbito, devido ao extravasamento de plasma, hemorragias severas ou comprometimento de órgãos.</p>
+                <p>Indivíduos de todas as idades são suscetíveis, porém aqueles com condições preexistentes e certos grupos, como mulheres grávidas, lactentes, crianças (até 2 anos) e pessoas com mais de 65 anos, têm maior risco de complicações graves.</p><br>
+               <img id="monica" src="/img/turmadamonica.jpg"/>
+                <label class="prev" for="checkbox-page4"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
 
-        <div class="page" id="page7">
-            <div class="front-page" style="text-align: justify;"><br>                           
-                    <p>Após a fase crítica da dengue, o paciente pode entrar na fase de recuperação, mas a doença pode se tornar grave, com risco de óbito, devido ao extravasamento de plasma, hemorragias severas ou comprometimento de órgãos.</p>
-                    <p>Indivíduos de todas as idades são suscetíveis, porém aqueles com condições preexistentes e certos grupos, como mulheres grávidas, lactentes, crianças (até 2 anos) e pessoas com mais de 65 anos, têm maior risco de complicações graves.</p><br>
-                   <img id="monica" src="/img/turmadamonica.jpg"/>
-                <label class="next" for="checkbox-page7"><i class="fas fa-chevron-right"></i></label>
-            </div>
-
-            <div class="back-page">
-                <label class="prev" for="checkbox-page7"><i class="fas fa-chevron-left"></i></label>
-            </div>
-        </div>
 
         <div class="page" id="page8">
-            <div class="front-page" style="text-align: justify;">                        
-                <img src="/img/quadrinho 2.png"/>
+            <div class="front-page" style="text-align: justify;"><br><br>                       
+                <img id="quadrinho2" src="/img/quadrinho 2.png"/>
                 <label class="next" for="checkbox-page8"><i class="fas fa-chevron-right"></i></label>
             </div>
 
-            <div class="back-page">
+            <div class="back-page" style="text-align: justify;"><br>
+                <h2>Transmissão</h2>
+                <p>O vírus da dengue (DENV) pode ser transmitido ao homem principalmente por via vetorial, pela picada de fêmeas de Aedes aegypti infectadas. Transmissão por via vertical (de mãe para filho durante a gestação) e por transfusão de sangue são raros.<br>
+                Estão classificados cientificamente na família Flaviviridae e no gênero Flavivirus. Até o momento são conhecidos quatro sorotipos – DENV-1, DENV-2, DENV-3 e DENV-4 –, que apresentam distintos materiais genéticos (genótipos) e linhagens.</p>
+                <img id="meme" src="/img/aiseeutepego.jpg"/>
                 <label class="prev" for="checkbox-page8"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
 
-        <div class="page" id="page9">
-            <div class="front-page" style="text-align: justify;">                        
-                <h2>Transmissão</h2>
-                <p>O vírus da dengue (DENV) pode ser transmitido ao homem principalmente por via vetorial, pela picada de fêmeas de Aedes aegypti infectadas. Transmissão por via vertical (de mãe para filho durante a gestação) e por transfusão de sangue são raros.<br>
-                Estão classificados cientificamente na família Flaviviridae e no gênero Flavivirus. Até o momento são conhecidos quatro sorotipos – DENV-1, DENV-2, DENV-3 e DENV-4 –, que apresentam distintos materiais genéticos (genótipos) e linhagens.</p>
-                <img id="meme" src="img/aiseeutepego.jpg"/>
-                <label class="next" for="checkbox-page9"><i class="fas fa-chevron-right"></i></label>
-            </div>
-
-            <div class="back-page">
-                <label class="prev" for="checkbox-page9"><i class="fas fa-chevron-left"></i></label>
-            </div>
-        </div>
-
         <div class="page" id="page10">
-            <div class="front-page" style="text-align: justify;">                        
-                <img src="/img/mosquito mg.jpg"/>
+            <div class="front-page" style="text-align: justify;"><br><br><br>                      
+                <img id="mosquitomg" src="/img/mosquito mg.jpg"/>
                 <label class="next" for="checkbox-page10"><i class="fas fa-chevron-right"></i></label>
             </div>
 
-            <div class="back-page">
-                <label class="prev" for="checkbox-page10"><i class="fas fa-chevron-left"></i></label>
-            </div>
-        </div>
-
-        <div class="page" id="page11">
-            <div class="front-page" style="text-align: justify;">                        
+            <div class="back-page" style="text-align: justify;"><br>
                 <h2>Diagnóstico</h2>
-                <p>Não existe necessidade da realização de exames específicos para o tratamento da doença, já que é baseado nas manifestações clínicas apresentadas. No entanto, para apoiar o diagnóstico clínico existem disponíveis técnicas laboratoriais para identificação do vírus (até o 5° dia de início da doença) e pesquisa de anticorpos (a partir do 6° dia de início da doença).</p>
-                <img id="meme" src="img/diagnostico2.jpeg"/>
-                <label class="next" for="checkbox-page11"><i class="fas fa-chevron-right"></i></label>
-            </div>
-
-            <div class="back-page">
-                <label class="prev" for="checkbox-page11"><i class="fas fa-chevron-left"></i></label>
+                <p>Não existe necessidade da realização de exames específicos para o tratamento da doença, já que é baseado nas manifestações clínicas apresentadas. No entanto, para apoiar o diagnóstico clínico existem disponíveis técnicas laboratoriais para identificação do vírus (até o 5° dia de início da doença) e pesquisa de anticorpos (a partir do 6° dia de início da doença).</p><br>
+                <img id="meme" src="/img/diagnostico2.jpeg"/>
+                <label class="prev" for="checkbox-page10"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
 
         <div class="page" id="page12">
             <div class="front-page" style="text-align: justify;">                        
-                <img src="/img/diagnostico.jpg"/>
+                <img id="diagnostico" src="/img/diagnostico.jpg"/>
                 <label class="next" for="checkbox-page12"><i class="fas fa-chevron-right"></i></label>
             </div>
 
-            <div class="back-page">
-                <label class="prev" for="checkbox-page12"><i class="fas fa-chevron-left"></i></label>
-            </div>
-        </div>
-
-        <div class="page" id="page13">
-            <div class="front-page" style="text-align: justify;">                        
+            <div class="back-page" style="text-align: justify;"><br>
                 <h2>Dengue, Chikungunya ou Zika?</h2>
                 <p>As três doenças - dengue, chikungunya e zika - apresentam sintomas semelhantes, mas possuem algumas diferenças distintivas no quadro clínico.</p>
                 <p>A <b><i>dengue</i></b> tem como primeiro sintoma a febre alta, entre 39° e 40°C. Tem início repentino e geralmente dura de 2 a 7 dias, acompanhada de dor de cabeça, dores no corpo e articulações, prostração, fraqueza, dor atrás dos olhos, erupção e coceira no corpo. Pode haver perda de peso, náuseas e vômitos.</p>
                 <p>Na <b><i>chikungunya</i></b>, a febre é geralmente menor que na dengue, mas há dores musculares e articulares intensas (são mais exuberantes que em Dengue e Zika), dor de cabeça e exantema (erupção na pele). Os sinais costumam durar de 3 a 10 dias.</p>
                 <p>Já na <b><i>zika</i></b>, destaca-se o exantema na pele com coceira, febre baixa ou ausente, conjuntivite e dores leves nas articulações e músculos.</p>
                 <p>Os exames de sangue, como o hemograma, auxiliam na diferenciação, pois mostram queda nas plaquetas e leucopenia mais pronunciada na dengue em comparação com a zika.</p>
-                <label class="next" for="checkbox-page13"><i class="fas fa-chevron-right"></i></label>
-            </div>
-
-            <div class="back-page">
-                <label class="prev" for="checkbox-page13"><i class="fas fa-chevron-left"></i></label>
+                <label class="prev" for="checkbox-page12"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
 
         <div class="page" id="page14">
-            <div class="front-page" style="text-align: justify;">                        
-                <img src="/img/AEDES-MOSQUITO-DENGOSO-1.jpg" width="1000" height="400"/>
+            <div class="front-page" style="text-align: justify;"><br><br><br>                       
+                <img id="aedes" src="/img/AEDES-MOSQUITO-DENGOSO-1.jpg"/>
                 <label class="next" for="checkbox-page14"><i class="fas fa-chevron-right"></i></label>
             </div>
 
-            <div class="back-page">
-                <label class="prev" for="checkbox-page14"><i class="fas fa-chevron-left"></i></label>
-            </div>
-        </div>
-
-        <div class="page" id="page15">
-            <div class="front-page" style="text-align: justify;">
+            <div class="back-page" style="text-align: justify;"><br>
                 <h2>Prevenção</h2>
                 <p>Em dezembro de 2023, a vacina contra a dengue foi integrada ao Sistema Único de Saúde (SUS) do Brasil, tornando-se uma ferramenta importante na prevenção da doença. O país é pioneiro em oferecer essa vacinação gratuitamente.<br>
                 Em fevereiro de 2024, a vacina foi incluída no Calendário Nacional de Vacinação, com a primeira campanha atendendo a centenas de municípios. No entanto, o controle do vetor Aedes aegypti continua sendo crucial na prevenção não só da dengue, mas também de outras doenças arbovirais.
@@ -254,61 +188,25 @@
                    3. vedação dos reservatórios e caixas de água;<br>
                    4. desobstrução de calhas, lajes e ralos;<br>
                    5. participação na fiscalização das ações de prevenção e controle da dengue executadas pelo Sistema Único de Saúde (SUS).</p>
-                <label class="next" for="checkbox-page15"><i class="fas fa-chevron-right"></i></label>
-            </div>
-
-            <div class="back-page">
-                <label class="prev" for="checkbox-page15"><i class="fas fa-chevron-left"></i></label>
+                <label class="prev" for="checkbox-page14"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
 
         <div class="page" id="page16">
-            <div class="front-page" style="text-align: justify;">                        
-                <img src="/img/quadrinho 3.png"/>
+            <div class="front-page" style="text-align: justify;"><br>                      
+                <p><b><i>O Brasil é o primeiro país do mundo a oferecer o imunizante no sistema público de saúde.</i></b></p>                     
+                <img id="quadrinho3" src="/img/quadrinho 3.png"/>
                 <label class="next" for="checkbox-page16"><i class="fas fa-chevron-right"></i></label>
             </div>
 
-            <div class="back-page">
+            <div class="back-page"><br><br>
+                <img id="quadrinho4" src="/img/quadrinho 4.png"/>
                 <label class="prev" for="checkbox-page16"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
 
-        <div class="page" id="page17">
-            <div class="front-page" style="text-align: justify;">                        
-                <img src="/img/quadrinho 4.png"/>
-                <label class="next" for="checkbox-page17"><i class="fas fa-chevron-right"></i></label>
-            </div>
-
-            <div class="back-page">
-                <label class="prev" for="checkbox-page17"><i class="fas fa-chevron-left"></i></label>
-            </div>
-        </div>
-
-        <div class="page" id="page18">
-            <div class="front-page" style="text-align: justify;">
-                <p><b><i>O Brasil é o primeiro país do mundo a oferecer o imunizante no sistema público de saúde.</i></b></p>                     
-                <img id="quadrinho" src="/img/quadrinho 3.png"/>
-                <label class="next" for="checkbox-page18"><i class="fas fa-chevron-right"></i></label>
-            </div>
-
-            <div class="back-page">
-                <label class="prev" for="checkbox-page18"><i class="fas fa-chevron-left"></i></label>
-            </div>
-        </div>
-
-        <div class="page" id="page19">
-            <div class="front-page" style="text-align: justify;">
-                <img src="/img/quadrinho 4.png"/>
-                <label class="next" for="checkbox-page19"><i class="fas fa-chevron-right"></i></label>
-            </div>
-
-            <div class="back-page">
-                <label class="prev" for="checkbox-page19"><i class="fas fa-chevron-left"></i></label>
-            </div>
-        </div>
-
         <div class="page" id="page20">
-            <div class="front-page" style="text-align: justify;">
+            <div class="front-page" style="text-align: justify;"><br>
                 <h2>Dengue: tratamento</h2>
                 <p>O tratamento é baseado principalmente na reposição de líquidos adequada. Por isso, conforme orientação médica, em casa deve-se realizar:
                 <p>1. Repouso;<br>
@@ -320,68 +218,35 @@
                 <label class="next" for="checkbox-page20"><i class="fas fa-chevron-right"></i></label>
             </div>
 
-            <div class="back-page">
-                <label class="prev" for="checkbox-page20"><i class="fas fa-chevron-left"></i></label>
-            </div>
-        </div>
-
-        <div class="page" id="page21">
-            <div class="front-page" style="text-align: justify;">
+            <div class="back-page" style="text-align: justify;"><br>
                 <h2>Dengue no Brasil e América Latina</h2>
                 <p>Segundo a Organização Pan-americana da Saúde (Opas) o continente americano pode enfrentar o pior surto de dengue de sua história em 2024, com mais de 3,5 milhões de casos nos primeiros três meses do ano.</p>
                 <p>Brasil, Argentina e Paraguai são responsáveis por mais de 90% dos casos e 80% das mortes. Jarbas Barbosa, diretor-geral da Opas, destacou que todos os quatro sorotipos da dengue estão em circulação, aumentando o risco de casos graves.
                 As causas incluem fatores ambientais como altas temperaturas, ondas de calor, secas e inundações. Apesar do aumento na transmissão, não há mudança nos sintomas da doença.</p>
                 <p>A Opas enfatiza a importância de programas permanentes para identificar precocemente novos surtos.
                 </p>
-                
-                <label class="next" for="checkbox-page21"><i class="fas fa-chevron-right"></i></label>
-            </div>
-
-            <div class="back-page">
-                <label class="prev" for="checkbox-page21"><i class="fas fa-chevron-left"></i></label>
+                <p>“A OMS [Organização Mundial da Saúde], de forma acertada, declarou a emergência até que pudéssemos ter uma avaliação do que estava acontecendo”, disse. “Na dengue, a única novidade é o aumento na transmissão, mas não há mudança na expressão clínica da doença ou nos sintomas”, completou.</p>
+                <label class="prev" for="checkbox-page20"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
 
         <div class="page" id="page22">
-            <div class="front-page" style="text-align: justify;">
-                <br>                        
-                <p>“A OMS [Organização Mundial da Saúde], de forma acertada, declarou a emergência até que pudéssemos ter uma avaliação do que estava acontecendo”, disse. “Na dengue, a única novidade é o aumento na transmissão, mas não há mudança na expressão clínica da doença ou nos sintomas”, completou.</p>
+            <div class="front-page" style="text-align: justify;"><br>                     
                 <p>“A dengue é um desafio importante. Quando temos uma epidemia, a circulação é tão forte que quase todas as pessoas têm contato com aquele sorotipo. Depois, passamos um período de três ou quatro anos até que tenhamos outro surto. Parece que a doença desapareceu, foi embora”, concluiu Jarbas, ao destacar a necessidade de programas permanentes nas Américas para identificar precocemente novos surtos.</p>
+                <img id="dengue" src="/img/dengue.webp"/>
                 <label class="next" for="checkbox-page22"><i class="fas fa-chevron-right"></i></label>
             </div>
 
-            <div class="back-page">
+            <div class="back-page" style="text-align: justify;">
+                <h2><p><i>Proteja sua família: verifique, limpe e elimine possíveis criadouros da dengue. Ela não escolhe idade, nem classe social. Juntos podemos eliminar esse vírus.</i></p></h2>
+                <img id="denguestop" src="/img/Denguestop.jpg"/>
                 <label class="prev" for="checkbox-page22"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
-
-        <div class="page" id="page23">
-            <div class="front-page" style="text-align: justify;">
-                <img src="/img/dengue.webp" width="400" height="500"/>
-                <label class="next" for="checkbox-page23"><i class="fas fa-chevron-right"></i></label>
-            </div>
-
-            <div class="back-page">
-                <label class="prev" for="checkbox-page23"><i class="fas fa-chevron-left"></i></label>
-            </div>
-        </div>
-
-        <div class="page" id="page24">
-            <div class="front-page" style="text-align: justify;">
-                <h2><p><i>Proteja sua família: verifique, limpe e elimine possíveis criadouros da dengue. Ela não escolhe idade, nem classe social. Juntos podemos eliminar esse vírus.</i></p></h2>
-
-                <img id="denguestop" src="img/Denguestop.jpg"/>
-                <label class="next" for="checkbox-page24"><i class="fas fa-chevron-right"></i></label>
-            </div>
-
-            <div class="back-page">
-                <label class="prev" for="checkbox-page24"><i class="fas fa-chevron-left"></i></label>
-            </div>
-        </div>
-
+        
         <div class="page" id="page25">
             <div class="front-page" style="text-align: justify;">
-                <img src="img/lapada dengue.jpeg"/>
+                <img id="lapada" src="/img/lapada dengue.jpeg"/>
                 <label class="next" for="checkbox-page25"><i class="fas fa-chevron-right"></i></label>
             </div>
 
