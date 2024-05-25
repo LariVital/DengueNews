@@ -31,6 +31,7 @@ Entender os requisitos do website e quais dados precisam ser armazenados:
 
 ## 🧠 [Modelo Lógico](https://app.brmodeloweb.com/#!/publicview/66460f2b9c4fbe1c0ef21e1c)
 ![image](https://github.com/LariVital/PDI-DengueNews/assets/142796669/e40a0670-9715-43e1-949d-1c769d8f95b9)
+PS: a cardinalidade foi alterada pelo BR Modelo Web
 
 ## 💪🏼 Modelo Físico 
 Escolher o SGBD - Sistema de Gerenciamento de Banco de Dados para criar o esquema do banco de dados:
