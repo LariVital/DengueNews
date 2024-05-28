@@ -1,2 +1,8 @@
 # Define @LariVital, @alcangio, @caiki14 como responsáveis por todos os arquivos no repositório
 * @LariVital @alcangio @caiki14
+
+# Define @LorenadeCastro como responsável pelo arquivo flipbook.html na pasta 'public'
+public/flipbook.html @LorenadeCastro
+
+# Define @LorenadeCastro como responsável pelo arquivo flipbook.css na raiz do repositório
+/flipbook.css @LorenadeCastro
