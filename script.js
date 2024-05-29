@@ -1,15 +1,15 @@
 // SOBRE A DENGUE
 // abre o flipbook como pop-up
-// let bookPopUp = document.getElementsByClassName("pop-book")[0];
-// console.log(bookPopUp)
+let bookPopUp = document.getElementsByClassName("pop-book")[0];
+console.log(bookPopUp)
 
-// bookPopUp.addEventListener("click", (e) => {
-//     if (window.location.pathname === '/index.html') {
-//         window.open('./public/flipbook.html', 'popup', 'width=1920,height=1080');
-//     } else {
-//         window.open('./flipbook.html', 'popup', 'width=1920,height=1080');
-//     }
-// })
+bookPopUp.addEventListener("click", (e) => {
+    if (window.location.pathname === '/index.html') {
+        window.open('./public/flipbook.html', 'popup', 'width=1920,height=1080');
+    } else {
+        window.open('./flipbook.html', 'popup', 'width=1920,height=1080');
+    }
+})
 
 // NEWSLETTER
 // abre a página newsletter como pop-up
