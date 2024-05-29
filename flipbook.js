@@ -3,9 +3,9 @@ let bookPopUp = document.getElementsByClassName("book-pop")[0];
 console.log(bookPopUp)
 
 bookPopUp.addEventListener("click", () => {
-    if (window.location.pathname === 'index.html') {
-        window.open('public/flipbook.html', 'popup', 'width=1920,height=1080');
+    if (window.location.pathname === '/DengueNews/') {
+        window.open('./public/flipbook.html', 'popup', 'width=1920,height=1080');
     } else {
-        window.open('flipbook.html', 'popup', 'width=1920,height=1080');
+        window.open('./flipbook.html', 'popup', 'width=1920,height=1080');
     }
 })
