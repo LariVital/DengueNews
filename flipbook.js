@@ -4,8 +4,8 @@ console.log(bookPopUp)
 
 bookPopUp.addEventListener("click", (e) => {
     if (window.location.pathname === '/index.html') {
-        window.open('https://username.github.io/repository/public/flipbook.html', 'popup', 'width=1920,height=1080');
+        window.open('/public/flipbook.html', 'popup', 'width=1920,height=1080');
     } else {
-        window.open('flipbook.html', 'popup', 'width=1920,height=1080');
+        window.open('./flipbook.html', 'popup', 'width=1920,height=1080');
     }
 })
