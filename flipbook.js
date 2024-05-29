@@ -1,17 +1,4 @@
 // abre o flipbook como pop-up
-let bookPopUp = document.getElementsByClassName("book-pop")[0];
-console.log(bookPopUp);
-
-bookPopUp.addEventListener("click", () => {
-    if (window.location.pathname.endsWith("/index.html") || window.location.pathname === "/") {
-        window.open("./public/flipbook.html", "popup", "width=1920,height=1080");
-    } else {
-        window.open("./flipbook.html", "popup", "width=1920,height=1080");
-    }
-});
-
-
-
 // let bookPopUp = document.getElementsByClassName("book-pop")[0];
 // console.log(bookPopUp)
 
@@ -22,3 +9,13 @@ bookPopUp.addEventListener("click", () => {
 //         window.open("/flipbook.html", "popup", "width=1920,height=1080");
 //     }
 // })
+let bookPopUp = document.getElementsByClassName("book-pop")[0];
+console.log(bookPopUp);
+
+bookPopUp.addEventListener("click", (e) => {
+    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
+        window.open('public/flipbook.html', 'popup', 'width=1920,height=1080');
+    } else {
+        window.open('flipbook.html', 'popup', 'width=1920,height=1080');
+    }
+});
