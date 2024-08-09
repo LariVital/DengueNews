@@ -57,3 +57,24 @@ app.post('/login', (req, res) => {
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');
 });
+
+const express = require('express');
+const app = express();
+const path = require('path');
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Rotas para as páginas HTML
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'login.html'));
+});
+
+app.get('/cadastro', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'cadastro.html'));
+});
+
+// Iniciar o servidor
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT}`);
+});
