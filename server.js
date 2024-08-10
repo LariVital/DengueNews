@@ -1,76 +1,60 @@
 const express = require('express');
 const mysql = require('mysql2');
-const app = express();
-const port = 3000;
-
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'OCaminhoÉOFimMaisQueChegar.',
-    database: 'meu_banco'
-});
-
-db.connect((err) => {
-    if (err) {
-        console.error('Erro ao conectar ao banco de dados:', err);
-    } else {
-        console.log('Conectado ao banco de dados');
-    }
-});
-
-app.use(express.json());
-
-app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}`);
-});
-
+const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
+const saltRounds = 10;
+
+const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static('public'));
+
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root', // Substitua pelo seu usuário do MySQL
+  password: 'OCaminhoÉOFimMaisQueChegar.', // Substitua pela sua senha do MySQL
+  database: 'dengue_news'
+});
+
+connection.connect((err) => {
+  if (err) throw err;
+  console.log('Connected to the database.');
+});
+
+app.get('/register', (req, res) => {
+  res.sendFile(__dirname + '/public/register.html');
+});
+
+app.get('/login', (req, res) => {
+  res.sendFile(__dirname + '/public/login.html');
+});
 
 app.post('/register', (req, res) => {
-    const { username, password, email, telefone } = req.body;
-
-    bcrypt.hash(password, 10, (err, hash) => {
-        if (err) throw err;
-
-        db.query(
-            'INSERT INTO users (username, password, email, telefone) VALUES (?, ?, ?, ?)',
-            [username, hash, email, telefone],
-            (err, result) => {
-                if (err) throw err;
-                res.send('Usuário registrado com sucesso!');
-            }
-        );
+  const { username, password, email, telefone } = req.body;
+  bcrypt.hash(password, saltRounds, (err, hash) => {
+    if (err) throw err;
+    const sql = 'INSERT INTO users (username, password, email, telefone) VALUES (?, ?, ?, ?)';
+    connection.query(sql, [username, hash, email, telefone], (err, result) => {
+      if (err) throw err;
+      res.send('User registered successfully.');
     });
+  });
 });
 
 app.post('/login', (req, res) => {
-    const { username, password } = req.body;
-
-    db.query(
-        'SELECT * FROM users WHERE username = ?',
-        [username],
-        (err, results) => {
-            if (err) throw err;
-
-            if (results.length > 0) {
-                const user = results[0];
-
-                bcrypt.compare(password, user.password, (err, match) => {
-                    if (err) throw err;
-
-                    if (match) {
-                        res.send('Login bem-sucedido!');
-                    } else {
-                        res.send('Senha incorreta.');
-                    }
-                });
-            } else {
-                res.send('Usuário não encontrado.');
-            }
-        }
-    );
+  const { username, password } = req.body;
+  const sql = 'SELECT * FROM users WHERE username = ?';
+  connection.query(sql, [username], (err, results) => {
+    if (err) throw err;
+    if (results.length === 0) return res.send('User not found.');
+    bcrypt.compare(password, results[0].password, (err, result) => {
+      if (err) throw err;
+      if (result) res.send('Login successful.');
+      else res.send('Incorrect password.');
+    });
+  });
 });
 
-app.use(express.static('cadUsuarios'));
-app.use(express.static('public')); // Se houver outros arquivos estáticos em 'public'
-app.use(express.static(__dirname)); // Serve arquivos estáticos da raiz do projeto
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
